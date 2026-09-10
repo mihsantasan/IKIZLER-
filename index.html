@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="tr" itemscope itemtype="https://schema.org/LocalBusiness">
+<html lang="tr" itemscope itemtype="https://schema.org/LocalBusiness" class="scroll-smooth">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -41,40 +41,58 @@
         * { font-family: 'Poppins', sans-serif; }
 
         :root {
-            --teal-900: #14532d;
-            --teal-800: #166534;
-            --teal-700: #15803d;
-            --teal-600: #16a34a;
-            --teal-500: #22c55e;
-            --teal-400: #4ade80;
-            --teal-100: #bbf7d0;
-            --teal-50: #f0fdf4;
-            --orange-500: #f97316;
+            --cyan-400: #22d3ee;
+            --cyan-500: #06b6d4;
+            --teal-500: #14b8a6;
+            --green-500: #22c55e;
         }
 
-        body { font-size: 1rem; line-height: 1.6; color: #1f2937; }
-
-        .gradient-bg {
-            position: relative;
-            overflow: hidden;
-            background: linear-gradient(135deg, #14532d 0%, #166534 50%, #15803d 100%);
+        body {
+            background-color: #050505;
+            color: #e5e7eb;
+            overflow-x: hidden;
         }
 
-        .gradient-text {
-            background: linear-gradient(135deg, #15803d 0%, #22c55e 100%);
-            -webkit-background-clip: text;
-            -webkit-text-fill-color: transparent;
-            background-clip: text;
+        /* Glassmorphism kart efektleri */
+        .glass-card {
+            background: rgba(18, 18, 18, 0.78);
+            backdrop-filter: blur(12px);
+            -webkit-backdrop-filter: blur(12px);
+            border: 1px solid rgba(255, 255, 255, 0.08);
+            transition: all 0.3s cubic-bezier(0.16, 1, 0.3, 1);
+        }
+        .glass-card:hover {
+            border-color: rgba(6, 182, 212, 0.45);
+            transform: translateY(-4px);
+            box-shadow: 0 16px 32px -8px rgba(6, 182, 212, 0.16);
         }
 
         .service-card {
+            background: rgba(22, 22, 24, 0.82);
+            backdrop-filter: blur(12px);
+            -webkit-backdrop-filter: blur(12px);
+            border: 1px solid rgba(255, 255, 255, 0.09);
             transition: all 0.35s cubic-bezier(0.175, 0.885, 0.32, 1.275);
             position: relative;
             overflow: hidden;
         }
         .service-card:hover {
             transform: translateY(-8px);
-            box-shadow: 0 20px 35px rgba(22, 163, 74, 0.18);
+            border-color: rgba(34, 211, 238, 0.5);
+            box-shadow: 0 20px 40px -10px rgba(6, 182, 212, 0.22);
+        }
+
+        .region-card {
+            background: rgba(20, 20, 22, 0.75);
+            backdrop-filter: blur(8px);
+            border: 1px solid rgba(255, 255, 255, 0.07);
+            transition: all 0.25s ease;
+        }
+        .region-card:hover {
+            border-color: var(--cyan-400);
+            background: rgba(6, 182, 212, 0.12);
+            transform: translateY(-3px);
+            box-shadow: 0 8px 20px rgba(6, 182, 212, 0.18);
         }
 
         .hover-lift {
@@ -82,7 +100,7 @@
         }
         .hover-lift:hover {
             transform: translateY(-4px);
-            box-shadow: 0 10px 25px rgba(0,0,0,0.12);
+            box-shadow: 0 10px 25px rgba(0, 207, 255, 0.15);
         }
 
         .icon-bounce { animation: iconBounce 2.4s infinite; }
@@ -99,16 +117,6 @@
         .animate-bounce-slow-delayed { animation: bounceSlow 3s ease-in-out infinite 1.5s; }
         .animate-bounce-slow-ig { animation: bounceSlow 3s ease-in-out infinite 0.75s; }
 
-        .region-card {
-            transition: all 0.25s ease;
-        }
-        .region-card:hover {
-            border-color: var(--teal-500);
-            background-color: var(--teal-50);
-            transform: translateY(-3px);
-            box-shadow: 0 8px 18px rgba(22, 163, 74, 0.12);
-        }
-
         #hero-canvas {
             position: absolute;
             top: 0;
@@ -123,6 +131,12 @@
         .instagram-gradient {
             background: linear-gradient(45deg, #f09433 0%, #e6683c 25%, #dc2743 50%, #cc2366 75%, #bc1888 100%);
         }
+
+        /* Özel scrollbar */
+        ::-webkit-scrollbar { width: 8px; }
+        ::-webkit-scrollbar-track { background: #0a0a0a; }
+        ::-webkit-scrollbar-thumb { background: #262626; border-radius: 4px; }
+        ::-webkit-scrollbar-thumb:hover { background: #06b6d4; }
     </style>
 
     <script type="application/ld+json">
@@ -165,7 +179,26 @@
     }
     </script>
 </head>
-<body class="bg-gray-50 text-gray-800">
+<body class="selection:bg-cyan-500 selection:text-black min-h-screen relative">
+
+<!-- Tüm Sayfayı Kapsayan Koyu Desen Arka Plan Katmanları -->
+<div class="fixed inset-0 pointer-events-none z-0">
+    <!-- Gradyan ve 45 Derece Eğimli Işık Bantları -->
+    <div class="absolute inset-0 opacity-100" style="background: radial-gradient(100% 100% at 0% 0%, rgb(36, 36, 36) 0%, rgb(3, 3, 3) 100%); -webkit-mask: radial-gradient(125% 100% at 0% 0%, rgb(0, 0, 0) 0%, rgba(0, 0, 0, 0.224) 88.2883%, rgba(0, 0, 0, 0) 100%); mask: radial-gradient(125% 100% at 0% 0%, rgb(0, 0, 0) 0%, rgba(0, 0, 0, 0.224) 88.2883%, rgba(0, 0, 0, 0) 100%);">
+        <div class="absolute inset-0 opacity-20" style="background: linear-gradient(rgb(0, 207, 255) 0%, rgba(0, 207, 255, 0) 100%); -webkit-mask: linear-gradient(90deg, rgba(0, 0, 0, 0) 0%, rgb(0, 0, 0) 20%, rgba(0, 0, 0, 0) 36%, rgb(0, 0, 0) 55%, rgba(0, 0, 0, 0.13) 67%, rgb(0, 0, 0) 78%, rgba(0, 0, 0, 0) 97%); mask: linear-gradient(90deg, rgba(0, 0, 0, 0) 0%, rgb(0, 0, 0) 20%, rgba(0, 0, 0, 0) 36%, rgb(0, 0, 0) 55%, rgba(0, 0, 0, 0.13) 67%, rgb(0, 0, 0) 78%, rgba(0, 0, 0, 0) 97%); transform: skewX(45deg);"></div>
+        <div class="absolute inset-0 opacity-20" style="background: linear-gradient(rgb(0, 207, 255) 0%, rgba(0, 207, 255, 0) 100%); -webkit-mask: linear-gradient(90deg, rgba(0, 0, 0, 0) 11%, rgb(0, 0, 0) 25%, rgba(0, 0, 0, 0.55) 41%, rgba(0, 0, 0, 0.13) 67%, rgb(0, 0, 0) 78%, rgba(0, 0, 0, 0) 97%); mask: linear-gradient(90deg, rgba(0, 0, 0, 0) 11%, rgb(0, 0, 0) 25%, rgba(0, 0, 0, 0.55) 41%, rgba(0, 0, 0, 0.13) 67%, rgb(0, 0, 0) 78%, rgba(0, 0, 0, 0) 97%); transform: skewX(45deg);"></div>
+        <div class="absolute inset-0 opacity-20" style="background: linear-gradient(rgb(0, 207, 255) 0%, rgba(0, 207, 255, 0) 100%); -webkit-mask: linear-gradient(90deg, rgba(0, 0, 0, 0) 9%, rgb(0, 0, 0) 20%, rgba(0, 0, 0, 0.55) 28%, rgba(0, 0, 0, 0.424) 40%, rgb(0, 0, 0) 48%, rgba(0, 0, 0, 0.267) 54%, rgba(0, 0, 0, 0.13) 78%, rgb(0, 0, 0) 88%, rgba(0, 0, 0, 0) 97%); mask: linear-gradient(90deg, rgba(0, 0, 0, 0) 9%, rgb(0, 0, 0) 20%, rgba(0, 0, 0, 0.55) 28%, rgba(0, 0, 0, 0.424) 40%, rgb(0, 0, 0) 48%, rgba(0, 0, 0, 0.267) 54%, rgba(0, 0, 0, 0.13) 78%, rgb(0, 0, 0) 88%, rgba(0, 0, 0, 0) 97%); transform: skewX(45deg);"></div>
+        <div class="absolute inset-0 opacity-20" style="background: linear-gradient(rgb(0, 207, 255) 0%, rgba(0, 207, 255, 0) 100%); -webkit-mask: linear-gradient(90deg, rgba(0, 0, 0, 0) 0%, rgb(0, 0, 0) 17%, rgba(0, 0, 0, 0.55) 26%, rgb(0, 0, 0) 35%, rgba(0, 0, 0, 0.47) 47%, rgba(0, 0, 0, 0.13) 69%, rgb(0, 0, 0) 79%, rgba(0, 0, 0, 0) 97%); mask: linear-gradient(90deg, rgba(0, 0, 0, 0) 0%, rgb(0, 0, 0) 17%, rgba(0, 0, 0, 0.55) 26%, rgb(0, 0, 0) 35%, rgba(0, 0, 0, 0.47) 47%, rgba(0, 0, 0, 0.13) 69%, rgb(0, 0, 0) 79%, rgba(0, 0, 0, 0) 97%); transform: skewX(45deg);"></div>
+        <div class="absolute inset-0 opacity-20" style="background: linear-gradient(rgb(0, 207, 255) 0%, rgba(0, 207, 255, 0) 100%); -webkit-mask: linear-gradient(90deg, rgba(0, 0, 0, 0) 0%, rgb(0, 0, 0) 20%, rgba(0, 0, 0, 0.55) 27%, rgb(0, 0, 0) 42%, rgba(0, 0, 0, 0.48) 48%, rgba(0, 0, 0, 0.13) 67%, rgb(0, 0, 0) 74%, rgb(0, 0, 0) 82%, rgba(0, 0, 0, 0.47) 88%, rgba(0, 0, 0, 0) 97%); mask: linear-gradient(90deg, rgba(0, 0, 0, 0) 0%, rgb(0, 0, 0) 20%, rgba(0, 0, 0, 0.55) 27%, rgb(0, 0, 0) 42%, rgba(0, 0, 0, 0.48) 48%, rgba(0, 0, 0, 0.13) 67%, rgb(0, 0, 0) 74%, rgb(0, 0, 0) 82%, rgba(0, 0, 0, 0.47) 88%, rgba(0, 0, 0, 0) 97%); transform: skewX(45deg);"></div>
+    </div>
+    <!-- Noise doku kaplaması -->
+    <div class="absolute inset-0 opacity-10 bg-repeat" style="background-image: url('https://cdn.21st.dev/assets/mirror/f5/f55dfc553c100e6da0ad95258a042b4100f0ff4bb03a5313d1f541984275e262.png'); background-size: 149.76px;"></div>
+    <!-- Noktalı desen (Dot pattern) -->
+    <div class="absolute inset-0 opacity-15" style="background-image: radial-gradient(circle at 1px 1px, rgba(255,255,255,0.45) 1px, transparent 0); background-size: 20px 20px;"></div>
+    <!-- İnce radyal atmosfer parlamaları -->
+    <div class="absolute inset-0" style="background: radial-gradient(circle at 50% 20%, rgba(0, 207, 255, 0.12) 0%, transparent 60%);"></div>
+    <div class="absolute inset-0" style="background: radial-gradient(circle at 80% 80%, rgba(20, 184, 166, 0.08) 0%, transparent 50%);"></div>
+</div>
 
 <!-- SVG İkon Kütüphanesi -->
 <svg style="display:none;">
@@ -187,36 +220,36 @@
 </svg>
 
 <!-- Navigation -->
-<nav class="bg-white shadow-md fixed w-full top-0 z-50 border-b border-gray-100">
+<nav class="bg-neutral-950/85 backdrop-blur-md fixed w-full top-0 z-50 border-b border-neutral-800 shadow-2xl">
     <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         <div class="flex justify-between items-center h-20 md:h-24">
             <a href="/" class="flex items-center group flex-shrink-0">
-                <img src="https://camlikalti.yurdu.org/media/camlikaltiyurduorg_1789012455_8552.jpg" alt="İkizler Halı ve Koltuk Yıkama Logo" class="h-16 md:h-20 w-auto object-contain rounded-lg shadow-sm border border-gray-100 group-hover:scale-105 transition-transform duration-300">
+                <img src="https://camlikalti.yurdu.org/media/camlikaltiyurduorg_1789012455_8552.jpg" alt="İkizler Halı ve Koltuk Yıkama Logo" class="h-14 md:h-18 w-auto object-contain rounded-lg shadow-md border border-neutral-800 group-hover:border-cyan-500/60 transition-all duration-300">
             </a>
 
             <div class="hidden lg:flex items-center space-x-1">
-                <a href="#anasayfa" class="px-4 py-2 font-semibold rounded-lg text-sm text-green-700 bg-green-50">Ana Sayfa</a>
-                <a href="#hizmetler" class="px-4 py-2 text-gray-700 hover:text-green-700 hover:bg-green-50 rounded-lg transition font-medium text-sm">Hizmetlerimiz</a>
-                <a href="#bolgeler" class="px-4 py-2 text-gray-700 hover:text-green-700 hover:bg-green-50 rounded-lg transition font-medium text-sm">Hizmet Bölgelerimiz</a>
-                <a href="#hakkimizda" class="px-4 py-2 text-gray-700 hover:text-green-700 hover:bg-green-50 rounded-lg transition font-medium text-sm">Hakkımızda</a>
-                <a href="#yorumlar" class="px-4 py-2 text-gray-700 hover:text-green-700 hover:bg-green-50 rounded-lg transition font-medium text-sm">Yorumlar</a>
-                <a href="#iletisim" class="px-4 py-2 text-gray-700 hover:text-green-700 hover:bg-green-50 rounded-lg transition font-medium text-sm">İletişim</a>
+                <a href="#anasayfa" class="px-3.5 py-2 font-semibold rounded-lg text-sm text-cyan-400 bg-cyan-950/40 border border-cyan-500/30">Ana Sayfa</a>
+                <a href="#hizmetler" class="px-3.5 py-2 text-gray-300 hover:text-cyan-300 hover:bg-neutral-800/60 rounded-lg transition font-medium text-sm">Hizmetlerimiz</a>
+                <a href="#bolgeler" class="px-3.5 py-2 text-gray-300 hover:text-cyan-300 hover:bg-neutral-800/60 rounded-lg transition font-medium text-sm">Hizmet Bölgelerimiz</a>
+                <a href="#hakkimizda" class="px-3.5 py-2 text-gray-300 hover:text-cyan-300 hover:bg-neutral-800/60 rounded-lg transition font-medium text-sm">Hakkımızda</a>
+                <a href="#yorumlar" class="px-3.5 py-2 text-gray-300 hover:text-cyan-300 hover:bg-neutral-800/60 rounded-lg transition font-medium text-sm">Yorumlar</a>
+                <a href="#iletisim" class="px-3.5 py-2 text-gray-300 hover:text-cyan-300 hover:bg-neutral-800/60 rounded-lg transition font-medium text-sm">İletişim</a>
 
-                <div class="flex items-center space-x-2 ml-3 pl-3 border-l border-gray-200">
-                    <a href="https://www.instagram.com/ikizlerhalivekoltukyikama?stkn=MTBianZxYjdtdGszNQ==" target="_blank" rel="noopener noreferrer" class="flex items-center justify-center w-10 h-10 text-white rounded-lg transition shadow-md hover:shadow-lg hover-lift instagram-gradient" title="Instagram: @ikizlerhalivekoltukyikama">
+                <div class="flex items-center space-x-2 ml-3 pl-3 border-l border-neutral-800">
+                    <a href="https://www.instagram.com/ikizlerhalivekoltukyikama?stkn=MTBianZxYjdtdGszNQ==" target="_blank" rel="noopener noreferrer" class="flex items-center justify-center w-10 h-10 text-white rounded-lg transition shadow-md hover:shadow-cyan-500/20 hover-lift instagram-gradient" title="Instagram: @ikizlerhalivekoltukyikama">
                         <i class="fab fa-instagram text-base"></i>
                     </a>
-                    <a href="tel:05304149246" class="flex items-center justify-center w-10 h-10 text-white rounded-lg transition shadow-md hover:shadow-lg hover-lift icon-bounce" style="background: var(--teal-600);" title="Telefon: 0530 414 92 46">
+                    <a href="tel:05304149246" class="flex items-center justify-center w-10 h-10 text-white rounded-lg transition shadow-md hover:shadow-cyan-500/20 hover-lift icon-bounce bg-cyan-600 hover:bg-cyan-500" title="Telefon: 0530 414 92 46">
                         <i class="fas fa-phone text-sm"></i>
                     </a>
-                    <a href="https://wa.me/905304149246?text=Merhaba,%20hali%20yikama%20hakkinda%20bilgi%20almak%20istiyorum." target="_blank" rel="noopener noreferrer" class="flex items-center justify-center w-10 h-10 bg-green-500 text-white rounded-lg hover:bg-green-600 transition shadow-md hover:shadow-lg hover-lift icon-bounce" title="WhatsApp: 0530 414 92 46">
+                    <a href="https://wa.me/905304149246?text=Merhaba,%20hali%20yikama%20hakkinda%20bilgi%20almak%20istiyorum." target="_blank" rel="noopener noreferrer" class="flex items-center justify-center w-10 h-10 bg-green-500 hover:bg-green-600 text-white rounded-lg transition shadow-md hover:shadow-green-500/20 hover-lift icon-bounce" title="WhatsApp: 0530 414 92 46">
                         <i class="fab fa-whatsapp text-base"></i>
                     </a>
                 </div>
             </div>
 
             <div class="lg:hidden">
-                <button id="mobile-menu-btn" aria-label="Menüyü Aç" class="text-gray-700 p-2 rounded-lg hover:bg-green-50 transition">
+                <button id="mobile-menu-btn" aria-label="Menüyü Aç" class="text-gray-300 p-2 rounded-lg hover:bg-neutral-800 transition">
                     <svg class="w-7 h-7" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16M4 18h16"/></svg>
                 </button>
             </div>
@@ -224,22 +257,22 @@
     </div>
 
     <!-- Mobil Açılır Menü -->
-    <div id="mobile-menu" class="hidden lg:hidden bg-white border-t border-gray-100 shadow-xl">
+    <div id="mobile-menu" class="hidden lg:hidden bg-neutral-950/95 backdrop-blur-xl border-t border-neutral-800 shadow-2xl">
         <div class="px-4 pt-3 pb-5 space-y-2">
-            <a href="#anasayfa" class="block px-4 py-2.5 font-semibold rounded-lg text-green-700 bg-green-50">Ana Sayfa</a>
-            <a href="#hizmetler" class="block px-4 py-2.5 text-gray-700 hover:bg-green-50 hover:text-green-700 rounded-lg transition font-medium">Hizmetlerimiz</a>
-            <a href="#bolgeler" class="block px-4 py-2.5 text-gray-700 hover:bg-green-50 hover:text-green-700 rounded-lg transition font-medium">Hizmet Bölgelerimiz</a>
-            <a href="#hakkimizda" class="block px-4 py-2.5 text-gray-700 hover:bg-green-50 hover:text-green-700 rounded-lg transition font-medium">Hakkımızda</a>
-            <a href="#yorumlar" class="block px-4 py-2.5 text-gray-700 hover:bg-green-50 hover:text-green-700 rounded-lg transition font-medium">Müşteri Yorumları</a>
-            <a href="#iletisim" class="block px-4 py-2.5 text-gray-700 hover:bg-green-50 hover:text-green-700 rounded-lg transition font-medium">İletişim</a>
-            <div class="flex items-center space-x-2 pt-3 border-t border-gray-100">
+            <a href="#anasayfa" class="block px-4 py-2.5 font-semibold rounded-lg text-cyan-400 bg-cyan-950/40 border border-cyan-500/20">Ana Sayfa</a>
+            <a href="#hizmetler" class="block px-4 py-2.5 text-gray-300 hover:bg-neutral-800 hover:text-cyan-300 rounded-lg transition font-medium">Hizmetlerimiz</a>
+            <a href="#bolgeler" class="block px-4 py-2.5 text-gray-300 hover:bg-neutral-800 hover:text-cyan-300 rounded-lg transition font-medium">Hizmet Bölgelerimiz</a>
+            <a href="#hakkimizda" class="block px-4 py-2.5 text-gray-300 hover:bg-neutral-800 hover:text-cyan-300 rounded-lg transition font-medium">Hakkımızda</a>
+            <a href="#yorumlar" class="block px-4 py-2.5 text-gray-300 hover:bg-neutral-800 hover:text-cyan-300 rounded-lg transition font-medium">Müşteri Yorumları</a>
+            <a href="#iletisim" class="block px-4 py-2.5 text-gray-300 hover:bg-neutral-800 hover:text-cyan-300 rounded-lg transition font-medium">İletişim</a>
+            <div class="flex items-center space-x-2 pt-3 border-t border-neutral-800">
                 <a href="https://www.instagram.com/ikizlerhalivekoltukyikama?stkn=MTBianZxYjdtdGszNQ==" target="_blank" rel="noopener noreferrer" class="flex-1 flex items-center justify-center text-white py-3 rounded-lg shadow-md font-medium text-xs instagram-gradient">
                     <i class="fab fa-instagram mr-1.5 text-sm"></i>Instagram
                 </a>
-                <a href="tel:05304149246" class="flex-1 flex items-center justify-center text-white py-3 rounded-lg shadow-md font-medium text-xs" style="background: var(--teal-600);">
+                <a href="tel:05304149246" class="flex-1 flex items-center justify-center text-white py-3 rounded-lg shadow-md font-medium text-xs bg-cyan-600 hover:bg-cyan-500">
                     <i class="fas fa-phone mr-1.5 text-xs"></i>Ara
                 </a>
-                <a href="https://wa.me/905304149246?text=Merhaba,%20hali%20yikama%20hakkinda%20bilgi%20almak%20istiyorum." target="_blank" rel="noopener noreferrer" class="flex-1 flex items-center justify-center bg-green-500 text-white py-3 rounded-lg shadow-md font-medium text-xs">
+                <a href="https://wa.me/905304149246?text=Merhaba,%20hali%20yikama%20hakkinda%20bilgi%20almak%20istiyorum." target="_blank" rel="noopener noreferrer" class="flex-1 flex items-center justify-center bg-green-500 hover:bg-green-600 text-white py-3 rounded-lg shadow-md font-medium text-xs">
                     <i class="fab fa-whatsapp mr-1.5 text-sm"></i>WhatsApp
                 </a>
             </div>
@@ -247,26 +280,8 @@
     </div>
 </nav>
 
-<!-- Hero Bölümü (Gönderilen Koyu Şık Desenli Arka Plan & Canlı Halı Yıkama Animasyonlu) -->
-<section id="anasayfa" class="relative bg-black pt-28 md:pt-36 pb-20 md:pb-28 text-white overflow-hidden">
-    <!-- Entegre Edilen Koyu Desen Arka Plan Katmanları -->
-    <div class="absolute inset-0 pointer-events-none">
-        <div class="absolute inset-0 opacity-100" style="background: radial-gradient(100% 100% at 0% 0%, rgb(46, 46, 46) 0%, rgb(0, 0, 0) 100%); -webkit-mask: radial-gradient(125% 100% at 0% 0%, rgb(0, 0, 0) 0%, rgba(0, 0, 0, 0.224) 88.2883%, rgba(0, 0, 0, 0) 100%); mask: radial-gradient(125% 100% at 0% 0%, rgb(0, 0, 0) 0%, rgba(0, 0, 0, 0.224) 88.2883%, rgba(0, 0, 0, 0) 100%);">
-            <!-- Açılı mavi ışık çizgileri -->
-            <div class="absolute inset-0 opacity-20" style="background: linear-gradient(rgb(0, 207, 255) 0%, rgba(0, 207, 255, 0) 100%); -webkit-mask: linear-gradient(90deg, rgba(0, 0, 0, 0) 0%, rgb(0, 0, 0) 20%, rgba(0, 0, 0, 0) 36%, rgb(0, 0, 0) 55%, rgba(0, 0, 0, 0.13) 67%, rgb(0, 0, 0) 78%, rgba(0, 0, 0, 0) 97%); mask: linear-gradient(90deg, rgba(0, 0, 0, 0) 0%, rgb(0, 0, 0) 20%, rgba(0, 0, 0, 0) 36%, rgb(0, 0, 0) 55%, rgba(0, 0, 0, 0.13) 67%, rgb(0, 0, 0) 78%, rgba(0, 0, 0, 0) 97%); transform: skewX(45deg);"></div>
-            <div class="absolute inset-0 opacity-20" style="background: linear-gradient(rgb(0, 207, 255) 0%, rgba(0, 207, 255, 0) 100%); -webkit-mask: linear-gradient(90deg, rgba(0, 0, 0, 0) 11%, rgb(0, 0, 0) 25%, rgba(0, 0, 0, 0.55) 41%, rgba(0, 0, 0, 0.13) 67%, rgb(0, 0, 0) 78%, rgba(0, 0, 0, 0) 97%); mask: linear-gradient(90deg, rgba(0, 0, 0, 0) 11%, rgb(0, 0, 0) 25%, rgba(0, 0, 0, 0.55) 41%, rgba(0, 0, 0, 0.13) 67%, rgb(0, 0, 0) 78%, rgba(0, 0, 0, 0) 97%); transform: skewX(45deg);"></div>
-            <div class="absolute inset-0 opacity-20" style="background: linear-gradient(rgb(0, 207, 255) 0%, rgba(0, 207, 255, 0) 100%); -webkit-mask: linear-gradient(90deg, rgba(0, 0, 0, 0) 9%, rgb(0, 0, 0) 20%, rgba(0, 0, 0, 0.55) 28%, rgba(0, 0, 0, 0.424) 40%, rgb(0, 0, 0) 48%, rgba(0, 0, 0, 0.267) 54%, rgba(0, 0, 0, 0.13) 78%, rgb(0, 0, 0) 88%, rgba(0, 0, 0, 0) 97%); mask: linear-gradient(90deg, rgba(0, 0, 0, 0) 9%, rgb(0, 0, 0) 20%, rgba(0, 0, 0, 0.55) 28%, rgba(0, 0, 0, 0.424) 40%, rgb(0, 0, 0) 48%, rgba(0, 0, 0, 0.267) 54%, rgba(0, 0, 0, 0.13) 78%, rgb(0, 0, 0) 88%, rgba(0, 0, 0, 0) 97%); transform: skewX(45deg);"></div>
-            <div class="absolute inset-0 opacity-20" style="background: linear-gradient(rgb(0, 207, 255) 0%, rgba(0, 207, 255, 0) 100%); -webkit-mask: linear-gradient(90deg, rgba(0, 0, 0, 0) 0%, rgb(0, 0, 0) 17%, rgba(0, 0, 0, 0.55) 26%, rgb(0, 0, 0) 35%, rgba(0, 0, 0, 0) 47%, rgba(0, 0, 0, 0.13) 69%, rgb(0, 0, 0) 79%, rgba(0, 0, 0, 0) 97%); mask: linear-gradient(90deg, rgba(0, 0, 0, 0) 0%, rgb(0, 0, 0) 17%, rgba(0, 0, 0, 0.55) 26%, rgb(0, 0, 0) 35%, rgba(0, 0, 0, 0) 47%, rgba(0, 0, 0, 0.13) 69%, rgb(0, 0, 0) 79%, rgba(0, 0, 0, 0) 97%); transform: skewX(45deg);"></div>
-            <div class="absolute inset-0 opacity-20" style="background: linear-gradient(rgb(0, 207, 255) 0%, rgba(0, 207, 255, 0) 100%); -webkit-mask: linear-gradient(90deg, rgba(0, 0, 0, 0) 0%, rgb(0, 0, 0) 20%, rgba(0, 0, 0, 0.55) 27%, rgb(0, 0, 0) 42%, rgba(0, 0, 0, 0.48) 48%, rgba(0, 0, 0, 0.13) 67%, rgb(0, 0, 0) 74%, rgb(0, 0, 0) 82%, rgba(0, 0, 0, 0.47) 88%, rgba(0, 0, 0, 0) 97%); mask: linear-gradient(90deg, rgba(0, 0, 0, 0) 0%, rgb(0, 0, 0) 20%, rgba(0, 0, 0, 0.55) 27%, rgb(0, 0, 0) 42%, rgba(0, 0, 0, 0.48) 48%, rgba(0, 0, 0, 0.13) 67%, rgb(0, 0, 0) 74%, rgb(0, 0, 0) 82%, rgba(0, 0, 0, 0.47) 88%, rgba(0, 0, 0, 0) 97%); transform: skewX(45deg);"></div>
-        </div>
-        <!-- Doku kaplaması (Noise texture) -->
-        <div class="absolute inset-0 opacity-10 bg-repeat" style="background-image: url('https://cdn.21st.dev/assets/mirror/f5/f55dfc553c100e6da0ad95258a042b4100f0ff4bb03a5313d1f541984275e262.png'); background-size: 149.76px;"></div>
-        <!-- İnce noktalı desen katmanı (Dot pattern overlay) -->
-        <div class="absolute inset-0 opacity-20" style="background-image: radial-gradient(circle at 1px 1px, rgba(255,255,255,0.5) 1px, transparent 0); background-size: 20px 20px;"></div>
-        <!-- Vurgu parlaması (Subtle radial highlight) -->
-        <div class="absolute inset-0" style="background: radial-gradient(circle at 50% 35%, rgba(0, 207, 255, 0.14) 0%, transparent 70%);"></div>
-    </div>
-
+<!-- Hero Bölümü -->
+<section id="anasayfa" class="relative pt-28 md:pt-36 pb-20 md:pb-28 text-white overflow-hidden z-10">
     <!-- Dinamik Halı Yıkama Animasyonu Canvas -->
     <canvas id="hero-canvas"></canvas>
 
@@ -279,24 +294,24 @@
                 </div>
                 <h1 class="text-3xl sm:text-4xl md:text-5xl lg:text-6xl font-extrabold tracking-tight leading-tight mb-5 text-white">
                     Halı ve Koltuklarınızda <br class="hidden sm:inline">
-                    <span class="text-transparent bg-clip-text bg-gradient-to-r from-cyan-400 to-teal-300">Kusursuz Hijyen</span>
+                    <span class="text-transparent bg-clip-text bg-gradient-to-r from-cyan-400 via-teal-300 to-emerald-400">Kusursuz Hijyen</span>
                 </h1>
                 <p class="text-base sm:text-lg md:text-xl text-gray-300 max-w-2xl mx-auto lg:mx-0 mb-8 leading-relaxed">
                     Eyüpsultan merkezli servis ağımızla halı, koltuk, perde ve yorganlarınızı adresinizden alıyor; antibakteriyel derinlemesine temizlikle ilk günkü tazeliğinde teslim ediyoruz.
                 </p>
 
                 <div class="flex flex-col sm:flex-row gap-4 justify-center lg:justify-start">
-                    <a href="tel:05304149246" class="inline-flex items-center justify-center bg-white text-gray-900 hover:bg-gray-100 font-bold px-7 py-4 rounded-xl shadow-xl transition-all duration-300 hover-lift text-base">
-                        <svg class="w-5 h-5 mr-2 text-green-700"><use href="#icon-phone"></use></svg>
+                    <a href="tel:05304149246" class="inline-flex items-center justify-center bg-white hover:bg-gray-100 text-gray-950 font-bold px-7 py-4 rounded-xl shadow-xl transition-all duration-300 hover-lift text-base">
+                        <svg class="w-5 h-5 mr-2 text-cyan-600"><use href="#icon-phone"></use></svg>
                         0530 414 92 46
                     </a>
-                    <a href="https://wa.me/905304149246?text=Merhaba,%20hali%20yikama%20hakkinda%20bilgi%20almak%20istiyorum." target="_blank" rel="noopener noreferrer" class="inline-flex items-center justify-center bg-green-500 hover:bg-green-600 text-white font-bold px-7 py-4 rounded-xl shadow-xl transition-all duration-300 hover-lift text-base">
+                    <a href="https://wa.me/905304149246?text=Merhaba,%20hali%20yikama%20hakkinda%20bilgi%20almak%20istiyorum." target="_blank" rel="noopener noreferrer" class="inline-flex items-center justify-center bg-green-500 hover:bg-green-600 text-white font-bold px-7 py-4 rounded-xl shadow-xl transition-all duration-300 hover-lift text-base shadow-green-500/20">
                         <i class="fab fa-whatsapp mr-2 text-xl"></i>
                         WhatsApp Sipariş Hattı
                     </a>
                 </div>
 
-                <div class="grid grid-cols-3 gap-3 mt-10 max-w-lg mx-auto lg:mx-0 pt-6 border-t border-gray-800 text-center">
+                <div class="grid grid-cols-3 gap-3 mt-10 max-w-lg mx-auto lg:mx-0 pt-6 border-t border-neutral-800 text-center">
                     <div>
                         <div class="text-2xl sm:text-3xl font-extrabold text-white">18+</div>
                         <div class="text-xs text-gray-400">Yıllık Tecrübe</div>
@@ -314,50 +329,50 @@
 
             <!-- Hızlı Servis Talep Kartı -->
             <div class="lg:col-span-5">
-                <div class="bg-white/95 backdrop-blur-md rounded-2xl p-6 sm:p-8 text-gray-800 shadow-2xl border border-white/40">
-                    <h3 class="text-xl font-bold mb-1 text-gray-900">Hemen Servis İsteyin</h3>
-                    <p class="text-xs text-gray-500 mb-5">Bilgilerinizi bırakın, servis aracımız adresinize yönlensin.</p>
+                <div class="glass-card rounded-2xl p-6 sm:p-8 shadow-2xl border border-neutral-700/80">
+                    <div class="flex items-center justify-between mb-4">
+                        <h3 class="text-xl font-bold text-white">Hemen Servis İsteyin</h3>
+                        <span class="px-2.5 py-1 rounded-full text-[11px] font-semibold bg-cyan-950 text-cyan-300 border border-cyan-500/30">Hızlı Kayıt</span>
+                    </div>
+                    <p class="text-xs text-gray-400 mb-5">Bilgilerinizi bırakın, servis aracımız adresinize yönlensin.</p>
 
                     <form id="hero-quick-form" class="space-y-4">
                         <div>
-                            <label class="block text-xs font-semibold text-gray-700 mb-1">Adınız Soyadınız</label>
-                            <input type="text" id="lead-name" required placeholder="Örn: Ahmet Yılmaz" class="w-full px-3.5 py-2.5 rounded-lg border border-gray-200 text-sm focus:outline-none focus:ring-2 focus:ring-green-500">
+                            <label class="block text-xs font-semibold text-gray-300 mb-1">Adınız Soyadınız</label>
+                            <input type="text" id="lead-name" required placeholder="Örn: Ahmet Yılmaz" class="w-full px-3.5 py-2.5 rounded-lg bg-neutral-950/80 border border-neutral-700 text-white placeholder-gray-500 text-sm focus:outline-none focus:ring-2 focus:ring-cyan-500 focus:border-cyan-500">
                         </div>
                         <div>
-                            <label class="block text-xs font-semibold text-gray-700 mb-1">Telefon Numaranız</label>
-                            <input type="tel" id="lead-phone" required placeholder="05XX XXX XX XX" class="w-full px-3.5 py-2.5 rounded-lg border border-gray-200 text-sm focus:outline-none focus:ring-2 focus:ring-green-500">
+                            <label class="block text-xs font-semibold text-gray-300 mb-1">Telefon Numaranız</label>
+                            <input type="tel" id="lead-phone" required placeholder="05XX XXX XX XX" class="w-full px-3.5 py-2.5 rounded-lg bg-neutral-950/80 border border-neutral-700 text-white placeholder-gray-500 text-sm focus:outline-none focus:ring-2 focus:ring-cyan-500 focus:border-cyan-500">
                         </div>
                         <div>
-                            <label class="block text-xs font-semibold text-gray-700 mb-1">Bölgeniz</label>
-                            <select id="lead-region" class="w-full px-3.5 py-2.5 rounded-lg border border-gray-200 text-sm focus:outline-none focus:ring-2 focus:ring-green-500 bg-white">
-                                <option value="Eyüpsultan">Eyüpsultan</option>
-                                <option value="Alibeyköy">Alibeyköy</option>
-                                <option value="Gaziosmanpaşa">Gaziosmanpaşa</option>
+                            <label class="block text-xs font-semibold text-gray-300 mb-1">Bölgeniz</label>
+                            <select id="lead-region" class="w-full px-3.5 py-2.5 rounded-lg bg-neutral-950/90 border border-neutral-700 text-white text-sm focus:outline-none focus:ring-2 focus:ring-cyan-500 focus:border-cyan-500">
+                                <option value="Beyoğlu">Beyoğlu</option>
                                 <option value="Sultangazi">Sultangazi</option>
                                 <option value="Bayrampaşa">Bayrampaşa</option>
-                                <option value="Beyoğlu">Beyoğlu</option>
-                                <option value="Küçükköy">Küçükköy</option>
-                                <option value="Rami">Rami</option>
-                                <option value="Çırçır">Çırçır</option>
-                                <option value="Yeşilpınar">Yeşilpınar</option>
-                                <option value="Güzeltepe">Güzeltepe</option>
-                                <option value="Karadolap">Karadolap</option>
-                                <option value="Emniyettepe">Emniyettepe</option>
-                                <option value="Mevlana Mahallesi">Mevlana Mahallesi</option>
-                                <option value="Akşemsettin Mahallesi">Akşemsettin Mahallesi</option>
+                                <option value="Eyüpsultan" selected>Eyüpsultan</option>
+                                <option value="Gaziosmanpaşa">Gaziosmanpaşa</option>
                                 <option value="Cebeci">Cebeci</option>
+                                <option value="Emniyettepe">Emniyettepe</option>
                                 <option value="Gültepe">Gültepe</option>
                                 <option value="5. Levent">5. Levent</option>
+                                <option value="Karadolap">Karadolap</option>
                                 <option value="Yunus Emre">Yunus Emre</option>
+                                <option value="Çırçır">Çırçır</option>
                                 <option value="İsmetpaşa">İsmetpaşa</option>
+                                <option value="Alibeyköy">Alibeyköy</option>
+                                <option value="Güzeltepe">Güzeltepe</option>
+                                <option value="Yeşilpınar">Yeşilpınar</option>
                                 <option value="Kazım Karabekir">Kazım Karabekir</option>
                                 <option value="Göktürk Merkez">Göktürk Merkez</option>
+                                <option value="Küçükköy">Küçükköy</option>
                                 <option value="Kemerburgaz">Kemerburgaz</option>
                             </select>
                         </div>
                         <div>
-                            <label class="block text-xs font-semibold text-gray-700 mb-1">Hizmet Türü</label>
-                            <select id="lead-service" class="w-full px-3.5 py-2.5 rounded-lg border border-gray-200 text-sm focus:outline-none focus:ring-2 focus:ring-green-500 bg-white">
+                            <label class="block text-xs font-semibold text-gray-300 mb-1">Hizmet Türü</label>
+                            <select id="lead-service" class="w-full px-3.5 py-2.5 rounded-lg bg-neutral-950/90 border border-neutral-700 text-white text-sm focus:outline-none focus:ring-2 focus:ring-cyan-500 focus:border-cyan-500">
                                 <option value="Halı Yıkama">Halı Yıkama</option>
                                 <option value="Koltuk Yıkama">Koltuk Yıkama</option>
                                 <option value="Perde Yıkama">Perde Yıkama</option>
@@ -365,7 +380,7 @@
                                 <option value="Çoklu Hizmet">Birden Fazla Hizmet</option>
                             </select>
                         </div>
-                        <button type="submit" class="w-full bg-green-600 hover:bg-green-700 text-white font-bold py-3 px-4 rounded-xl shadow-lg transition duration-200 flex items-center justify-center text-sm">
+                        <button type="submit" class="w-full bg-green-600 hover:bg-green-500 text-white font-bold py-3.5 px-4 rounded-xl shadow-lg transition duration-200 flex items-center justify-center text-sm shadow-green-600/30">
                             <i class="fab fa-whatsapp mr-2 text-lg"></i>
                             WhatsApp ile Randevu Oluştur
                         </button>
@@ -377,232 +392,236 @@
 </section>
 
 <!-- Çalışma Saatleri Şeridi -->
-<section class="bg-neutral-950 text-white py-3.5 border-t border-neutral-800 text-xs sm:text-sm">
+<section class="relative z-10 bg-neutral-950/90 text-white py-3.5 border-y border-neutral-800 text-xs sm:text-sm">
     <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 flex flex-col sm:flex-row items-center justify-between gap-3 text-center sm:text-left">
         <div class="flex items-center gap-2">
-            <svg class="w-5 h-5 text-cyan-400"><use href="#icon-truck"></use></svg>
-            <span><strong>Ücretsiz Alım-Teslim:</strong> Halılarınızı kapınızdan alıp kapınıza bırakıyoruz.</span>
+            <svg class="w-5 h-5 text-cyan-400 flex-shrink-0"><use href="#icon-truck"></use></svg>
+            <span><strong class="text-white">Ücretsiz Alım-Teslim:</strong> Halılarınızı kapınızdan alıp kapınıza bırakıyoruz.</span>
         </div>
         <div class="flex items-center gap-2">
-            <svg class="w-5 h-5 text-cyan-400"><use href="#icon-clock"></use></svg>
-            <span>Pzt - Cmt: 08:30 - 21:30 | Pazar: Kapalı</span>
+            <svg class="w-5 h-5 text-cyan-400 flex-shrink-0"><use href="#icon-clock"></use></svg>
+            <span class="text-gray-300">Pzt - Cmt: 08:30 - 21:30 | Pazar: Kapalı</span>
         </div>
     </div>
 </section>
 
 <!-- Avantajlar / Özellikler -->
-<section class="py-14 bg-white">
+<section class="relative z-10 py-14">
     <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         <div class="grid grid-cols-2 md:grid-cols-4 gap-4 sm:gap-6">
-            <div class="p-5 rounded-xl border border-green-100 bg-green-50/50 text-center hover-lift">
-                <div class="w-12 h-12 mx-auto mb-3 rounded-xl bg-green-600 text-white flex items-center justify-center shadow-md">
+            <div class="glass-card p-5 rounded-2xl text-center hover-lift">
+                <div class="w-12 h-12 mx-auto mb-3 rounded-xl bg-cyan-950/80 text-cyan-400 border border-cyan-500/30 flex items-center justify-center shadow-md">
                     <svg class="w-6 h-6"><use href="#icon-shield"></use></svg>
                 </div>
-                <h4 class="font-bold text-sm sm:text-base mb-1">Hijyen Garantisi</h4>
-                <p class="text-xs text-gray-600">Özel antibakteriyel şampuanlar ve derinlemesine dezenfeksiyon.</p>
+                <h4 class="font-bold text-sm sm:text-base mb-1 text-white">Hijyen Garantisi</h4>
+                <p class="text-xs text-gray-400">Özel antibakteriyel şampuanlar ve derinlemesine dezenfeksiyon.</p>
             </div>
-            <div class="p-5 rounded-xl border border-green-100 bg-green-50/50 text-center hover-lift">
-                <div class="w-12 h-12 mx-auto mb-3 rounded-xl bg-green-600 text-white flex items-center justify-center shadow-md">
+            <div class="glass-card p-5 rounded-2xl text-center hover-lift">
+                <div class="w-12 h-12 mx-auto mb-3 rounded-xl bg-cyan-950/80 text-cyan-400 border border-cyan-500/30 flex items-center justify-center shadow-md">
                     <svg class="w-6 h-6"><use href="#icon-truck"></use></svg>
                 </div>
-                <h4 class="font-bold text-sm sm:text-base mb-1">Ücretsiz Servis</h4>
-                <p class="text-xs text-gray-600">Belirtilen tüm bölgelerden ücretsiz alım ve teslimat.</p>
+                <h4 class="font-bold text-sm sm:text-base mb-1 text-white">Ücretsiz Servis</h4>
+                <p class="text-xs text-gray-400">Belirtilen tüm 20 bölgeden ücretsiz alım ve teslimat.</p>
             </div>
-            <div class="p-5 rounded-xl border border-green-100 bg-green-50/50 text-center hover-lift">
-                <div class="w-12 h-12 mx-auto mb-3 rounded-xl bg-green-600 text-white flex items-center justify-center shadow-md">
+            <div class="glass-card p-5 rounded-2xl text-center hover-lift">
+                <div class="w-12 h-12 mx-auto mb-3 rounded-xl bg-cyan-950/80 text-cyan-400 border border-cyan-500/30 flex items-center justify-center shadow-md">
                     <svg class="w-6 h-6"><use href="#icon-clock"></use></svg>
                 </div>
-                <h4 class="font-bold text-sm sm:text-base mb-1">Hızlı Teslimat</h4>
-                <p class="text-xs text-gray-600">Tam kurutma odalarında kurutularak zamanında teslim.</p>
+                <h4 class="font-bold text-sm sm:text-base mb-1 text-white">Hızlı Teslimat</h4>
+                <p class="text-xs text-gray-400">Tam kurutma odalarında kurutularak zamanında teslim.</p>
             </div>
-            <div class="p-5 rounded-xl border border-green-100 bg-green-50/50 text-center hover-lift">
-                <div class="w-12 h-12 mx-auto mb-3 rounded-xl bg-green-600 text-white flex items-center justify-center shadow-md">
+            <div class="glass-card p-5 rounded-2xl text-center hover-lift">
+                <div class="w-12 h-12 mx-auto mb-3 rounded-xl bg-cyan-950/80 text-cyan-400 border border-cyan-500/30 flex items-center justify-center shadow-md">
                     <svg class="w-6 h-6"><use href="#icon-award"></use></svg>
                 </div>
-                <h4 class="font-bold text-sm sm:text-base mb-1">Uzman İşçilik</h4>
-                <p class="text-xs text-gray-600">El dokuma, ipek ve makine halılarına özel hassas yıkama.</p>
+                <h4 class="font-bold text-sm sm:text-base mb-1 text-white">Uzman İşçilik</h4>
+                <p class="text-xs text-gray-400">El dokuma, ipek ve makine halılarına özel hassas yıkama.</p>
             </div>
         </div>
     </div>
 </section>
 
 <!-- Hizmetlerimiz -->
-<section id="hizmetler" class="py-16 md:py-20 bg-gray-50 scroll-mt-20">
+<section id="hizmetler" class="relative z-10 py-16 md:py-20 scroll-mt-20">
     <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         <div class="text-center mb-12">
-            <h2 class="text-3xl sm:text-4xl font-extrabold text-gray-900 mb-3">Hizmetlerimiz</h2>
-            <p class="text-gray-600 max-w-2xl mx-auto text-sm sm:text-base">
-                Evinizin ve iş yerinizin tüm tekstil temizlik ihtiyaçları için profesyonel çözümler.
+            <div class="inline-flex items-center gap-1.5 text-cyan-400 font-semibold text-xs tracking-wider uppercase mb-2">
+                <svg class="w-4 h-4"><use href="#icon-sparkle"></use></svg>
+                Profesyonel Çözümler
+            </div>
+            <h2 class="text-3xl sm:text-4xl font-extrabold text-white mb-3">Hizmetlerimiz</h2>
+            <p class="text-gray-400 max-w-2xl mx-auto text-sm sm:text-base">
+                Evinizin ve iş yerinizin tüm tekstil temizlik ihtiyaçları için derinlemesine hijyenik çözümler.
             </p>
         </div>
 
         <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-6">
             <!-- Halı Yıkama -->
-            <div class="service-card bg-white rounded-2xl p-6 shadow-sm border border-gray-100 flex flex-col">
-                <div class="w-14 h-14 rounded-2xl bg-green-100 text-green-700 flex items-center justify-center mb-4">
+            <div class="service-card rounded-2xl p-6 shadow-xl flex flex-col">
+                <div class="w-14 h-14 rounded-2xl bg-cyan-950/90 text-cyan-400 border border-cyan-500/30 flex items-center justify-center mb-4">
                     <svg class="w-8 h-8"><use href="#icon-rug"></use></svg>
                 </div>
-                <h3 class="text-lg font-bold text-gray-900 mb-2">Halı Yıkama</h3>
-                <p class="text-xs sm:text-sm text-gray-600 mb-4 flex-grow">
+                <h3 class="text-lg font-bold text-white mb-2">Halı Yıkama</h3>
+                <p class="text-xs sm:text-sm text-gray-400 mb-4 flex-grow leading-relaxed">
                     Makine halısı, el dokuma, yün, Shaggy ve Akrilik halılarınız toz alma, ön yıkama, derinlemesine temizleme ve kapalı kurutma odasında işlem görür.
                 </p>
-                <ul class="space-y-1.5 text-xs text-gray-600 border-t border-gray-100 pt-4">
-                    <li class="flex items-center"><svg class="w-4 h-4 text-green-600 mr-2"><use href="#icon-check"></use></svg>Toz alma ve arındırma</li>
-                    <li class="flex items-center"><svg class="w-4 h-4 text-green-600 mr-2"><use href="#icon-check"></use></svg>Özel leke çıkarma işlemi</li>
-                    <li class="flex items-center"><svg class="w-4 h-4 text-green-600 mr-2"><use href="#icon-check"></use></svg>Parfümlü hijyenik ambalaj</li>
+                <ul class="space-y-2 text-xs text-gray-300 border-t border-neutral-800 pt-4">
+                    <li class="flex items-center"><svg class="w-4 h-4 text-cyan-400 mr-2 flex-shrink-0"><use href="#icon-check"></use></svg>Toz alma ve derin arındırma</li>
+                    <li class="flex items-center"><svg class="w-4 h-4 text-cyan-400 mr-2 flex-shrink-0"><use href="#icon-check"></use></svg>Özel leke çıkarma uygulaması</li>
+                    <li class="flex items-center"><svg class="w-4 h-4 text-cyan-400 mr-2 flex-shrink-0"><use href="#icon-check"></use></svg>Parfümlü hijyenik ambalaj</li>
                 </ul>
             </div>
 
             <!-- Koltuk Yıkama -->
-            <div class="service-card bg-white rounded-2xl p-6 shadow-sm border border-gray-100 flex flex-col">
-                <div class="w-14 h-14 rounded-2xl bg-green-100 text-green-700 flex items-center justify-center mb-4">
+            <div class="service-card rounded-2xl p-6 shadow-xl flex flex-col">
+                <div class="w-14 h-14 rounded-2xl bg-cyan-950/90 text-cyan-400 border border-cyan-500/30 flex items-center justify-center mb-4">
                     <svg class="w-8 h-8"><use href="#icon-couch"></use></svg>
                 </div>
-                <h3 class="text-lg font-bold text-gray-900 mb-2">Koltuk Yıkama</h3>
-                <p class="text-xs sm:text-sm text-gray-600 mb-4 flex-grow">
+                <h3 class="text-lg font-bold text-white mb-2">Koltuk Yıkama</h3>
+                <p class="text-xs sm:text-sm text-gray-400 mb-4 flex-grow leading-relaxed">
                     Yerinde buharlı ve yüksek vakumlu profesyonel makinelerimiz ile koltuk takımlarınız, çekyat ve sandalyeleriniz kumaşına zarar vermeden temizlenir.
                 </p>
-                <ul class="space-y-1.5 text-xs text-gray-600 border-t border-gray-100 pt-4">
-                    <li class="flex items-center"><svg class="w-4 h-4 text-green-600 mr-2"><use href="#icon-check"></use></svg>Yerinde hijyenik temizlik</li>
-                    <li class="flex items-center"><svg class="w-4 h-4 text-green-600 mr-2"><use href="#icon-check"></use></svg>Derin vakumlama teknolojisi</li>
-                    <li class="flex items-center"><svg class="w-4 h-4 text-green-600 mr-2"><use href="#icon-check"></use></svg>Hızlı kuruma avantajı</li>
+                <ul class="space-y-2 text-xs text-gray-300 border-t border-neutral-800 pt-4">
+                    <li class="flex items-center"><svg class="w-4 h-4 text-cyan-400 mr-2 flex-shrink-0"><use href="#icon-check"></use></svg>Yerinde derin vakumlu temizlik</li>
+                    <li class="flex items-center"><svg class="w-4 h-4 text-cyan-400 mr-2 flex-shrink-0"><use href="#icon-check"></use></svg>Kumaş dokusuna özel şampuanlar</li>
+                    <li class="flex items-center"><svg class="w-4 h-4 text-cyan-400 mr-2 flex-shrink-0"><use href="#icon-check"></use></svg>Hızlı kuruma avantajı</li>
                 </ul>
             </div>
 
             <!-- Perde Yıkama -->
-            <div class="service-card bg-white rounded-2xl p-6 shadow-sm border border-gray-100 flex flex-col">
-                <div class="w-14 h-14 rounded-2xl bg-green-100 text-green-700 flex items-center justify-center mb-4">
+            <div class="service-card rounded-2xl p-6 shadow-xl flex flex-col">
+                <div class="w-14 h-14 rounded-2xl bg-cyan-950/90 text-cyan-400 border border-cyan-500/30 flex items-center justify-center mb-4">
                     <svg class="w-8 h-8"><use href="#icon-curtain"></use></svg>
                 </div>
-                <h3 class="text-lg font-bold text-gray-900 mb-2">Perde Yıkama</h3>
-                <p class="text-xs sm:text-sm text-gray-600 mb-4 flex-grow">
+                <h3 class="text-lg font-bold text-white mb-2">Perde Yıkama</h3>
+                <p class="text-xs sm:text-sm text-gray-400 mb-4 flex-grow leading-relaxed">
                     Stor perde, zebra perde, fon ve tül perdeleriniz renkleri soldurmayan, kırışıklık yapmayan özel hassas temizleme yöntemleriyle yıkanır.
                 </p>
-                <ul class="space-y-1.5 text-xs text-gray-600 border-t border-gray-100 pt-4">
-                    <li class="flex items-center"><svg class="w-4 h-4 text-green-600 mr-2"><use href="#icon-check"></use></svg>Stor &amp; Zebra perde uzmanlığı</li>
-                    <li class="flex items-center"><svg class="w-4 h-4 text-green-600 mr-2"><use href="#icon-check"></use></svg>Doku ve renk koruma</li>
-                    <li class="flex items-center"><svg class="w-4 h-4 text-green-600 mr-2"><use href="#icon-check"></use></svg>Özenli paketleme ve teslimat</li>
+                <ul class="space-y-2 text-xs text-gray-300 border-t border-neutral-800 pt-4">
+                    <li class="flex items-center"><svg class="w-4 h-4 text-cyan-400 mr-2 flex-shrink-0"><use href="#icon-check"></use></svg>Stor &amp; Zebra perde uzmanlığı</li>
+                    <li class="flex items-center"><svg class="w-4 h-4 text-cyan-400 mr-2 flex-shrink-0"><use href="#icon-check"></use></svg>Renk ve mekanizma koruması</li>
+                    <li class="flex items-center"><svg class="w-4 h-4 text-cyan-400 mr-2 flex-shrink-0"><use href="#icon-check"></use></svg>Kusursuz ambalajlı teslimat</li>
                 </ul>
             </div>
 
             <!-- Yorgan & Battaniye -->
-            <div class="service-card bg-white rounded-2xl p-6 shadow-sm border border-gray-100 flex flex-col">
-                <div class="w-14 h-14 rounded-2xl bg-green-100 text-green-700 flex items-center justify-center mb-4">
+            <div class="service-card rounded-2xl p-6 shadow-xl flex flex-col">
+                <div class="w-14 h-14 rounded-2xl bg-cyan-950/90 text-cyan-400 border border-cyan-500/30 flex items-center justify-center mb-4">
                     <svg class="w-8 h-8"><use href="#icon-bed"></use></svg>
                 </div>
-                <h3 class="text-lg font-bold text-gray-900 mb-2">Yorgan &amp; Battaniye</h3>
-                <p class="text-xs sm:text-sm text-gray-600 mb-4 flex-grow">
+                <h3 class="text-lg font-bold text-white mb-2">Yorgan &amp; Battaniye</h3>
+                <p class="text-xs sm:text-sm text-gray-400 mb-4 flex-grow leading-relaxed">
                     Yün yorgan, elyaf yorgan, pamuk yorgan ve battaniyeleriniz sanayi tipi geniş kazanlı hijyenik makinelerde tek tek yıkanıp durulanır.
                 </p>
-                <ul class="space-y-1.5 text-xs text-gray-600 border-t border-gray-100 pt-4">
-                    <li class="flex items-center"><svg class="w-4 h-4 text-green-600 mr-2"><use href="#icon-check"></use></svg>Kişiye özel tekli yıkama</li>
-                    <li class="flex items-center"><svg class="w-4 h-4 text-green-600 mr-2"><use href="#icon-check"></use></svg>Akar ve mayt dezenfeksiyonu</li>
-                    <li class="flex items-center"><svg class="w-4 h-4 text-green-600 mr-2"><use href="#icon-check"></use></svg>Havadar kapalı kurutma</li>
+                <ul class="space-y-2 text-xs text-gray-300 border-t border-neutral-800 pt-4">
+                    <li class="flex items-center"><svg class="w-4 h-4 text-cyan-400 mr-2 flex-shrink-0"><use href="#icon-check"></use></svg>Kişiye özel tekli yıkama programı</li>
+                    <li class="flex items-center"><svg class="w-4 h-4 text-cyan-400 mr-2 flex-shrink-0"><use href="#icon-check"></use></svg>Akar ve alerjen dezenfeksiyonu</li>
+                    <li class="flex items-center"><svg class="w-4 h-4 text-cyan-400 mr-2 flex-shrink-0"><use href="#icon-check"></use></svg>Havadar kapalı kurutma sistemi</li>
                 </ul>
             </div>
         </div>
     </div>
 </section>
 
-<!-- Hizmet Bölgelerimiz (Talep Ettiğiniz 20 Bölge) -->
-<section id="bolgeler" class="py-16 md:py-20 bg-white scroll-mt-20">
+<!-- Hizmet Bölgelerimiz (20 Bölge) -->
+<section id="bolgeler" class="relative z-10 py-16 md:py-20 scroll-mt-20">
     <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         <div class="text-center mb-12">
-            <div class="inline-flex items-center gap-1.5 text-green-700 font-semibold text-xs tracking-wider uppercase mb-2">
+            <div class="inline-flex items-center gap-1.5 text-cyan-400 font-semibold text-xs tracking-wider uppercase mb-2">
                 <svg class="w-4 h-4"><use href="#icon-map-marker"></use></svg>
                 Ücretsiz Servis Ağı
             </div>
-            <h2 class="text-3xl sm:text-4xl font-extrabold text-gray-900 mb-3">Hizmet Bölgelerimiz</h2>
-            <p class="text-gray-600 max-w-2xl mx-auto text-sm sm:text-base">
+            <h2 class="text-3xl sm:text-4xl font-extrabold text-white mb-3">Hizmet Bölgelerimiz</h2>
+            <p class="text-gray-400 max-w-2xl mx-auto text-sm sm:text-base">
                 Aşağıdaki tüm bölgelere haftanın 6 günü ücretsiz servisimizle kapıdan alım ve kapıya teslim hizmeti sağlıyoruz.
             </p>
         </div>
 
         <div class="grid grid-cols-2 sm:grid-cols-3 md:grid-cols-4 lg:grid-cols-5 gap-3 sm:gap-4 max-w-5xl mx-auto">
-            <div class="region-card border border-gray-200 rounded-xl p-3.5 text-center flex items-center justify-center gap-2">
-                <i class="fas fa-map-pin text-green-600 text-xs"></i>
-                <span class="font-semibold text-xs sm:text-sm text-gray-800">Beyoğlu</span>
+            <div class="region-card rounded-xl p-3.5 text-center flex items-center justify-center gap-2">
+                <i class="fas fa-map-pin text-cyan-400 text-xs"></i>
+                <span class="font-semibold text-xs sm:text-sm text-gray-200">Beyoğlu</span>
             </div>
-            <div class="region-card border border-gray-200 rounded-xl p-3.5 text-center flex items-center justify-center gap-2">
-                <i class="fas fa-map-pin text-green-600 text-xs"></i>
-                <span class="font-semibold text-xs sm:text-sm text-gray-800">Sultangazi</span>
+            <div class="region-card rounded-xl p-3.5 text-center flex items-center justify-center gap-2">
+                <i class="fas fa-map-pin text-cyan-400 text-xs"></i>
+                <span class="font-semibold text-xs sm:text-sm text-gray-200">Sultangazi</span>
             </div>
-            <div class="region-card border border-gray-200 rounded-xl p-3.5 text-center flex items-center justify-center gap-2">
-                <i class="fas fa-map-pin text-green-600 text-xs"></i>
-                <span class="font-semibold text-xs sm:text-sm text-gray-800">Bayrampaşa</span>
+            <div class="region-card rounded-xl p-3.5 text-center flex items-center justify-center gap-2">
+                <i class="fas fa-map-pin text-cyan-400 text-xs"></i>
+                <span class="font-semibold text-xs sm:text-sm text-gray-200">Bayrampaşa</span>
             </div>
-            <div class="region-card border border-gray-200 rounded-xl p-3.5 text-center flex items-center justify-center gap-2">
-                <i class="fas fa-map-pin text-green-600 text-xs"></i>
-                <span class="font-semibold text-xs sm:text-sm text-gray-800">Eyüpsultan</span>
+            <div class="region-card rounded-xl p-3.5 text-center flex items-center justify-center gap-2">
+                <i class="fas fa-map-pin text-cyan-400 text-xs"></i>
+                <span class="font-semibold text-xs sm:text-sm text-gray-200">Eyüpsultan</span>
             </div>
-            <div class="region-card border border-gray-200 rounded-xl p-3.5 text-center flex items-center justify-center gap-2">
-                <i class="fas fa-map-pin text-green-600 text-xs"></i>
-                <span class="font-semibold text-xs sm:text-sm text-gray-800">Gaziosmanpaşa</span>
+            <div class="region-card rounded-xl p-3.5 text-center flex items-center justify-center gap-2">
+                <i class="fas fa-map-pin text-cyan-400 text-xs"></i>
+                <span class="font-semibold text-xs sm:text-sm text-gray-200">Gaziosmanpaşa</span>
             </div>
-            <div class="region-card border border-gray-200 rounded-xl p-3.5 text-center flex items-center justify-center gap-2">
-                <i class="fas fa-map-pin text-green-600 text-xs"></i>
-                <span class="font-semibold text-xs sm:text-sm text-gray-800">Cebeci</span>
+            <div class="region-card rounded-xl p-3.5 text-center flex items-center justify-center gap-2">
+                <i class="fas fa-map-pin text-cyan-400 text-xs"></i>
+                <span class="font-semibold text-xs sm:text-sm text-gray-200">Cebeci</span>
             </div>
-            <div class="region-card border border-gray-200 rounded-xl p-3.5 text-center flex items-center justify-center gap-2">
-                <i class="fas fa-map-pin text-green-600 text-xs"></i>
-                <span class="font-semibold text-xs sm:text-sm text-gray-800">Emniyettepe</span>
+            <div class="region-card rounded-xl p-3.5 text-center flex items-center justify-center gap-2">
+                <i class="fas fa-map-pin text-cyan-400 text-xs"></i>
+                <span class="font-semibold text-xs sm:text-sm text-gray-200">Emniyettepe</span>
             </div>
-            <div class="region-card border border-gray-200 rounded-xl p-3.5 text-center flex items-center justify-center gap-2">
-                <i class="fas fa-map-pin text-green-600 text-xs"></i>
-                <span class="font-semibold text-xs sm:text-sm text-gray-800">Gültepe</span>
+            <div class="region-card rounded-xl p-3.5 text-center flex items-center justify-center gap-2">
+                <i class="fas fa-map-pin text-cyan-400 text-xs"></i>
+                <span class="font-semibold text-xs sm:text-sm text-gray-200">Gültepe</span>
             </div>
-            <div class="region-card border border-gray-200 rounded-xl p-3.5 text-center flex items-center justify-center gap-2">
-                <i class="fas fa-map-pin text-green-600 text-xs"></i>
-                <span class="font-semibold text-xs sm:text-sm text-gray-800">5. Levent</span>
+            <div class="region-card rounded-xl p-3.5 text-center flex items-center justify-center gap-2">
+                <i class="fas fa-map-pin text-cyan-400 text-xs"></i>
+                <span class="font-semibold text-xs sm:text-sm text-gray-200">5. Levent</span>
             </div>
-            <div class="region-card border border-gray-200 rounded-xl p-3.5 text-center flex items-center justify-center gap-2">
-                <i class="fas fa-map-pin text-green-600 text-xs"></i>
-                <span class="font-semibold text-xs sm:text-sm text-gray-800">Karadolap</span>
+            <div class="region-card rounded-xl p-3.5 text-center flex items-center justify-center gap-2">
+                <i class="fas fa-map-pin text-cyan-400 text-xs"></i>
+                <span class="font-semibold text-xs sm:text-sm text-gray-200">Karadolap</span>
             </div>
-            <div class="region-card border border-gray-200 rounded-xl p-3.5 text-center flex items-center justify-center gap-2">
-                <i class="fas fa-map-pin text-green-600 text-xs"></i>
-                <span class="font-semibold text-xs sm:text-sm text-gray-800">Yunus Emre</span>
+            <div class="region-card rounded-xl p-3.5 text-center flex items-center justify-center gap-2">
+                <i class="fas fa-map-pin text-cyan-400 text-xs"></i>
+                <span class="font-semibold text-xs sm:text-sm text-gray-200">Yunus Emre</span>
             </div>
-            <div class="region-card border border-gray-200 rounded-xl p-3.5 text-center flex items-center justify-center gap-2">
-                <i class="fas fa-map-pin text-green-600 text-xs"></i>
-                <span class="font-semibold text-xs sm:text-sm text-gray-800">Çırçır</span>
+            <div class="region-card rounded-xl p-3.5 text-center flex items-center justify-center gap-2">
+                <i class="fas fa-map-pin text-cyan-400 text-xs"></i>
+                <span class="font-semibold text-xs sm:text-sm text-gray-200">Çırçır</span>
             </div>
-            <div class="region-card border border-gray-200 rounded-xl p-3.5 text-center flex items-center justify-center gap-2">
-                <i class="fas fa-map-pin text-green-600 text-xs"></i>
-                <span class="font-semibold text-xs sm:text-sm text-gray-800">İsmetpaşa</span>
+            <div class="region-card rounded-xl p-3.5 text-center flex items-center justify-center gap-2">
+                <i class="fas fa-map-pin text-cyan-400 text-xs"></i>
+                <span class="font-semibold text-xs sm:text-sm text-gray-200">İsmetpaşa</span>
             </div>
-            <div class="region-card border border-gray-200 rounded-xl p-3.5 text-center flex items-center justify-center gap-2">
-                <i class="fas fa-map-pin text-green-600 text-xs"></i>
-                <span class="font-semibold text-xs sm:text-sm text-gray-800">Alibeyköy</span>
+            <div class="region-card rounded-xl p-3.5 text-center flex items-center justify-center gap-2">
+                <i class="fas fa-map-pin text-cyan-400 text-xs"></i>
+                <span class="font-semibold text-xs sm:text-sm text-gray-200">Alibeyköy</span>
             </div>
-            <div class="region-card border border-gray-200 rounded-xl p-3.5 text-center flex items-center justify-center gap-2">
-                <i class="fas fa-map-pin text-green-600 text-xs"></i>
-                <span class="font-semibold text-xs sm:text-sm text-gray-800">Güzeltepe</span>
+            <div class="region-card rounded-xl p-3.5 text-center flex items-center justify-center gap-2">
+                <i class="fas fa-map-pin text-cyan-400 text-xs"></i>
+                <span class="font-semibold text-xs sm:text-sm text-gray-200">Güzeltepe</span>
             </div>
-            <div class="region-card border border-gray-200 rounded-xl p-3.5 text-center flex items-center justify-center gap-2">
-                <i class="fas fa-map-pin text-green-600 text-xs"></i>
-                <span class="font-semibold text-xs sm:text-sm text-gray-800">Yeşilpınar</span>
+            <div class="region-card rounded-xl p-3.5 text-center flex items-center justify-center gap-2">
+                <i class="fas fa-map-pin text-cyan-400 text-xs"></i>
+                <span class="font-semibold text-xs sm:text-sm text-gray-200">Yeşilpınar</span>
             </div>
-            <div class="region-card border border-gray-200 rounded-xl p-3.5 text-center flex items-center justify-center gap-2">
-                <i class="fas fa-map-pin text-green-600 text-xs"></i>
-                <span class="font-semibold text-xs sm:text-sm text-gray-800">Kazım Karabekir</span>
+            <div class="region-card rounded-xl p-3.5 text-center flex items-center justify-center gap-2">
+                <i class="fas fa-map-pin text-cyan-400 text-xs"></i>
+                <span class="font-semibold text-xs sm:text-sm text-gray-200">Kazım Karabekir</span>
             </div>
-            <div class="region-card border border-gray-200 rounded-xl p-3.5 text-center flex items-center justify-center gap-2">
-                <i class="fas fa-map-pin text-green-600 text-xs"></i>
-                <span class="font-semibold text-xs sm:text-sm text-gray-800">Göktürk Merkez</span>
+            <div class="region-card rounded-xl p-3.5 text-center flex items-center justify-center gap-2">
+                <i class="fas fa-map-pin text-cyan-400 text-xs"></i>
+                <span class="font-semibold text-xs sm:text-sm text-gray-200">Göktürk Merkez</span>
             </div>
-            <div class="region-card border border-gray-200 rounded-xl p-3.5 text-center flex items-center justify-center gap-2">
-                <i class="fas fa-map-pin text-green-600 text-xs"></i>
-                <span class="font-semibold text-xs sm:text-sm text-gray-800">Küçükköy</span>
+            <div class="region-card rounded-xl p-3.5 text-center flex items-center justify-center gap-2">
+                <i class="fas fa-map-pin text-cyan-400 text-xs"></i>
+                <span class="font-semibold text-xs sm:text-sm text-gray-200">Küçükköy</span>
             </div>
-            <div class="region-card border border-gray-200 rounded-xl p-3.5 text-center flex items-center justify-center gap-2">
-                <i class="fas fa-map-pin text-green-600 text-xs"></i>
-                <span class="font-semibold text-xs sm:text-sm text-gray-800">Kemerburgaz</span>
+            <div class="region-card rounded-xl p-3.5 text-center flex items-center justify-center gap-2">
+                <i class="fas fa-map-pin text-cyan-400 text-xs"></i>
+                <span class="font-semibold text-xs sm:text-sm text-gray-200">Kemerburgaz</span>
             </div>
         </div>
 
         <div class="mt-8 text-center">
-            <p class="text-xs text-gray-500">
+            <p class="text-xs text-gray-400">
                 Bölgeniz bu listede yer alıyorsa servisimiz ücretsizdir. Randevu almak için bizi hemen arayabilirsiniz.
             </p>
         </div>
@@ -610,66 +629,66 @@
 </section>
 
 <!-- Hakkımızda -->
-<section id="hakkimizda" class="py-16 md:py-20 bg-gray-50 scroll-mt-20">
+<section id="hakkimizda" class="relative z-10 py-16 md:py-20 scroll-mt-20">
     <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         <div class="grid grid-cols-1 lg:grid-cols-2 gap-12 items-center">
             <div>
-                <div class="inline-flex items-center gap-1.5 text-green-700 font-semibold text-xs tracking-wider uppercase mb-2">
+                <div class="inline-flex items-center gap-1.5 text-cyan-400 font-semibold text-xs tracking-wider uppercase mb-2">
                     <svg class="w-4 h-4"><use href="#icon-award"></use></svg>
                     18 Yıllık Güven
                 </div>
-                <h2 class="text-3xl sm:text-4xl font-extrabold text-gray-900 mb-5">İkizler Halı ve Koltuk Yıkama</h2>
-                <p class="text-sm sm:text-base text-gray-600 leading-relaxed mb-4">
+                <h2 class="text-3xl sm:text-4xl font-extrabold text-white mb-5">İkizler Halı ve Koltuk Yıkama</h2>
+                <p class="text-sm sm:text-base text-gray-300 leading-relaxed mb-4">
                     Kurulduğumuz günden bu yana Eyüpsultan, Alibeyköy, Gaziosmanpaşa, Sultangazi ve çevre ilçelerde binlerce haneye ve iş yerine güvenilir temizlik hizmeti sunduk. Halılarınızı ve mobilyalarınızı sadece yıkamıyor, hijyen standartlarına uygun olarak derinlemesine arındırıyoruz.
                 </p>
-                <p class="text-sm sm:text-base text-gray-600 leading-relaxed mb-6">
+                <p class="text-sm sm:text-base text-gray-300 leading-relaxed mb-6">
                     Müşteri memnuniyetini en üst seviyede tutmak adına kullandığımız bitkisel ve antialerjik şampuanlar sayesinde çocuklarınız ve evcil hayvanlarınız için güvenli bir yaşam alanı sağlıyoruz.
                 </p>
 
                 <div class="space-y-3">
                     <div class="flex items-center gap-3">
-                        <div class="w-7 h-7 rounded-full bg-green-100 text-green-700 flex items-center justify-center flex-shrink-0">
+                        <div class="w-7 h-7 rounded-full bg-cyan-950 text-cyan-400 border border-cyan-500/30 flex items-center justify-center flex-shrink-0">
                             <svg class="w-4 h-4"><use href="#icon-check"></use></svg>
                         </div>
-                        <span class="text-sm font-medium text-gray-800">Kapalı alanda tozsuz kurutma teknolojisi</span>
+                        <span class="text-sm font-medium text-gray-200">Kapalı alanda tozsuz kurutma teknolojisi</span>
                     </div>
                     <div class="flex items-center gap-3">
-                        <div class="w-7 h-7 rounded-full bg-green-100 text-green-700 flex items-center justify-center flex-shrink-0">
+                        <div class="w-7 h-7 rounded-full bg-cyan-950 text-cyan-400 border border-cyan-500/30 flex items-center justify-center flex-shrink-0">
                             <svg class="w-4 h-4"><use href="#icon-check"></use></svg>
                         </div>
-                        <span class="text-sm font-medium text-gray-800">Çıkmayan inatçı lekelerde özel solüsyon uygulaması</span>
+                        <span class="text-sm font-medium text-gray-200">Çıkmayan inatçı lekelerde özel solüsyon uygulaması</span>
                     </div>
                     <div class="flex items-center gap-3">
-                        <div class="w-7 h-7 rounded-full bg-green-100 text-green-700 flex items-center justify-center flex-shrink-0">
+                        <div class="w-7 h-7 rounded-full bg-cyan-950 text-cyan-400 border border-cyan-500/30 flex items-center justify-center flex-shrink-0">
                             <svg class="w-4 h-4"><use href="#icon-check"></use></svg>
                         </div>
-                        <span class="text-sm font-medium text-gray-800">Zamanında alım ve söz verilen günde teslim</span>
+                        <span class="text-sm font-medium text-gray-200">Zamanında alım ve söz verilen günde teslim</span>
                     </div>
                 </div>
             </div>
 
-            <div class="bg-white p-8 rounded-2xl border border-gray-200 shadow-lg">
-                <h3 class="text-xl font-bold text-gray-900 mb-6 text-center sm:text-left">Neden Bizi Tercih Etmelisiniz?</h3>
-                <div class="grid grid-cols-1 sm:grid-cols-2 gap-6">
-                    <div class="p-4 rounded-xl bg-green-50/70 border border-green-100">
-                        <div class="text-3xl font-extrabold text-green-700 mb-1">7000+</div>
-                        <div class="text-xs font-semibold text-gray-800 uppercase mb-1">Mutlu Müşteri</div>
-                        <p class="text-xs text-gray-600">Bölgemizde binlerce daimi müşteri referansı.</p>
+            <div class="glass-card p-8 rounded-2xl shadow-2xl">
+                <h3 class="text-xl font-bold text-white mb-6 text-center sm:text-left">Neden Bizi Tercih Etmelisiniz?</h3>
+                <div class="grid grid-cols-1 sm:grid-cols-2 gap-4">
+                    <div class="p-4 rounded-xl bg-neutral-950/70 border border-neutral-800">
+                        <div class="text-3xl font-extrabold text-cyan-400 mb-1">7000+</div>
+                        <div class="text-xs font-semibold text-gray-200 uppercase mb-1">Mutlu Müşteri</div>
+                        <p class="text-xs text-gray-400">Bölgemizde binlerce daimi müşteri referansı.</p>
                     </div>
-                    <div class="p-4 rounded-xl bg-green-50/70 border border-green-100">
-                        <div class="text-3xl font-extrabold text-green-700 mb-1">%100</div>
-                        <div class="text-xs font-semibold text-gray-800 uppercase mb-1">Şeffaf Fiyat</div>
-                        <p class="text-xs text-gray-600">Kapıda sürpriz ücret yok, net ve dürüst tarife.</p>
+                    <div class="p-4 rounded-xl bg-neutral-950/70 border border-neutral-800">
+                        <div class="text-3xl font-extrabold text-cyan-400 mb-1">%100</div>
+                        <div class="text-xs font-semibold text-gray-200 uppercase mb-1">Şeffaf Fiyat</div>
+                        <p class="text-xs text-gray-400">Kapıda sürpriz ücret yok, net ve dürüst tarife.</p>
                     </div>
-                    <div class="p-4 rounded-xl bg-green-50/70 border border-green-100">
-                        <div class="text-3xl font-extrabold text-green-700 mb-1">0₺</div>
-                        <div class="text-xs font-semibold text-gray-800 uppercase mb-1">Servis Ücreti</div>
-                        <p class="text-xs text-gray-600">Tüm 20 hizmet bölgesinde alım-teslim ücretsiz.</p>
+                    <div class="p-4 rounded-xl bg-neutral-950/70 border border-neutral-800">
+                        <div class="text-3xl font-extrabold text-cyan-400 mb-1">0₺</div>
+                        <div class="text-xs font-semibold text-gray-200 uppercase mb-1">Servis Ücreti</div>
+                        <p class="text-xs text-gray-400">Tüm 20 hizmet bölgesinde alım-teslim ücretsiz.</p>
                     </div>
-                    <div class="p-4 rounded-xl bg-green-50/70 border border-green-100">
-                        <div class="text-3xl font-extrabold text-green-700 mb-1">6 Gün</div>
-                        <div class="text-xs font-semibold text-gray-800 uppercase mb-1">Kesintisiz Hizmet</div>
-                        <p class="text-xs text-gray-600">Pazartesi-Cumartesi 08:30-21:30 arası aktif.</p>
+                    <div class="p-4 rounded-xl bg-neutral-950/70 border border-neutral-800">
+                        <div class="text-3xl font-extrabold text-cyan-400 mb-1">6 Gün</div>
+                        <div class="text-xs font-semibold text-gray-200 uppercase mb-1">Kesintisiz Hizmet</div>
+                        <p class="text-xs text-gray-400">Pazartesi-Cumartesi 08:30-21:30 arası aktif.</p>
                     </div>
                 </div>
             </div>
@@ -678,22 +697,22 @@
 </section>
 
 <!-- Olumlu Müşteri Yorumları -->
-<section id="yorumlar" class="py-16 md:py-20 bg-white scroll-mt-20">
+<section id="yorumlar" class="relative z-10 py-16 md:py-20 scroll-mt-20">
     <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         <div class="text-center mb-12">
-            <div class="inline-flex items-center gap-1.5 text-green-700 font-semibold text-xs tracking-wider uppercase mb-2">
-                <svg class="w-4 h-4 text-yellow-500"><use href="#icon-star"></use></svg>
+            <div class="inline-flex items-center gap-1.5 text-cyan-400 font-semibold text-xs tracking-wider uppercase mb-2">
+                <svg class="w-4 h-4 text-yellow-400"><use href="#icon-star"></use></svg>
                 Gerçek Deneyimler
             </div>
-            <h2 class="text-3xl sm:text-4xl font-extrabold text-gray-900 mb-3">Müşteri Yorumları</h2>
-            <p class="text-gray-600 max-w-2xl mx-auto text-sm sm:text-base">
+            <h2 class="text-3xl sm:text-4xl font-extrabold text-white mb-3">Müşteri Yorumları</h2>
+            <p class="text-gray-400 max-w-2xl mx-auto text-sm sm:text-base">
                 Bizi tercih eden müşterilerimizin temizlik sonrası memnuniyet mesajları.
             </p>
         </div>
 
         <div class="grid grid-cols-1 md:grid-cols-3 gap-6">
             <!-- Yorum 1 -->
-            <div class="bg-gray-50 rounded-2xl p-6 border border-gray-200 shadow-sm flex flex-col justify-between hover-lift">
+            <div class="glass-card rounded-2xl p-6 shadow-xl flex flex-col justify-between hover-lift">
                 <div>
                     <div class="flex text-yellow-400 mb-3">
                         <svg class="w-5 h-5"><use href="#icon-star"></use></svg>
@@ -702,21 +721,21 @@
                         <svg class="w-5 h-5"><use href="#icon-star"></use></svg>
                         <svg class="w-5 h-5"><use href="#icon-star"></use></svg>
                     </div>
-                    <p class="text-sm text-gray-700 leading-relaxed mb-4">
+                    <p class="text-sm text-gray-300 leading-relaxed mb-4">
                         "Açık renk Shaggy halımı kahve lekesi yüzünden neredeyse atacaktım. İkizler Halı Yıkama tek bir leke dahi bırakmadan pırıl pırıl getirdi. Zamanında alıp getirdiler, çok teşekkür ederim."
                     </p>
                 </div>
-                <div class="border-t border-gray-200 pt-3 flex items-center justify-between">
+                <div class="border-t border-neutral-800 pt-3 flex items-center justify-between">
                     <div>
-                        <div class="font-bold text-sm text-gray-900">Selin K.</div>
-                        <div class="text-xs text-gray-500">Alibeyköy</div>
+                        <div class="font-bold text-sm text-white">Selin K.</div>
+                        <div class="text-xs text-gray-400">Alibeyköy</div>
                     </div>
-                    <span class="text-xs text-green-700 font-medium bg-green-100 px-2 py-1 rounded">Doğrulanmış Müşteri</span>
+                    <span class="text-xs text-cyan-300 font-medium bg-cyan-950/80 border border-cyan-500/30 px-2 py-1 rounded">Doğrulanmış Müşteri</span>
                 </div>
             </div>
 
             <!-- Yorum 2 -->
-            <div class="bg-gray-50 rounded-2xl p-6 border border-gray-200 shadow-sm flex flex-col justify-between hover-lift">
+            <div class="glass-card rounded-2xl p-6 shadow-xl flex flex-col justify-between hover-lift">
                 <div>
                     <div class="flex text-yellow-400 mb-3">
                         <svg class="w-5 h-5"><use href="#icon-star"></use></svg>
@@ -725,21 +744,21 @@
                         <svg class="w-5 h-5"><use href="#icon-star"></use></svg>
                         <svg class="w-5 h-5"><use href="#icon-star"></use></svg>
                     </div>
-                    <p class="text-sm text-gray-700 leading-relaxed mb-4">
+                    <p class="text-sm text-gray-300 leading-relaxed mb-4">
                         "Koltuk yıkama için çağırdık. Gelen ustalar son derece titiz ve saygılıydı. Yıkama bittiğinde çıkan suya inanamadım, koltuklarımız adeta mağazadan yeni gelmiş gibi oldu. Kesinlikle tavsiye ederim."
                     </p>
                 </div>
-                <div class="border-t border-gray-200 pt-3 flex items-center justify-between">
+                <div class="border-t border-neutral-800 pt-3 flex items-center justify-between">
                     <div>
-                        <div class="font-bold text-sm text-gray-900">Murat D.</div>
-                        <div class="text-xs text-gray-500">Yeşilpınar</div>
+                        <div class="font-bold text-sm text-white">Murat D.</div>
+                        <div class="text-xs text-gray-400">Yeşilpınar</div>
                     </div>
-                    <span class="text-xs text-green-700 font-medium bg-green-100 px-2 py-1 rounded">Doğrulanmış Müşteri</span>
+                    <span class="text-xs text-cyan-300 font-medium bg-cyan-950/80 border border-cyan-500/30 px-2 py-1 rounded">Doğrulanmış Müşteri</span>
                 </div>
             </div>
 
             <!-- Yorum 3 -->
-            <div class="bg-gray-50 rounded-2xl p-6 border border-gray-200 shadow-sm flex flex-col justify-between hover-lift">
+            <div class="glass-card rounded-2xl p-6 shadow-xl flex flex-col justify-between hover-lift">
                 <div>
                     <div class="flex text-yellow-400 mb-3">
                         <svg class="w-5 h-5"><use href="#icon-star"></use></svg>
@@ -748,16 +767,16 @@
                         <svg class="w-5 h-5"><use href="#icon-star"></use></svg>
                         <svg class="w-5 h-5"><use href="#icon-star"></use></svg>
                     </div>
-                    <p class="text-sm text-gray-700 leading-relaxed mb-4">
+                    <p class="text-sm text-gray-300 leading-relaxed mb-4">
                         "Yün yorgan ve zebra perdelerimizi verdik. İkisi de kusursuz yıkanıp çok güzel ambalajlanmış olarak teslim edildi. Kapıda söz verdikleri fiyat geçerliydi. Güvenilir ve dürüst esnaf."
                     </p>
                 </div>
-                <div class="border-t border-gray-200 pt-3 flex items-center justify-between">
+                <div class="border-t border-neutral-800 pt-3 flex items-center justify-between">
                     <div>
-                        <div class="font-bold text-sm text-gray-900">Fatma T.</div>
-                        <div class="text-xs text-gray-500">Gaziosmanpaşa</div>
+                        <div class="font-bold text-sm text-white">Fatma T.</div>
+                        <div class="text-xs text-gray-400">Gaziosmanpaşa</div>
                     </div>
-                    <span class="text-xs text-green-700 font-medium bg-green-100 px-2 py-1 rounded">Doğrulanmış Müşteri</span>
+                    <span class="text-xs text-cyan-300 font-medium bg-cyan-950/80 border border-cyan-500/30 px-2 py-1 rounded">Doğrulanmış Müşteri</span>
                 </div>
             </div>
         </div>
@@ -765,84 +784,84 @@
 </section>
 
 <!-- İletişim & Harita -->
-<section id="iletisim" class="py-16 md:py-20 bg-gray-50 scroll-mt-20">
+<section id="iletisim" class="relative z-10 py-16 md:py-20 scroll-mt-20">
     <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         <div class="text-center mb-12">
-            <h2 class="text-3xl sm:text-4xl font-extrabold text-gray-900 mb-3">İletişim &amp; Konum</h2>
-            <p class="text-gray-600 max-w-2xl mx-auto text-sm sm:text-base">
+            <h2 class="text-3xl sm:text-4xl font-extrabold text-white mb-3">İletişim &amp; Konum</h2>
+            <p class="text-gray-400 max-w-2xl mx-auto text-sm sm:text-base">
                 Bize dilediğiniz zaman telefon veya WhatsApp üzerinden ulaşabilir, servis kaydı oluşturabilirsiniz.
             </p>
         </div>
 
         <div class="grid grid-cols-1 lg:grid-cols-12 gap-8 items-start">
             <!-- İletişim Kartı -->
-            <div class="lg:col-span-5 bg-white p-6 sm:p-8 rounded-2xl border border-gray-200 shadow-sm space-y-6">
+            <div class="lg:col-span-5 glass-card p-6 sm:p-8 rounded-2xl shadow-xl space-y-6">
                 <div>
-                    <h3 class="text-xl font-bold text-gray-900 mb-1">İletişim Bilgileri</h3>
-                    <p class="text-xs text-gray-500">Hemen arayın veya WhatsApp'tan konum atın.</p>
+                    <h3 class="text-xl font-bold text-white mb-1">İletişim Bilgileri</h3>
+                    <p class="text-xs text-gray-400">Hemen arayın veya WhatsApp'tan konum atın.</p>
                 </div>
 
                 <div class="space-y-4">
                     <div class="flex items-start gap-3">
-                        <div class="w-10 h-10 rounded-xl bg-green-100 text-green-700 flex items-center justify-center flex-shrink-0 mt-1">
+                        <div class="w-10 h-10 rounded-xl bg-cyan-950 text-cyan-400 border border-cyan-500/30 flex items-center justify-center flex-shrink-0 mt-1">
                             <svg class="w-5 h-5"><use href="#icon-phone"></use></svg>
                         </div>
                         <div>
-                            <div class="text-xs text-gray-500 font-medium">Telefon</div>
-                            <a href="tel:05304149246" class="text-base font-bold text-green-700 hover:text-green-800">0530 414 92 46</a>
+                            <div class="text-xs text-gray-400 font-medium">Telefon</div>
+                            <a href="tel:05304149246" class="text-base font-bold text-cyan-400 hover:text-cyan-300">0530 414 92 46</a>
                         </div>
                     </div>
 
                     <div class="flex items-start gap-3">
-                        <div class="w-10 h-10 rounded-xl bg-green-100 text-green-700 flex items-center justify-center flex-shrink-0 mt-1">
+                        <div class="w-10 h-10 rounded-xl bg-green-950 text-green-400 border border-green-500/30 flex items-center justify-center flex-shrink-0 mt-1">
                             <i class="fab fa-whatsapp text-xl"></i>
                         </div>
                         <div>
-                            <div class="text-xs text-gray-500 font-medium">WhatsApp Hattı</div>
-                            <a href="https://wa.me/905304149246?text=Merhaba,%20hali%20yikama%20hakkinda%20bilgi%20almak%20istiyorum." target="_blank" rel="noopener noreferrer" class="text-base font-bold text-green-700 hover:text-green-800">0530 414 92 46</a>
+                            <div class="text-xs text-gray-400 font-medium">WhatsApp Hattı</div>
+                            <a href="https://wa.me/905304149246?text=Merhaba,%20hali%20yikama%20hakkinda%20bilgi%20almak%20istiyorum." target="_blank" rel="noopener noreferrer" class="text-base font-bold text-green-400 hover:text-green-300">0530 414 92 46</a>
                         </div>
                     </div>
 
                     <div class="flex items-start gap-3">
-                        <div class="w-10 h-10 rounded-xl text-white flex items-center justify-center flex-shrink-0 mt-1 instagram-gradient">
+                        <div class="w-10 h-10 rounded-xl text-white flex items-center justify-center flex-shrink-0 mt-1 instagram-gradient shadow-md">
                             <i class="fab fa-instagram text-xl"></i>
                         </div>
                         <div>
-                            <div class="text-xs text-gray-500 font-medium">Instagram Hesabımız</div>
-                            <a href="https://www.instagram.com/ikizlerhalivekoltukyikama?stkn=MTBianZxYjdtdGszNQ==" target="_blank" rel="noopener noreferrer" class="text-base font-bold text-pink-600 hover:text-pink-700">@ikizlerhalivekoltukyikama</a>
+                            <div class="text-xs text-gray-400 font-medium">Instagram Hesabımız</div>
+                            <a href="https://www.instagram.com/ikizlerhalivekoltukyikama?stkn=MTBianZxYjdtdGszNQ==" target="_blank" rel="noopener noreferrer" class="text-base font-bold text-pink-400 hover:text-pink-300">@ikizlerhalivekoltukyikama</a>
                         </div>
                     </div>
 
                     <div class="flex items-start gap-3">
-                        <div class="w-10 h-10 rounded-xl bg-green-100 text-green-700 flex items-center justify-center flex-shrink-0 mt-1">
+                        <div class="w-10 h-10 rounded-xl bg-cyan-950 text-cyan-400 border border-cyan-500/30 flex items-center justify-center flex-shrink-0 mt-1">
                             <svg class="w-5 h-5"><use href="#icon-map-marker"></use></svg>
                         </div>
                         <div>
-                            <div class="text-xs text-gray-500 font-medium">Adres</div>
-                            <p class="text-sm font-semibold text-gray-800 leading-snug">
+                            <div class="text-xs text-gray-400 font-medium">Adres</div>
+                            <p class="text-sm font-semibold text-gray-200 leading-snug">
                                 Çırçır Mahallesi, Sezai Karakoç Caddesi No:67, Eyüpsultan / İstanbul
                             </p>
                         </div>
                     </div>
 
                     <div class="flex items-start gap-3">
-                        <div class="w-10 h-10 rounded-xl bg-green-100 text-green-700 flex items-center justify-center flex-shrink-0 mt-1">
+                        <div class="w-10 h-10 rounded-xl bg-cyan-950 text-cyan-400 border border-cyan-500/30 flex items-center justify-center flex-shrink-0 mt-1">
                             <svg class="w-5 h-5"><use href="#icon-clock"></use></svg>
                         </div>
                         <div>
-                            <div class="text-xs text-gray-500 font-medium">Çalışma Saatleri</div>
-                            <p class="text-sm font-semibold text-gray-800">Pazartesi - Cumartesi: 08:30 - 21:30</p>
-                            <p class="text-xs text-gray-500">Pazar: Kapalı</p>
+                            <div class="text-xs text-gray-400 font-medium">Çalışma Saatleri</div>
+                            <p class="text-sm font-semibold text-gray-200">Pazartesi - Cumartesi: 08:30 - 21:30</p>
+                            <p class="text-xs text-gray-400">Pazar: Kapalı</p>
                         </div>
                     </div>
                 </div>
 
-                <div class="space-y-3 pt-4 border-t border-gray-100">
-                    <a href="tel:05304149246" class="w-full bg-green-700 hover:bg-green-800 text-white font-bold py-3.5 px-4 rounded-xl shadow-md transition flex items-center justify-center text-sm">
+                <div class="space-y-3 pt-4 border-t border-neutral-800">
+                    <a href="tel:05304149246" class="w-full bg-cyan-600 hover:bg-cyan-500 text-white font-bold py-3.5 px-4 rounded-xl shadow-md transition flex items-center justify-center text-sm shadow-cyan-600/20">
                         <svg class="w-4 h-4 mr-2"><use href="#icon-phone"></use></svg>
                         Hemen Ara: 0530 414 92 46
                     </a>
-                    <a href="https://wa.me/905304149246?text=Merhaba,%20hali%20yikama%20hakkinda%20bilgi%20almak%20istiyorum." target="_blank" rel="noopener noreferrer" class="w-full bg-green-500 hover:bg-green-600 text-white font-bold py-3.5 px-4 rounded-xl shadow-md transition flex items-center justify-center text-sm">
+                    <a href="https://wa.me/905304149246?text=Merhaba,%20hali%20yikama%20hakkinda%20bilgi%20almak%20istiyorum." target="_blank" rel="noopener noreferrer" class="w-full bg-green-600 hover:bg-green-500 text-white font-bold py-3.5 px-4 rounded-xl shadow-md transition flex items-center justify-center text-sm shadow-green-600/20">
                         <i class="fab fa-whatsapp mr-2 text-lg"></i>
                         WhatsApp ile İletişime Geç
                     </a>
@@ -854,14 +873,14 @@
             </div>
 
             <!-- Google Harita Bölümü -->
-            <div class="lg:col-span-7 bg-white p-3 rounded-2xl border border-gray-200 shadow-sm overflow-hidden">
-                <div class="w-full h-80 sm:h-96 md:h-[450px] rounded-xl overflow-hidden relative">
+            <div class="lg:col-span-7 glass-card p-3 rounded-2xl shadow-xl overflow-hidden">
+                <div class="w-full h-80 sm:h-96 md:h-[450px] rounded-xl overflow-hidden relative border border-neutral-800">
                     <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2858.408400228397!2d28.932899075862718!3d41.086427171339636!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x14cab1c5f27ef005%3A0x2efe9eb54f25195e!2s%C4%B0K%C4%B0ZLER%20HALI%20VE%20KOLTUK%20YIKAMA!5e1!3m2!1str!2str!4v1789050441680!5m2!1str!2str" width="100%" height="100%" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="strict-origin-when-cross-origin" title="İkizler Halı ve Koltuk Yıkama Konum"></iframe>
                 </div>
-                <div class="mt-3 p-3 bg-gray-50 rounded-xl flex flex-col sm:flex-row items-center justify-between gap-3 text-xs">
-                    <span class="text-gray-600 font-medium">Navigasyonla doğrudan dükkanımıza gelmek için:</span>
-                    <a href="https://maps.google.com/?cid=3386318471383292254" target="_blank" rel="noopener noreferrer" class="inline-flex items-center gap-1.5 font-bold text-green-700 hover:text-green-800 bg-white px-3.5 py-2 rounded-lg border border-gray-200 shadow-sm">
-                        <i class="fas fa-directions"></i>
+                <div class="mt-3 p-3 bg-neutral-950/80 rounded-xl border border-neutral-800 flex flex-col sm:flex-row items-center justify-between gap-3 text-xs">
+                    <span class="text-gray-400 font-medium">Navigasyonla doğrudan dükkanımıza gelmek için:</span>
+                    <a href="https://maps.google.com/?cid=3386318471383292254" target="_blank" rel="noopener noreferrer" class="inline-flex items-center gap-1.5 font-bold text-cyan-400 hover:text-cyan-300 bg-neutral-900 px-3.5 py-2 rounded-lg border border-neutral-700 shadow-sm transition">
+                        <i class="fas fa-directions text-cyan-400"></i>
                         Haritada Aç &amp; Yol Tarifi Al
                     </a>
                 </div>
@@ -871,11 +890,11 @@
 </section>
 
 <!-- Footer -->
-<footer class="bg-gray-900 text-gray-300 py-12 border-t border-gray-800 text-sm">
+<footer class="relative z-10 bg-neutral-950/90 text-gray-300 py-12 border-t border-neutral-800 text-sm">
     <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         <div class="grid grid-cols-1 md:grid-cols-4 gap-8 mb-8">
             <div class="space-y-3">
-                <img src="https://camlikalti.yurdu.org/media/camlikaltiyurduorg_1789012455_8552.jpg" alt="İkizler Halı Yıkama" class="h-16 w-auto rounded-lg shadow-sm border border-gray-700">
+                <img src="https://camlikalti.yurdu.org/media/camlikaltiyurduorg_1789012455_8552.jpg" alt="İkizler Halı Yıkama" class="h-16 w-auto rounded-lg shadow-sm border border-neutral-800">
                 <p class="text-xs text-gray-400 leading-relaxed">
                     Eyüpsultan ve çevresinde profesyonel halı, koltuk, perde ve yorgan yıkama çözümleri. Ücretsiz alım ve teslimat.
                 </p>
@@ -890,12 +909,12 @@
             <div>
                 <h4 class="text-white font-bold mb-3 text-sm">Hızlı Linkler</h4>
                 <ul class="space-y-2 text-xs text-gray-400">
-                    <li><a href="#anasayfa" class="hover:text-green-400 transition">Ana Sayfa</a></li>
-                    <li><a href="#hizmetler" class="hover:text-green-400 transition">Hizmetlerimiz</a></li>
-                    <li><a href="#bolgeler" class="hover:text-green-400 transition">Hizmet Bölgelerimiz</a></li>
-                    <li><a href="#hakkimizda" class="hover:text-green-400 transition">Hakkımızda</a></li>
-                    <li><a href="#yorumlar" class="hover:text-green-400 transition">Müşteri Yorumları</a></li>
-                    <li><a href="#iletisim" class="hover:text-green-400 transition">İletişim</a></li>
+                    <li><a href="#anasayfa" class="hover:text-cyan-400 transition">Ana Sayfa</a></li>
+                    <li><a href="#hizmetler" class="hover:text-cyan-400 transition">Hizmetlerimiz</a></li>
+                    <li><a href="#bolgeler" class="hover:text-cyan-400 transition">Hizmet Bölgelerimiz</a></li>
+                    <li><a href="#hakkimizda" class="hover:text-cyan-400 transition">Hakkımızda</a></li>
+                    <li><a href="#yorumlar" class="hover:text-cyan-400 transition">Müşteri Yorumları</a></li>
+                    <li><a href="#iletisim" class="hover:text-cyan-400 transition">İletişim</a></li>
                 </ul>
             </div>
 
@@ -914,7 +933,7 @@
                 <h4 class="text-white font-bold mb-3 text-sm">İletişim</h4>
                 <ul class="space-y-2 text-xs text-gray-400">
                     <li>Çırçır Mah. Sezai Karakoç Cd. No:67, Eyüpsultan/İstanbul</li>
-                    <li>Tel: <a href="tel:05304149246" class="text-white hover:text-green-400">0530 414 92 46</a></li>
+                    <li>Tel: <a href="tel:05304149246" class="text-white hover:text-cyan-400">0530 414 92 46</a></li>
                     <li>WhatsApp: <a href="https://wa.me/905304149246" class="text-white hover:text-green-400">0530 414 92 46</a></li>
                     <li>Instagram: <a href="https://www.instagram.com/ikizlerhalivekoltukyikama?stkn=MTBianZxYjdtdGszNQ==" target="_blank" rel="noopener noreferrer" class="text-pink-400 hover:text-pink-300">@ikizlerhalivekoltukyikama</a></li>
                     <li>Pzt - Cmt: 08:30 - 21:30</li>
@@ -922,7 +941,7 @@
             </div>
         </div>
 
-        <div class="border-t border-gray-800 pt-6 text-center text-xs text-gray-500">
+        <div class="border-t border-neutral-800 pt-6 text-center text-xs text-gray-500">
             &copy; 2026 İkizler Halı ve Koltuk Yıkama. Tüm hakları saklıdır.
         </div>
     </div>
@@ -935,11 +954,11 @@
         <i class="fab fa-instagram text-2xl"></i>
     </a>
     <!-- WhatsApp Butonu -->
-    <a href="https://wa.me/905304149246?text=Merhaba,%20hali%20yikama%20hakkinda%20bilgi%20almak%20istiyorum." target="_blank" rel="noopener noreferrer" class="flex items-center justify-center w-14 h-14 bg-green-500 text-white rounded-full shadow-2xl hover:bg-green-600 transition-all duration-300 transform hover:scale-110 animate-bounce-slow" title="WhatsApp ile Yazın">
+    <a href="https://wa.me/905304149246?text=Merhaba,%20hali%20yikama%20hakkinda%20bilgi%20almak%20istiyorum." target="_blank" rel="noopener noreferrer" class="flex items-center justify-center w-14 h-14 bg-green-500 text-white rounded-full shadow-2xl hover:bg-green-600 transition-all duration-300 transform hover:scale-110 animate-bounce-slow shadow-green-500/30" title="WhatsApp ile Yazın">
         <i class="fab fa-whatsapp text-2xl"></i>
     </a>
     <!-- Telefon Butonu -->
-    <a href="tel:05304149246" class="flex items-center justify-center w-14 h-14 text-white rounded-full shadow-2xl transition-all duration-300 transform hover:scale-110 animate-bounce-slow-delayed" style="background: var(--teal-600);" title="Hemen Arayın">
+    <a href="tel:05304149246" class="flex items-center justify-center w-14 h-14 text-white rounded-full shadow-2xl transition-all duration-300 transform hover:scale-110 animate-bounce-slow-delayed bg-cyan-600 hover:bg-cyan-500 shadow-cyan-600/30" title="Hemen Arayın">
         <i class="fas fa-phone text-xl"></i>
     </a>
 </div>

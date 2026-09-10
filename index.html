@@ -1,0 +1,941 @@
+<!DOCTYPE html>
+<html lang="tr">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>İKİZLER Halı & Koltuk Yıkama — Eyüpsultan, İstanbul</title>
+<meta name="description" content="İKİZLER Halı ve Koltuk Yıkama — İstanbul Eyüpsultan'da halı, koltuk, perde, yorgan ve battaniye yıkama. Ücretsiz alım ve teslim.">
+
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Fraunces:opsz,wght@9..144,400;9..144,500;9..144,600;9..144,700&family=IBM+Plex+Sans:wght@400;500;600&display=swap" rel="stylesheet">
+<script src="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"></script>
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+
+<style>
+  :root{
+    --ink:#10221F;
+    --pine:#2F5C53;
+    --pine-deep:#1D3F38;
+    --brass:#A97C50;
+    --brass-light:#C9A06E;
+    --foam:#CFE3D8;
+    --paper:#F3EEE3;
+    --paper-dim:#EAE3D3;
+    --line: rgba(16,34,31,0.12);
+  }
+  *{box-sizing:border-box;}
+  html{scroll-behavior:smooth; overflow-x:hidden;}
+  body{
+    margin:0;
+    background:var(--paper);
+    color:var(--ink);
+    font-family:'IBM Plex Sans', sans-serif;
+    font-size:16px;
+    line-height:1.65;
+    -webkit-font-smoothing:antialiased;
+    overflow-x:hidden;
+  }
+  h1,h2,h3,h4{
+    font-family:'Fraunces', serif;
+    font-optical-sizing:auto;
+    font-weight:600;
+    line-height:1.12;
+    margin:0;
+    letter-spacing:-0.015em;
+    text-wrap:balance;
+  }
+  p{margin:0;}
+  a{color:inherit; text-decoration:none;}
+  img{max-width:100%; display:block;}
+  .wrap{max-width:1180px; margin:0 auto; padding:0 24px;}
+  section{padding:96px 0;}
+  @media(max-width:768px){ section{padding:64px 0;} }
+
+  /* ---------- Twin mark (logo) ---------- */
+  .twin-mark{width:38px; height:38px; flex-shrink:0;}
+  .twin-mark circle{fill:none; stroke:var(--brass); stroke-width:2.4;}
+  .wordmark{
+    font-family:'Fraunces', serif;
+    font-weight:600;
+    font-size:1.4rem;
+    letter-spacing:0.01em;
+    color:var(--ink);
+  }
+  .wordmark span{color:var(--pine);}
+
+  /* ---------- Nav / sliding tabs ---------- */
+  header.site-nav{
+    position:fixed; top:0; left:0; right:0; z-index:100;
+    background:rgba(243,238,227,0.86);
+    backdrop-filter:blur(10px);
+    border-bottom:1px solid var(--line);
+  }
+  .nav-inner{
+    max-width:1180px; margin:0 auto; padding:0 24px;
+    height:84px; display:flex; align-items:center; justify-content:space-between;
+    gap:12px;
+  }
+  .brand-lockup{display:flex; align-items:center; gap:12px; min-width:0;}
+  .wordmark{white-space:nowrap; overflow:hidden; text-overflow:ellipsis;}
+  .tabs{
+    position:relative;
+    display:inline-flex; align-items:center; gap:2px;
+    background:rgba(16,34,31,0.045);
+    border:1px solid var(--line);
+    border-radius:999px;
+    padding:5px;
+  }
+  .tabs .indicator{
+    position:absolute; top:5px; bottom:5px; left:0; width:0;
+    background:var(--pine);
+    border-radius:999px;
+    transition:left .38s cubic-bezier(.34,1.1,.4,1), width .38s cubic-bezier(.34,1.1,.4,1);
+    z-index:0;
+  }
+  .tabs a{
+    position:relative; z-index:1;
+    padding:10px 20px;
+    font-size:0.92rem;
+    font-weight:500;
+    color:var(--ink);
+    border-radius:999px;
+    white-space:nowrap;
+    transition:color .25s ease;
+  }
+  .tabs a.active, .tabs a:hover{color:var(--paper);}
+  .tabs a.active{color:var(--paper);}
+  @media(max-width:1020px){ .tabs{display:none;} }
+
+  .nav-actions{display:flex; align-items:center; gap:10px; flex-shrink:0;}
+  .btn-call{
+    display:inline-flex; align-items:center; gap:8px;
+    background:var(--brass); color:var(--paper);
+    padding:11px 18px; border-radius:999px;
+    font-size:0.88rem; font-weight:600;
+    transition:background .2s ease, transform .2s ease;
+    white-space:nowrap;
+  }
+  .btn-call:hover{background:#93683f; transform:translateY(-1px);}
+  .icon-btn{
+    width:42px; height:42px; border-radius:999px;
+    display:flex; align-items:center; justify-content:center;
+    background:var(--ink); color:var(--paper);
+    transition:opacity .2s ease;
+    flex-shrink:0;
+  }
+  .icon-btn:hover{opacity:.82;}
+  .menu-toggle{display:none; width:42px; height:42px; align-items:center; justify-content:center; border-radius:999px; border:1px solid var(--line); background:transparent; flex-shrink:0;}
+  @media(max-width:1020px){ .menu-toggle{display:flex;} }
+  @media(max-width:560px){
+    .btn-call span{display:none;}
+    .btn-call{width:42px; height:42px; padding:0; justify-content:center;}
+    .wordmark span{display:none;}
+  }
+  @media(max-width:400px){
+    .wordmark{font-size:1.15rem;}
+    .nav-inner{gap:8px;}
+    .nav-actions{gap:8px;}
+  }
+
+  #mobile-panel{
+    display:none;
+    background:var(--paper);
+    border-top:1px solid var(--line);
+  }
+  #mobile-panel.open{display:block;}
+  #mobile-panel a{
+    display:block; padding:16px 24px; border-bottom:1px solid var(--line);
+    font-weight:500;
+  }
+
+  /* ---------- Hero ---------- */
+  #hero{
+    position:relative;
+    min-height:92vh;
+    display:flex; align-items:flex-end;
+    overflow:hidden;
+    padding-top:84px;
+  }
+  @media(max-width:640px){ #hero{min-height:84vh;} }
+  #hero canvas{
+    position:absolute; inset:0; width:100%; height:100%;
+    display:block;
+  }
+  .hero-scrim{
+    position:absolute; inset:0;
+    background:linear-gradient(180deg, rgba(16,34,31,0.15) 0%, rgba(16,34,31,0.55) 100%);
+    pointer-events:none;
+  }
+  .scroll-cue{
+    position:absolute; left:50%; bottom:28px; transform:translateX(-50%);
+    z-index:2;
+    width:36px; height:36px; border-radius:999px;
+    border:1px solid rgba(243,238,227,0.45);
+    display:flex; align-items:center; justify-content:center;
+    color:var(--paper);
+    animation:cueBob 2.2s ease-in-out infinite;
+  }
+  @keyframes cueBob{
+    0%,100%{ transform:translate(-50%,0); }
+    50%{ transform:translate(-50%,6px); }
+  }
+  @media (prefers-reduced-motion: reduce){ .scroll-cue{animation:none;} }
+  .hero-content{
+    position:relative; z-index:2;
+    max-width:1180px; margin:0 auto; padding:0 24px 88px;
+    width:100%;
+  }
+  .hero-content h1{
+    color:var(--paper);
+    max-width:16ch;
+    text-shadow:0 2px 24px rgba(16,34,31,0.35);
+  }
+  .hero-content h1 .line{
+    display:block;
+  }
+  .hero-content h1 .line--intro{
+    font-weight:400;
+    font-style:italic;
+    font-size:clamp(1.5rem, 3vw, 2.1rem);
+    color:rgba(243,238,227,0.82);
+    letter-spacing:0;
+    margin-bottom:2px;
+  }
+  .hero-content h1 .line--main{
+    font-weight:600;
+    font-size:clamp(2.7rem, 6.4vw, 5rem);
+    letter-spacing:-0.02em;
+  }
+  .hero-content .lede{
+    color:rgba(243,238,227,0.86);
+    font-size:1.1rem;
+    max-width:44ch;
+    margin-top:22px;
+  }
+  .hero-cta{display:flex; flex-wrap:wrap; gap:14px; margin-top:36px;}
+  .btn-primary{
+    background:var(--paper); color:var(--ink);
+    padding:15px 26px; border-radius:8px;
+    font-weight:600; font-size:0.95rem;
+    display:inline-flex; align-items:center; gap:10px;
+    transition:transform .2s ease;
+  }
+  .btn-primary:hover{transform:translateY(-2px);}
+  .btn-ghost{
+    border:1px solid rgba(243,238,227,0.5); color:var(--paper);
+    padding:15px 26px; border-radius:8px;
+    font-weight:600; font-size:0.95rem;
+    display:inline-flex; align-items:center; gap:10px;
+  }
+  .btn-ghost:hover{background:rgba(243,238,227,0.1);}
+
+  /* ---------- Strip ---------- */
+  .info-strip{
+    background:var(--ink); color:var(--foam);
+    padding:14px 0;
+  }
+  .info-strip .wrap{display:flex; flex-wrap:wrap; gap:10px 32px; align-items:center; justify-content:center; font-size:0.86rem;}
+  .info-strip i{color:var(--brass-light); margin-right:8px;}
+
+  /* ---------- Section headers ---------- */
+  .section-head{max-width:640px; margin-bottom:52px;}
+  .section-head h2{font-size:clamp(1.9rem, 3.4vw, 2.6rem);}
+  .section-head p{color:#4A5A55; margin-top:14px; font-size:1.02rem;}
+
+  /* ---------- Traits (feature strip) ---------- */
+  .traits{display:grid; grid-template-columns:repeat(4,1fr); gap:1px; background:var(--line); border:1px solid var(--line);}
+  .trait{background:var(--paper); padding:32px 26px;}
+  .trait i{font-size:1.3rem; color:var(--brass);}
+  .trait h4{margin-top:16px; font-size:1.02rem;}
+  .trait p{margin-top:8px; color:#4A5A55; font-size:0.92rem;}
+  @media(max-width:860px){ .traits{grid-template-columns:1fr 1fr;} }
+  @media(max-width:520px){ .traits{grid-template-columns:1fr;} }
+
+  /* ---------- Services (paired / twin layout) ---------- */
+  #hizmetler{background:var(--pine-deep); color:var(--foam);}
+  #hizmetler .section-head h2, #hizmetler .section-head p{color:var(--paper);}
+  #hizmetler .section-head p{color:rgba(243,238,227,0.72);}
+  .service-pairs{display:flex; flex-direction:column; gap:1px; background:rgba(243,238,227,0.14);}
+  .pair-row{display:grid; grid-template-columns:1fr 1fr; gap:1px;}
+  @media(max-width:760px){ .pair-row{grid-template-columns:1fr;} }
+  .service-cell{
+    background:var(--pine-deep);
+    padding:38px 34px;
+    display:flex; gap:20px;
+  }
+  .service-cell .num{
+    font-family:'Fraunces', serif; font-size:1rem; color:var(--brass-light);
+    padding-top:2px; flex-shrink:0; width:28px;
+  }
+  .service-cell h3{color:var(--paper); font-size:1.28rem;}
+  .service-cell p{color:rgba(207,227,216,0.78); margin-top:10px; font-size:0.94rem;}
+  .service-cell ul{list-style:none; padding:0; margin:16px 0 0; display:flex; flex-wrap:wrap; gap:8px;}
+  .service-cell li{
+    font-size:0.78rem; color:var(--foam);
+    border:1px solid rgba(207,227,216,0.28);
+    padding:5px 12px; border-radius:999px;
+  }
+
+  /* ---------- About ---------- */
+  .about-grid{display:grid; grid-template-columns:1.1fr 0.9fr; gap:72px; align-items:start;}
+  @media(max-width:900px){ .about-grid{grid-template-columns:1fr; gap:44px;} }
+  .about-grid h2{font-size:clamp(1.9rem,3.4vw,2.6rem); max-width:12ch;}
+  .about-copy p{color:#39463F; margin-top:20px; font-size:1.02rem; max-width:56ch;}
+  .about-copy p+p{margin-top:16px;}
+  .stat-row{display:flex; gap:40px; margin-top:36px; flex-wrap:wrap;}
+  .stat-row .stat b{
+    display:block; font-family:'Fraunces', serif; font-size:2.1rem; color:var(--pine);
+  }
+  .stat-row .stat span{font-size:0.86rem; color:#4A5A55;}
+  .why-card{
+    background:var(--ink); color:var(--paper);
+    border-radius:14px; padding:38px;
+  }
+  .why-card h3{font-size:1.4rem; color:var(--paper);}
+  .why-list{list-style:none; padding:0; margin:26px 0 0; display:flex; flex-direction:column; gap:20px;}
+  .why-list li{display:flex; gap:14px;}
+  .why-list i{color:var(--brass-light); margin-top:3px;}
+  .why-list h5{margin:0; font-size:0.98rem; font-family:'IBM Plex Sans'; font-weight:600;}
+  .why-list p{color:rgba(243,238,227,0.7); font-size:0.88rem; margin-top:4px;}
+
+  /* ---------- Process ---------- */
+  /* ---------- Service areas ---------- */
+  #bolgeler{background:var(--ink); color:var(--paper);}
+  #bolgeler .section-head h2, #bolgeler .section-head p{color:var(--paper);}
+  #bolgeler .section-head p{color:rgba(243,238,227,0.68);}
+  .area-grid{display:flex; flex-wrap:wrap; gap:10px;}
+  .area-chip{
+    display:inline-flex; align-items:center; gap:8px;
+    padding:11px 18px; border-radius:999px;
+    border:1px solid rgba(243,238,227,0.22);
+    background:rgba(243,238,227,0.04);
+    font-size:0.92rem; color:var(--foam);
+  }
+  .area-chip i{color:var(--brass-light); font-size:0.8rem;}
+  .area-note{margin-top:36px; color:rgba(243,238,227,0.62); font-size:0.88rem; max-width:56ch;}
+
+  #surec{background:var(--paper-dim);}
+  .process-rail{position:relative; display:grid; grid-template-columns:repeat(4,1fr); gap:36px; margin-top:8px;}
+  @media(max-width:860px){ .process-rail{grid-template-columns:1fr 1fr;} }
+  @media(max-width:520px){ .process-rail{grid-template-columns:1fr;} }
+  .process-rail::before{
+    content:''; position:absolute; top:22px; left:0; right:0; height:1px;
+    background:var(--line);
+  }
+  @media(max-width:860px){ .process-rail::before{display:none;} }
+  .process-step{position:relative;}
+  .process-step .n{
+    font-family:'Fraunces', serif; font-weight:600; font-size:1.6rem; color:var(--brass);
+    background:var(--paper-dim); display:inline-block; padding-right:14px; position:relative; z-index:1;
+  }
+  .process-step h4{margin-top:14px; font-size:1.05rem;}
+  .process-step p{margin-top:8px; color:#4A5A55; font-size:0.92rem;}
+
+  /* ---------- Testimonials ---------- */
+  .testi-grid{display:grid; grid-template-columns:repeat(3,1fr); gap:24px;}
+  @media(max-width:900px){ .testi-grid{grid-template-columns:1fr;} }
+  .testi-card{
+    background:var(--paper); border:1px solid var(--line); border-radius:14px; padding:30px;
+  }
+  .testi-card .stars{color:var(--brass); letter-spacing:2px; font-size:0.9rem;}
+  .testi-card p{margin-top:16px; font-size:0.96rem; color:#39463F;}
+  .testi-card .who{margin-top:22px; padding-top:18px; border-top:1px solid var(--line); font-size:0.86rem; color:#4A5A55;}
+  .testi-card .who b{color:var(--ink); display:block; font-size:0.94rem;}
+
+  /* ---------- Contact ---------- */
+  #iletisim{background:var(--ink); color:var(--paper);}
+  .contact-grid{display:grid; grid-template-columns:1fr 1fr; gap:56px;}
+  @media(max-width:860px){ .contact-grid{grid-template-columns:1fr;} }
+  #iletisim .section-head h2{color:var(--paper);}
+  #iletisim .section-head p{color:rgba(243,238,227,0.68);}
+  .contact-list{list-style:none; padding:0; margin:0; display:flex; flex-direction:column; gap:26px;}
+  .contact-list li{display:flex; gap:16px;}
+  .contact-list .ico{
+    width:44px; height:44px; border-radius:10px; flex-shrink:0;
+    background:rgba(243,238,227,0.08); display:flex; align-items:center; justify-content:center;
+    color:var(--brass-light);
+  }
+  .contact-list h5{margin:0 0 4px; font-size:0.92rem; font-weight:600; font-family:'IBM Plex Sans';}
+  .contact-list p, .contact-list a{color:rgba(243,238,227,0.75); font-size:0.94rem;}
+  .quick-box{background:rgba(243,238,227,0.06); border:1px solid rgba(243,238,227,0.14); border-radius:14px; padding:32px;}
+  .quick-box a.line{
+    display:flex; align-items:center; justify-content:space-between;
+    padding:16px 0; border-bottom:1px solid rgba(243,238,227,0.12);
+    font-weight:500;
+  }
+  .quick-box a.line:last-child{border-bottom:none;}
+
+  /* ---------- Map ---------- */
+  #map-wrap{position:relative;}
+  #map-wrap iframe{width:100%; height:460px; border:0; display:block; filter:grayscale(0.15);}
+
+  /* ---------- Footer ---------- */
+  footer{background:var(--paper-dim); border-top:1px solid var(--line); padding:56px 0 28px;}
+  .foot-grid{display:grid; grid-template-columns:1.4fr 1fr 1fr; gap:40px;}
+  @media(max-width:760px){ .foot-grid{grid-template-columns:1fr 1fr;} }
+  .foot-grid h5{font-size:0.88rem; margin:0 0 16px; color:var(--ink); font-weight:600;}
+  .foot-grid ul{list-style:none; padding:0; margin:0; display:flex; flex-direction:column; gap:10px;}
+  .foot-grid a{color:#4A5A55; font-size:0.9rem;}
+  .foot-grid a:hover{color:var(--pine);}
+  .foot-bottom{
+    margin-top:48px; padding-top:24px; border-top:1px solid var(--line);
+    display:flex; flex-wrap:wrap; gap:12px; justify-content:space-between; font-size:0.82rem; color:#6B7871;
+  }
+
+  /* ---------- Sticky mobile CTA ---------- */
+  .float-actions{position:fixed; bottom:22px; right:22px; z-index:90; display:flex; flex-direction:column; gap:12px;}
+  .float-actions a{
+    width:52px; height:52px; border-radius:999px; display:flex; align-items:center; justify-content:center;
+    color:#fff; font-size:1.2rem; box-shadow:0 10px 24px rgba(16,34,31,0.25);
+  }
+  .fa-whatsapp-btn{background:#2F5C53;}
+  .fa-call-btn{background:var(--brass);}
+
+  @media (prefers-reduced-motion: reduce){
+    html{scroll-behavior:auto;}
+    .tabs .indicator{transition:none;}
+  }
+</style>
+</head>
+<body>
+
+<!-- ================= NAV ================= -->
+<header class="site-nav">
+  <div class="nav-inner">
+    <a href="#anasayfa" class="brand-lockup">
+      <svg class="twin-mark" viewBox="0 0 40 40"><circle cx="15" cy="20" r="11"/><circle cx="25" cy="20" r="11"/></svg>
+      <span class="wordmark">İKİZLER <span>Halı & Koltuk</span></span>
+    </a>
+
+    <nav class="tabs" id="tabs" role="tablist" aria-label="Site menüsü">
+      <div class="indicator" id="tab-indicator"></div>
+      <a href="#anasayfa" class="tab-link active" data-target="anasayfa">Anasayfa</a>
+      <a href="#hizmetler" class="tab-link" data-target="hizmetler">Hizmetler</a>
+      <a href="#hakkimizda" class="tab-link" data-target="hakkimizda">Hakkımızda</a>
+      <a href="#bolgeler" class="tab-link" data-target="bolgeler">Bölgeler</a>
+      <a href="#surec" class="tab-link" data-target="surec">Süreç</a>
+      <a href="#iletisim" class="tab-link" data-target="iletisim">İletişim</a>
+    </nav>
+
+    <div class="nav-actions">
+      <a href="tel:05397182622" class="btn-call"><i class="fas fa-phone"></i><span>0539 718 26 22</span></a>
+      <a href="https://wa.me/905397182622" target="_blank" rel="noopener" class="icon-btn" title="WhatsApp"><i class="fab fa-whatsapp"></i></a>
+      <button class="menu-toggle" id="menu-toggle" aria-label="Menüyü aç"><i class="fas fa-bars"></i></button>
+    </div>
+  </div>
+
+  <div id="mobile-panel">
+    <a href="#anasayfa">Anasayfa</a>
+    <a href="#hizmetler">Hizmetler</a>
+    <a href="#hakkimizda">Hakkımızda</a>
+    <a href="#bolgeler">Hizmet Bölgelerimiz</a>
+    <a href="#surec">Süreç</a>
+    <a href="#iletisim">İletişim</a>
+  </div>
+</header>
+
+<!-- ================= HERO ================= -->
+<section id="anasayfa" style="scroll-margin-top:84px;">
+  <div id="hero">
+    <canvas id="shader-canvas"></canvas>
+    <div class="hero-scrim"></div>
+    <div class="hero-content">
+      <h1><span class="line line--intro">Halınızın</span><span class="line line--main">ilk günkü hâli.</span></h1>
+      <p class="lede">Eyüpsultan'da halı, koltuk, perde, yorgan ve battaniyeleriniz İKİZLER'in ellerinde yeniden ilk gününe döner — ücretsiz alım ve teslim ile.</p>
+      <div class="hero-cta">
+        <a href="tel:05397182622" class="btn-primary"><i class="fas fa-phone"></i>Hemen Ara</a>
+        <a href="#iletisim" class="btn-ghost">Ücretsiz Keşif İste</a>
+      </div>
+    </div>
+    <a href="#hizmetler" class="scroll-cue" aria-label="Aşağı kaydır"><i class="fas fa-chevron-down"></i></a>
+  </div>
+</section>
+
+<div class="info-strip">
+  <div class="wrap">
+    <span><i class="fas fa-credit-card"></i>Kredi kartı geçerlidir</span>
+    <span><i class="fas fa-clock"></i>Pazartesi–Cumartesi 09:00–18:00</span>
+    <span><i class="fas fa-truck"></i>Ücretsiz alım ve teslim</span>
+  </div>
+</div>
+
+<!-- ================= TRAITS ================= -->
+<section style="padding-bottom:0;">
+  <div class="wrap">
+    <div class="traits">
+      <div class="trait"><i class="fas fa-shield-halved"></i><h4>Tam hijyen</h4><p>Antibakteriyel yıkama ile toz akarından arındırılmış, kullanıma hazır tekstil.</p></div>
+      <div class="trait"><i class="fas fa-truck-fast"></i><h4>Ücretsiz servis</h4><p>Adresinizden alır, temizler, aynı adrese teslim ederiz.</p></div>
+      <div class="trait"><i class="fas fa-droplet"></i><h4>Türüne özel yıkama</h4><p>El dokuma, yün, shaggy ve deri her biri kendi yöntemiyle temizlenir.</p></div>
+      <div class="trait"><i class="fas fa-scale-balanced"></i><h4>Net fiyat</h4><p>Keşiften sonra tek bir fiyat söyleriz, sonradan değişmez.</p></div>
+    </div>
+  </div>
+</section>
+
+<!-- ================= SERVICES ================= -->
+<section id="hizmetler" style="scroll-margin-top:84px;">
+  <div class="wrap">
+    <div class="section-head">
+      <h2>Ne yıkıyoruz</h2>
+      <p>Evinizdeki her yumuşak yüzey için ayrı bir yöntem, ayrı bir dikkat.</p>
+    </div>
+  </div>
+  <div class="wrap" style="padding:0;">
+    <div class="service-pairs">
+      <div class="pair-row">
+        <div class="service-cell">
+          <span class="num">01</span>
+          <div>
+            <h3>Halı Yıkama</h3>
+            <p>Makine halısından el dokuma yün halıya kadar her tür halı için buharlı temizlik ve santrifüjlü kurutma.</p>
+            <ul><li>Leke çıkarma</li><li>Antibakteriyel işlem</li><li>Renk koruma</li></ul>
+          </div>
+        </div>
+        <div class="service-cell">
+          <span class="num">02</span>
+          <div>
+            <h3>Koltuk Yıkama</h3>
+            <p>Kumaş, deri ve süngerli koltuklar için yerinde ya da fabrikada yıkama, kokudan tamamen arındırma.</p>
+            <ul><li>Yerinde temizlik</li><li>Deri bakımı</li><li>Koku giderme</li></ul>
+          </div>
+        </div>
+      </div>
+      <div class="pair-row">
+        <div class="service-cell">
+          <span class="num">03</span>
+          <div>
+            <h3>Perde Yıkama</h3>
+            <p>Tül, kumaş, jaluzi ve stor perdeleriniz özel tekniklerle yıkanır, ütülenir ve istenirse yerine asılır.</p>
+            <ul><li>Ütüleme</li><li>Montaj desteği</li><li>Renk koruma</li></ul>
+          </div>
+        </div>
+        <div class="service-cell">
+          <span class="num">04</span>
+          <div>
+            <h3>Yorgan & Battaniye</h3>
+            <p>Yorgan, battaniye ve yatak takımlarınız büyük kapasiteli makinelerde hijyenik olarak yıkanır ve kurutulur.</p>
+            <ul><li>Toz akarı temizliği</li><li>Büyük boy yıkama</li><li>Hijyenik paketleme</li></ul>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ================= ABOUT ================= -->
+<section id="hakkimizda" style="scroll-margin-top:84px;">
+  <div class="wrap">
+    <div class="about-grid">
+      <div>
+        <h2>Eyüpsultan'da 15 yıldır aynı özenle</h2>
+        <div class="about-copy">
+          <p><b>İKİZLER Halı ve Koltuk Yıkama</b>, Eyüpsultan'da fabrika üretimi halılardan el dokuma antikalara kadar her türlü tekstili yıkıyor. İşin büyüğünü de küçüğünü de aynı titizlikle ele alıyoruz.</p>
+          <p>FDA onaylı antibakteriyel ürünler ve santrifüjlü kurutma sistemleriyle çalışıyoruz; her parça fabrikadan çıktığı gibi hijyenik, kuru ve kokusuz teslim edilir.</p>
+        </div>
+        <div class="stat-row">
+          <div class="stat"><b>15+</b><span>Yıllık deneyim</span></div>
+          <div class="stat"><b>5.000+</b><span>Yıkanan halı</span></div>
+          <div class="stat"><b>%100</b><span>Hijyen garantisi</span></div>
+        </div>
+      </div>
+      <div class="why-card">
+        <h3>Neden İKİZLER</h3>
+        <ul class="why-list">
+          <li><i class="fas fa-check"></i><div><h5>Modern ekipman</h5><p>Avrupa standartlarında yıkama ve kurutma makineleri.</p></div></li>
+          <li><i class="fas fa-check"></i><div><h5>Şeffaf fiyat</h5><p>Keşiften sonra net fiyat, gizli ücret yok.</p></div></li>
+          <li><i class="fas fa-check"></i><div><h5>Hızlı dönüş</h5><p>Randevu aldığınız gün alım, kısa sürede teslim.</p></div></li>
+          <li><i class="fas fa-check"></i><div><h5>Ücretsiz servis</h5><p>Alım ve teslim Eyüpsultan ve çevresinde ücretsiz.</p></div></li>
+        </ul>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ================= SERVICE AREAS ================= -->
+<section id="bolgeler" style="scroll-margin-top:84px;">
+  <div class="wrap">
+    <div class="section-head">
+      <h2>Hizmet bölgelerimiz</h2>
+      <p>Eyüpsultan ve çevresinde şu mahallelere ücretsiz alım ve teslim ile hizmet veriyoruz.</p>
+    </div>
+    <div class="area-grid">
+      <span class="area-chip"><i class="fas fa-location-dot"></i>Gaziosmanpaşa</span>
+      <span class="area-chip"><i class="fas fa-location-dot"></i>Güzeltepe</span>
+      <span class="area-chip"><i class="fas fa-location-dot"></i>Karadolap</span>
+      <span class="area-chip"><i class="fas fa-location-dot"></i>Rami</span>
+      <span class="area-chip"><i class="fas fa-location-dot"></i>Emniyettepe</span>
+      <span class="area-chip"><i class="fas fa-location-dot"></i>Mevlana Mahallesi</span>
+      <span class="area-chip"><i class="fas fa-location-dot"></i>Alibeyköy</span>
+      <span class="area-chip"><i class="fas fa-location-dot"></i>Eyüp</span>
+      <span class="area-chip"><i class="fas fa-location-dot"></i>Sultangazi</span>
+      <span class="area-chip"><i class="fas fa-location-dot"></i>Küçükköy</span>
+      <span class="area-chip"><i class="fas fa-location-dot"></i>Akşemsettin Mahallesi</span>
+      <span class="area-chip"><i class="fas fa-location-dot"></i>Yeşilpınar</span>
+      <span class="area-chip"><i class="fas fa-location-dot"></i>Çırçır</span>
+    </div>
+    <p class="area-note">Listede mahallenizi göremediyseniz de arayın — çoğu zaman yakın bölgelere de hizmet veriyoruz.</p>
+  </div>
+</section>
+
+<!-- ================= PROCESS ================= -->
+<section id="surec" style="scroll-margin-top:84px;">
+  <div class="wrap">
+    <div class="section-head">
+      <h2>Dört adımda temiz</h2>
+      <p>Randevudan teslimata, halınız gözden hiç çıkmaz.</p>
+    </div>
+    <div class="process-rail">
+      <div class="process-step"><span class="n">01</span><h4>Arayın</h4><p>Telefon ya da WhatsApp'tan ulaşın, ücretsiz keşif için gün belirleyelim.</p></div>
+      <div class="process-step"><span class="n">02</span><h4>Alıyoruz</h4><p>Belirlenen saatte adresinize gelip halılarınızı ücretsiz alıyoruz.</p></div>
+      <div class="process-step"><span class="n">03</span><h4>Yıkıyoruz</h4><p>Türüne uygun yöntemle yıkayıp santrifüjle kurutuyoruz.</p></div>
+      <div class="process-step"><span class="n">04</span><h4>Teslim ediyoruz</h4><p>Paketlenmiş, kuru ve hijyenik halınızı adresinize bırakıyoruz.</p></div>
+    </div>
+  </div>
+</section>
+
+<!-- ================= TESTIMONIALS ================= -->
+<section style="background:var(--paper);">
+  <div class="wrap">
+    <div class="section-head">
+      <h2>Müşterilerimiz ne diyor</h2>
+      <p>Eyüpsultan'daki komşularımızın yorumlarından bir kısmı.</p>
+    </div>
+    <div class="testi-grid">
+      <div class="testi-card">
+        <div class="stars">★★★★★</div>
+        <p>"Halılarımızı çok özenli temizlediler, leke çıkarma konusunda gerçekten başarılılar. Fiyatları da şeffaf."</p>
+        <div class="who"><b>Ayşe Şahin</b>Eyüpsultan, İstanbul</div>
+      </div>
+      <div class="testi-card">
+        <div class="stars">★★★★★</div>
+        <p>"Ücretsiz alım-teslim hizmeti tam zamanında işledi. Halılarımız paketlenmiş ve tertemiz geldi."</p>
+        <div class="who"><b>Mehmet Kaya</b>Eyüpsultan, İstanbul</div>
+      </div>
+      <div class="testi-card">
+        <div class="stars">★★★★★</div>
+        <p>"El dokuma antika halımı çok dikkatli yıkadılar, renkleri hiç solmadı. Özel halılar için gerçekten uzmanlar."</p>
+        <div class="who"><b>Fatma Demir</b>Eyüpsultan, İstanbul</div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ================= CONTACT ================= -->
+<section id="iletisim" style="scroll-margin-top:84px;">
+  <div class="wrap">
+    <div class="section-head">
+      <h2>Bize ulaşın</h2>
+      <p>Ücretsiz keşif için arayın, size en uygun teklifi hazırlayalım.</p>
+    </div>
+    <div class="contact-grid">
+      <ul class="contact-list">
+        <li>
+          <span class="ico"><i class="fas fa-location-dot"></i></span>
+          <div><h5>Adres</h5><p>Çırçır Mahallesi, Alibeyköy, Sezai Karakoç Cd. No:67, Eyüpsultan, İstanbul</p></div>
+        </li>
+        <li>
+          <span class="ico"><i class="fas fa-phone"></i></span>
+          <div><h5>Telefon</h5><a href="tel:05397182622">0539 718 26 22</a></div>
+        </li>
+        <li>
+          <span class="ico"><i class="fas fa-clock"></i></span>
+          <div><h5>Çalışma saatleri</h5><p>Pazartesi–Cumartesi: 09:00–18:00 · Pazar: Kapalı</p></div>
+        </li>
+      </ul>
+      <div class="quick-box">
+        <h5 style="font-family:'Fraunces',serif; font-size:1.1rem; margin-bottom:6px;">Hızlı iletişim</h5>
+        <a href="tel:05397182622" class="line">Hemen ara <i class="fas fa-arrow-right"></i></a>
+        <a href="https://wa.me/905397182622" target="_blank" rel="noopener" class="line">WhatsApp'tan yaz <i class="fab fa-whatsapp"></i></a>
+        <!-- Instagram kullanıcı adını güncelleyin -->
+        <a href="https://www.instagram.com/" target="_blank" rel="noopener" class="line">Instagram'da görün <i class="fab fa-instagram"></i></a>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ================= MAP ================= -->
+<div id="map-wrap">
+  <iframe
+    src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2858.408400228397!2d28.932899075862718!3d41.086427171339636!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x14cab1c5f27ef005%3A0x2efe9eb54f25195e!2s%C4%B0K%C4%B0ZLER%20HALI%20VE%20KOLTUK%20YIKAMA!5e1!3m2!1str!2str!4v1788512230362!5m2!1str!2str"
+    loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+</div>
+
+<!-- ================= FOOTER ================= -->
+<footer>
+  <div class="wrap">
+    <div class="foot-grid">
+      <div>
+        <a href="#anasayfa" class="brand-lockup" style="margin-bottom:14px; display:inline-flex;">
+          <svg class="twin-mark" viewBox="0 0 40 40"><circle cx="15" cy="20" r="11"/><circle cx="25" cy="20" r="11"/></svg>
+          <span class="wordmark">İKİZLER</span>
+        </a>
+        <p style="color:#4A5A55; font-size:0.9rem; max-width:32ch;">Eyüpsultan'da halı, koltuk, perde ve yatak tekstili için ücretsiz alım-teslimli yıkama hizmeti.</p>
+      </div>
+      <div>
+        <h5>Sayfalar</h5>
+        <ul>
+          <li><a href="#anasayfa">Anasayfa</a></li>
+          <li><a href="#hizmetler">Hizmetler</a></li>
+          <li><a href="#hakkimizda">Hakkımızda</a></li>
+          <li><a href="#surec">Süreç</a></li>
+          <li><a href="#iletisim">İletişim</a></li>
+        </ul>
+      </div>
+      <div>
+        <h5>İletişim</h5>
+        <ul>
+          <li><a href="tel:05397182622">0539 718 26 22</a></li>
+          <li><a href="https://wa.me/905397182622">WhatsApp</a></li>
+          <li><span style="color:#4A5A55; font-size:0.9rem;">Çırçır Mah., Sezai Karakoç Cd. No:67, Eyüpsultan</span></li>
+        </ul>
+      </div>
+    </div>
+    <div class="foot-bottom">
+      <span>© 2026 İKİZLER Halı ve Koltuk Yıkama. Tüm hakları saklıdır.</span>
+      <span>Kredi kartı geçerlidir</span>
+    </div>
+  </div>
+</footer>
+
+<div class="float-actions">
+  <a href="https://wa.me/905397182622" target="_blank" rel="noopener" class="fa-whatsapp-btn"><i class="fab fa-whatsapp"></i></a>
+  <a href="tel:05397182622" class="fa-call-btn"><i class="fas fa-phone"></i></a>
+</div>
+
+<script>
+/* ============ Mobile menu ============ */
+document.getElementById('menu-toggle').addEventListener('click', function(){
+  document.getElementById('mobile-panel').classList.toggle('open');
+});
+document.querySelectorAll('#mobile-panel a').forEach(function(a){
+  a.addEventListener('click', function(){ document.getElementById('mobile-panel').classList.remove('open'); });
+});
+
+/* ============ Sliding tab indicator ============ */
+(function(){
+  const tabsEl = document.getElementById('tabs');
+  const indicator = document.getElementById('tab-indicator');
+  const links = Array.from(document.querySelectorAll('.tab-link'));
+  const sections = links.map(l => document.getElementById(l.dataset.target));
+
+  function moveIndicator(link){
+    if(!link) return;
+    const cRect = tabsEl.getBoundingClientRect();
+    const lRect = link.getBoundingClientRect();
+    indicator.style.left = (lRect.left - cRect.left) + 'px';
+    indicator.style.width = lRect.width + 'px';
+  }
+
+  function setActive(link){
+    links.forEach(l => l.classList.remove('active'));
+    link.classList.add('active');
+    moveIndicator(link);
+  }
+
+  links.forEach(link => {
+    link.addEventListener('click', function(){ setActive(link); });
+  });
+
+  window.addEventListener('resize', function(){
+    const active = document.querySelector('.tab-link.active');
+    moveIndicator(active);
+  });
+
+  // scroll-spy: highlight tab matching the section in view
+  const observer = new IntersectionObserver(function(entries){
+    entries.forEach(entry => {
+      if(entry.isIntersecting){
+        const match = links.find(l => l.dataset.target === entry.target.id);
+        if(match) setActive(match);
+      }
+    });
+  }, { rootMargin: '-40% 0px -50% 0px', threshold: 0 });
+  sections.forEach(s => s && observer.observe(s));
+
+  window.addEventListener('load', function(){ moveIndicator(document.querySelector('.tab-link.active')); });
+})();
+
+/* ============ Shader hero background ============ */
+(function(){
+  const canvas = document.getElementById('shader-canvas');
+  const gl = canvas.getContext('webgl', { antialias:false });
+  if(!gl) return;
+
+  const VERT = 'attribute vec2 a_position;\n' +
+    'void main(){ gl_Position = vec4(a_position, 0.0, 1.0); }';
+
+  const FRAG = `
+    precision mediump float;
+    uniform vec3 u_colors[8];
+    uniform vec4 u_scene;      // resolution.xy, time, colorCount
+    uniform vec4 u_shape;      // scale, intensity, paramA, warp
+    uniform vec4 u_surface;    // detail, contrast, brightness, saturation
+    uniform vec4 u_finish;     // hue, vignette, blur, grain
+    uniform vec4 u_transform;  // seed, rotate, drift, unused
+    uniform vec4 u_space;      // offset.xy, unused.xy
+
+    #define u_resolution u_scene.xy
+    #define u_time u_scene.z
+    #define u_colorCount u_scene.w
+    #define u_scale u_shape.x
+    #define u_intensity u_shape.y
+    #define u_warp u_shape.w
+    #define u_detail u_surface.x
+    #define u_contrast u_surface.y
+    #define u_brightness u_surface.z
+    #define u_saturation u_surface.w
+    #define u_vignette u_finish.y
+    #define u_grain u_finish.w
+    #define u_seed u_transform.x
+    #define u_rotate u_transform.y
+    #define u_drift u_transform.z
+    #define u_offset u_space.xy
+
+    float hash21(vec2 p){
+      p = fract(p * vec2(234.34, 435.345));
+      p += dot(p, p + 34.23);
+      return fract(p.x * p.y);
+    }
+    float grainHash(vec2 p){
+      vec3 p3 = fract(vec3(p.xyx) * 0.1031);
+      p3 += dot(p3, p3.yzx + 33.33);
+      return fract((p3.x + p3.y) * p3.z);
+    }
+    float noise(vec2 p){
+      vec2 i = floor(p); vec2 f = fract(p);
+      vec2 u = f*f*(3.0-2.0*f);
+      return mix(mix(hash21(i), hash21(i+vec2(1.0,0.0)), u.x),
+                 mix(hash21(i+vec2(0.0,1.0)), hash21(i+vec2(1.0,1.0)), u.x), u.y);
+    }
+    float fbm(vec2 p){
+      float v=0.0; float a=0.5;
+      for(int i=0;i<5;i++){ v += a*noise(p); p = p*2.03 + vec2(17.0,9.2); a*=0.5; }
+      return v;
+    }
+    vec3 palette(float x){
+      float n = max(u_colorCount - 1.0, 1.0);
+      float f = clamp(x, 0.0, 1.0) * n;
+      vec3 col = u_colors[0];
+      for(int i=0;i<7;i++){
+        if(float(i) < n) col = mix(col, u_colors[i+1], smoothstep(0.0,1.0, clamp(f-float(i), 0.0, 1.0)));
+      }
+      return col;
+    }
+    vec3 shade(vec2 uv, vec2 p, float t){
+      float y = uv.y
+        + sin(uv.x * (3.0 + u_intensity * 9.0) + t * 0.8) * 0.08
+        + (fbm(p * 2.0 + t * 0.1) - 0.5) * u_intensity * 0.6;
+      return palette(y);
+    }
+    void main(){
+      vec2 uv = gl_FragCoord.xy / u_resolution.xy;
+      vec2 p = (gl_FragCoord.xy - 0.5*u_resolution.xy) / min(u_resolution.x, u_resolution.y);
+      p *= u_scale;
+      if(abs(u_rotate) > 0.0001){
+        float cr = cos(u_rotate), sr = sin(u_rotate);
+        p = mat2(cr,-sr,sr,cr) * p;
+      }
+      p += u_offset;
+      if(u_drift > 0.0001) p += u_drift * vec2(sin(u_time*0.31), cos(u_time*0.23));
+      if(u_warp > 0.0){
+        p += u_warp * (vec2(fbm(p*u_detail+u_seed), fbm(p*u_detail+vec2(5.2,1.3))) - 0.5);
+      }
+      vec3 col = shade(uv, p, u_time);
+      if(abs(u_contrast-1.0) > 0.0001) col = (col-0.5)*u_contrast + 0.5;
+      if(abs(u_saturation-1.0) > 0.0001){
+        float luma = dot(col, vec3(0.299,0.587,0.114));
+        col = mix(vec3(luma), col, u_saturation);
+      }
+      if(abs(u_brightness) > 0.0001) col += u_brightness;
+      if(u_vignette > 0.0001){
+        float vd = length(uv - 0.5) * 1.41421356;
+        col *= 1.0 - u_vignette * smoothstep(0.35, 1.0, vd);
+      }
+      if(u_grain > 0.0001){
+        col += (grainHash(gl_FragCoord.xy + vec2(u_seed*17.0, u_seed*31.0)) - 0.5) * u_grain;
+      }
+      gl_FragColor = vec4(clamp(col, 0.0, 1.0), 1.0);
+    }
+  `;
+
+  function compile(type, src){
+    const s = gl.createShader(type);
+    gl.shaderSource(s, src);
+    gl.compileShader(s);
+    return s;
+  }
+  const program = gl.createProgram();
+  gl.attachShader(program, compile(gl.VERTEX_SHADER, VERT));
+  gl.attachShader(program, compile(gl.FRAGMENT_SHADER, FRAG));
+  gl.linkProgram(program);
+  gl.useProgram(program);
+
+  const buf = gl.createBuffer();
+  gl.bindBuffer(gl.ARRAY_BUFFER, buf);
+  gl.bufferData(gl.ARRAY_BUFFER, new Float32Array([-1,-1, 3,-1, -1,3]), gl.STATIC_DRAW);
+  const loc = gl.getAttribLocation(program, 'a_position');
+  gl.enableVertexAttribArray(loc);
+  gl.vertexAttribPointer(loc, 2, gl.FLOAT, false, 0, 0);
+
+  const uni = {
+    colors: gl.getUniformLocation(program, 'u_colors'),
+    scene: gl.getUniformLocation(program, 'u_scene'),
+    shape: gl.getUniformLocation(program, 'u_shape'),
+    surface: gl.getUniformLocation(program, 'u_surface'),
+    finish: gl.getUniformLocation(program, 'u_finish'),
+    transform: gl.getUniformLocation(program, 'u_transform'),
+    space: gl.getUniformLocation(program, 'u_space'),
+  };
+
+  // İKİZLER palette: ink -> pine -> brass -> foam -> paper
+  const colors = [
+    [0.0627,0.1333,0.1216],
+    [0.1137,0.2471,0.2196],
+    [0.1843,0.3608,0.3255],
+    [0.6627,0.4863,0.3137],
+    [0.7882,0.6275,0.4314],
+    [0.8118,0.8902,0.8471],
+    [0.9529,0.9333,0.8902],
+    [0.9529,0.9333,0.8902],
+  ];
+  gl.uniform3fv(uni.colors, new Float32Array(colors.flat()));
+  gl.uniform4f(uni.shape, 1.65, 0.62, 0.0, 0.16);
+  gl.uniform4f(uni.surface, 1.35, 1.08, 0.0, 1.0);
+  gl.uniform4f(uni.finish, 0.0, 0.32, 0.0, 0.05);
+  gl.uniform4f(uni.transform, 12.0, 0.35, 0.10, 0.0);
+  gl.uniform4f(uni.space, 0.0, -0.15, 0.0, 0.0);
+
+  const colorCount = 6;
+  const start = performance.now();
+  let raf = 0;
+
+  function resize(){
+    const dpr = Math.min(window.devicePixelRatio || 1, 1.6);
+    const w = Math.max(1, Math.round(canvas.clientWidth * dpr));
+    const h = Math.max(1, Math.round(canvas.clientHeight * dpr));
+    if(canvas.width !== w || canvas.height !== h){
+      canvas.width = w; canvas.height = h;
+      gl.viewport(0,0,w,h);
+    }
+  }
+
+  function render(now){
+    resize();
+    gl.uniform4f(uni.scene, canvas.width, canvas.height, (now - start) / 1000 * 0.06, colorCount);
+    gl.drawArrays(gl.TRIANGLES, 0, 3);
+    raf = requestAnimationFrame(render);
+  }
+
+  const io = new IntersectionObserver(function(entries){
+    const visible = entries[0].isIntersecting;
+    if(visible && !raf) raf = requestAnimationFrame(render);
+    if(!visible && raf){ cancelAnimationFrame(raf); raf = 0; }
+  });
+  io.observe(canvas);
+  window.addEventListener('resize', resize);
+  resize();
+  raf = requestAnimationFrame(render);
+})();
+</script>
+</body>
+</html>

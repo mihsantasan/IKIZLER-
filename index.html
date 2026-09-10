@@ -116,8 +116,8 @@
             width: 100%;
             height: 100%;
             pointer-events: none;
-            z-index: 0;
-            opacity: 0.75;
+            z-index: 1;
+            opacity: 0.85;
         }
 
         .instagram-gradient {
@@ -247,27 +247,46 @@
     </div>
 </nav>
 
-<!-- Hero Bölümü (Canlı Halı Yıkama Animasyonlu) -->
-<section id="anasayfa" class="gradient-bg pt-28 md:pt-36 pb-20 md:pb-28 text-white relative">
+<!-- Hero Bölümü (Gönderilen Koyu Şık Desenli Arka Plan & Canlı Halı Yıkama Animasyonlu) -->
+<section id="anasayfa" class="relative bg-black pt-28 md:pt-36 pb-20 md:pb-28 text-white overflow-hidden">
+    <!-- Entegre Edilen Koyu Desen Arka Plan Katmanları -->
+    <div class="absolute inset-0 pointer-events-none">
+        <div class="absolute inset-0 opacity-100" style="background: radial-gradient(100% 100% at 0% 0%, rgb(46, 46, 46) 0%, rgb(0, 0, 0) 100%); -webkit-mask: radial-gradient(125% 100% at 0% 0%, rgb(0, 0, 0) 0%, rgba(0, 0, 0, 0.224) 88.2883%, rgba(0, 0, 0, 0) 100%); mask: radial-gradient(125% 100% at 0% 0%, rgb(0, 0, 0) 0%, rgba(0, 0, 0, 0.224) 88.2883%, rgba(0, 0, 0, 0) 100%);">
+            <!-- Açılı mavi ışık çizgileri -->
+            <div class="absolute inset-0 opacity-20" style="background: linear-gradient(rgb(0, 207, 255) 0%, rgba(0, 207, 255, 0) 100%); -webkit-mask: linear-gradient(90deg, rgba(0, 0, 0, 0) 0%, rgb(0, 0, 0) 20%, rgba(0, 0, 0, 0) 36%, rgb(0, 0, 0) 55%, rgba(0, 0, 0, 0.13) 67%, rgb(0, 0, 0) 78%, rgba(0, 0, 0, 0) 97%); mask: linear-gradient(90deg, rgba(0, 0, 0, 0) 0%, rgb(0, 0, 0) 20%, rgba(0, 0, 0, 0) 36%, rgb(0, 0, 0) 55%, rgba(0, 0, 0, 0.13) 67%, rgb(0, 0, 0) 78%, rgba(0, 0, 0, 0) 97%); transform: skewX(45deg);"></div>
+            <div class="absolute inset-0 opacity-20" style="background: linear-gradient(rgb(0, 207, 255) 0%, rgba(0, 207, 255, 0) 100%); -webkit-mask: linear-gradient(90deg, rgba(0, 0, 0, 0) 11%, rgb(0, 0, 0) 25%, rgba(0, 0, 0, 0.55) 41%, rgba(0, 0, 0, 0.13) 67%, rgb(0, 0, 0) 78%, rgba(0, 0, 0, 0) 97%); mask: linear-gradient(90deg, rgba(0, 0, 0, 0) 11%, rgb(0, 0, 0) 25%, rgba(0, 0, 0, 0.55) 41%, rgba(0, 0, 0, 0.13) 67%, rgb(0, 0, 0) 78%, rgba(0, 0, 0, 0) 97%); transform: skewX(45deg);"></div>
+            <div class="absolute inset-0 opacity-20" style="background: linear-gradient(rgb(0, 207, 255) 0%, rgba(0, 207, 255, 0) 100%); -webkit-mask: linear-gradient(90deg, rgba(0, 0, 0, 0) 9%, rgb(0, 0, 0) 20%, rgba(0, 0, 0, 0.55) 28%, rgba(0, 0, 0, 0.424) 40%, rgb(0, 0, 0) 48%, rgba(0, 0, 0, 0.267) 54%, rgba(0, 0, 0, 0.13) 78%, rgb(0, 0, 0) 88%, rgba(0, 0, 0, 0) 97%); mask: linear-gradient(90deg, rgba(0, 0, 0, 0) 9%, rgb(0, 0, 0) 20%, rgba(0, 0, 0, 0.55) 28%, rgba(0, 0, 0, 0.424) 40%, rgb(0, 0, 0) 48%, rgba(0, 0, 0, 0.267) 54%, rgba(0, 0, 0, 0.13) 78%, rgb(0, 0, 0) 88%, rgba(0, 0, 0, 0) 97%); transform: skewX(45deg);"></div>
+            <div class="absolute inset-0 opacity-20" style="background: linear-gradient(rgb(0, 207, 255) 0%, rgba(0, 207, 255, 0) 100%); -webkit-mask: linear-gradient(90deg, rgba(0, 0, 0, 0) 0%, rgb(0, 0, 0) 17%, rgba(0, 0, 0, 0.55) 26%, rgb(0, 0, 0) 35%, rgba(0, 0, 0, 0) 47%, rgba(0, 0, 0, 0.13) 69%, rgb(0, 0, 0) 79%, rgba(0, 0, 0, 0) 97%); mask: linear-gradient(90deg, rgba(0, 0, 0, 0) 0%, rgb(0, 0, 0) 17%, rgba(0, 0, 0, 0.55) 26%, rgb(0, 0, 0) 35%, rgba(0, 0, 0, 0) 47%, rgba(0, 0, 0, 0.13) 69%, rgb(0, 0, 0) 79%, rgba(0, 0, 0, 0) 97%); transform: skewX(45deg);"></div>
+            <div class="absolute inset-0 opacity-20" style="background: linear-gradient(rgb(0, 207, 255) 0%, rgba(0, 207, 255, 0) 100%); -webkit-mask: linear-gradient(90deg, rgba(0, 0, 0, 0) 0%, rgb(0, 0, 0) 20%, rgba(0, 0, 0, 0.55) 27%, rgb(0, 0, 0) 42%, rgba(0, 0, 0, 0.48) 48%, rgba(0, 0, 0, 0.13) 67%, rgb(0, 0, 0) 74%, rgb(0, 0, 0) 82%, rgba(0, 0, 0, 0.47) 88%, rgba(0, 0, 0, 0) 97%); mask: linear-gradient(90deg, rgba(0, 0, 0, 0) 0%, rgb(0, 0, 0) 20%, rgba(0, 0, 0, 0.55) 27%, rgb(0, 0, 0) 42%, rgba(0, 0, 0, 0.48) 48%, rgba(0, 0, 0, 0.13) 67%, rgb(0, 0, 0) 74%, rgb(0, 0, 0) 82%, rgba(0, 0, 0, 0.47) 88%, rgba(0, 0, 0, 0) 97%); transform: skewX(45deg);"></div>
+        </div>
+        <!-- Doku kaplaması (Noise texture) -->
+        <div class="absolute inset-0 opacity-10 bg-repeat" style="background-image: url('https://cdn.21st.dev/assets/mirror/f5/f55dfc553c100e6da0ad95258a042b4100f0ff4bb03a5313d1f541984275e262.png'); background-size: 149.76px;"></div>
+        <!-- İnce noktalı desen katmanı (Dot pattern overlay) -->
+        <div class="absolute inset-0 opacity-20" style="background-image: radial-gradient(circle at 1px 1px, rgba(255,255,255,0.5) 1px, transparent 0); background-size: 20px 20px;"></div>
+        <!-- Vurgu parlaması (Subtle radial highlight) -->
+        <div class="absolute inset-0" style="background: radial-gradient(circle at 50% 35%, rgba(0, 207, 255, 0.14) 0%, transparent 70%);"></div>
+    </div>
+
+    <!-- Dinamik Halı Yıkama Animasyonu Canvas -->
     <canvas id="hero-canvas"></canvas>
 
     <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 relative z-10">
         <div class="grid grid-cols-1 lg:grid-cols-12 gap-10 items-center">
             <div class="lg:col-span-7 text-center lg:text-left">
-                <div class="inline-flex items-center gap-2 px-3.5 py-1.5 rounded-full bg-white/15 backdrop-blur-md border border-white/20 text-xs md:text-sm font-medium mb-5">
-                    <span class="w-2 h-2 rounded-full bg-green-400 animate-pulse"></span>
+                <div class="inline-flex items-center gap-2 px-3.5 py-1.5 rounded-full bg-cyan-950/70 backdrop-blur-md border border-cyan-500/30 text-xs md:text-sm font-medium mb-5 text-cyan-300">
+                    <span class="w-2 h-2 rounded-full bg-cyan-400 animate-pulse"></span>
                     Ücretsiz Alım &amp; Hızlı Teslimat
                 </div>
-                <h1 class="text-3xl sm:text-4xl md:text-5xl lg:text-6xl font-extrabold tracking-tight leading-tight mb-5">
+                <h1 class="text-3xl sm:text-4xl md:text-5xl lg:text-6xl font-extrabold tracking-tight leading-tight mb-5 text-white">
                     Halı ve Koltuklarınızda <br class="hidden sm:inline">
-                    <span class="text-green-300">Kusursuz Hijyen</span>
+                    <span class="text-transparent bg-clip-text bg-gradient-to-r from-cyan-400 to-teal-300">Kusursuz Hijyen</span>
                 </h1>
-                <p class="text-base sm:text-lg md:text-xl text-green-50/95 max-w-2xl mx-auto lg:mx-0 mb-8 leading-relaxed">
+                <p class="text-base sm:text-lg md:text-xl text-gray-300 max-w-2xl mx-auto lg:mx-0 mb-8 leading-relaxed">
                     Eyüpsultan merkezli servis ağımızla halı, koltuk, perde ve yorganlarınızı adresinizden alıyor; antibakteriyel derinlemesine temizlikle ilk günkü tazeliğinde teslim ediyoruz.
                 </p>
 
                 <div class="flex flex-col sm:flex-row gap-4 justify-center lg:justify-start">
-                    <a href="tel:05304149246" class="inline-flex items-center justify-center bg-white text-green-800 hover:bg-green-50 font-bold px-7 py-4 rounded-xl shadow-xl transition-all duration-300 hover-lift text-base">
+                    <a href="tel:05304149246" class="inline-flex items-center justify-center bg-white text-gray-900 hover:bg-gray-100 font-bold px-7 py-4 rounded-xl shadow-xl transition-all duration-300 hover-lift text-base">
                         <svg class="w-5 h-5 mr-2 text-green-700"><use href="#icon-phone"></use></svg>
                         0530 414 92 46
                     </a>
@@ -277,18 +296,18 @@
                     </a>
                 </div>
 
-                <div class="grid grid-cols-3 gap-3 mt-10 max-w-lg mx-auto lg:mx-0 pt-6 border-t border-white/15 text-center">
+                <div class="grid grid-cols-3 gap-3 mt-10 max-w-lg mx-auto lg:mx-0 pt-6 border-t border-gray-800 text-center">
                     <div>
                         <div class="text-2xl sm:text-3xl font-extrabold text-white">18+</div>
-                        <div class="text-xs text-green-100">Yıllık Tecrübe</div>
+                        <div class="text-xs text-gray-400">Yıllık Tecrübe</div>
                     </div>
                     <div>
-                        <div class="text-2xl sm:text-3xl font-extrabold text-white">%100</div>
-                        <div class="text-xs text-green-100">Hijyen Garantisi</div>
+                        <div class="text-2xl sm:text-3xl font-extrabold text-cyan-400">%100</div>
+                        <div class="text-xs text-gray-400">Hijyen Garantisi</div>
                     </div>
                     <div>
                         <div class="text-2xl sm:text-3xl font-extrabold text-white">20</div>
-                        <div class="text-xs text-green-100">Hizmet Bölgesi</div>
+                        <div class="text-xs text-gray-400">Hizmet Bölgesi</div>
                     </div>
                 </div>
             </div>
@@ -358,14 +377,14 @@
 </section>
 
 <!-- Çalışma Saatleri Şeridi -->
-<section class="bg-green-900 text-white py-3.5 border-t border-green-800 text-xs sm:text-sm">
+<section class="bg-neutral-950 text-white py-3.5 border-t border-neutral-800 text-xs sm:text-sm">
     <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 flex flex-col sm:flex-row items-center justify-between gap-3 text-center sm:text-left">
         <div class="flex items-center gap-2">
-            <svg class="w-5 h-5 text-green-400"><use href="#icon-truck"></use></svg>
+            <svg class="w-5 h-5 text-cyan-400"><use href="#icon-truck"></use></svg>
             <span><strong>Ücretsiz Alım-Teslim:</strong> Halılarınızı kapınızdan alıp kapınıza bırakıyoruz.</span>
         </div>
         <div class="flex items-center gap-2">
-            <svg class="w-5 h-5 text-green-400"><use href="#icon-clock"></use></svg>
+            <svg class="w-5 h-5 text-cyan-400"><use href="#icon-clock"></use></svg>
             <span>Pzt - Cmt: 08:30 - 21:30 | Pazar: Kapalı</span>
         </div>
     </div>
@@ -981,13 +1000,13 @@ document.getElementById('hero-quick-form')?.addEventListener('submit', function(
             radius: Math.random() * 8 + 3,
             speedY: Math.random() * 0.8 + 0.3,
             speedX: (Math.random() - 0.5) * 0.4,
-            alpha: Math.random() * 0.5 + 0.2
+            alpha: Math.random() * 0.45 + 0.15
         });
     }
 
     // Parıltılar
     const sparkles = [];
-    for (let i = 0; i < 15; i++) {
+    for (let i = 0; i < 18; i++) {
         sparkles.push({
             x: Math.random() * width,
             y: Math.random() * height,
@@ -1004,7 +1023,7 @@ document.getElementById('hero-quick-form')?.addEventListener('submit', function(
 
     function drawSparkle(x, y, size, alpha) {
         ctx.save();
-        ctx.fillStyle = `rgba(255, 255, 255, ${alpha})`;
+        ctx.fillStyle = `rgba(0, 207, 255, ${alpha * 0.8})`;
         ctx.beginPath();
         ctx.moveTo(x, y - size);
         ctx.quadraticCurveTo(x, y, x + size, y);
@@ -1018,24 +1037,24 @@ document.getElementById('hero-quick-form')?.addEventListener('submit', function(
     function animate() {
         ctx.clearRect(0, 0, width, height);
 
-        // Yıkama yolu (Temizlenen parlak iz)
+        // Yıkama yolu (Temizlenen camgöbeği/parlak iz)
         cleanerX += cleanerSpeed;
         if (cleanerX > width + 100) {
             cleanerX = -100;
             cleanerY = Math.random() * (height * 0.6) + height * 0.2;
         }
 
-        const grad = ctx.createLinearGradient(cleanerX - 250, cleanerY, cleanerX, cleanerY);
-        grad.addColorStop(0, 'rgba(74, 222, 128, 0)');
-        grad.addColorStop(0.5, 'rgba(74, 222, 128, 0.08)');
-        grad.addColorStop(1, 'rgba(255, 255, 255, 0.15)');
+        const grad = ctx.createLinearGradient(cleanerX - 260, cleanerY, cleanerX, cleanerY);
+        grad.addColorStop(0, 'rgba(0, 207, 255, 0)');
+        grad.addColorStop(0.5, 'rgba(0, 207, 255, 0.1)');
+        grad.addColorStop(1, 'rgba(255, 255, 255, 0.22)');
         ctx.fillStyle = grad;
         ctx.fillRect(0, cleanerY - 40, cleanerX, 80);
 
         // Yıkama vakum kafası göstergesi
         ctx.save();
-        ctx.strokeStyle = 'rgba(255, 255, 255, 0.35)';
-        ctx.lineWidth = 3;
+        ctx.strokeStyle = 'rgba(0, 207, 255, 0.65)';
+        ctx.lineWidth = 2.5;
         ctx.beginPath();
         ctx.ellipse(cleanerX, cleanerY, 30, 14, 0, 0, Math.PI * 2);
         ctx.stroke();
@@ -1050,7 +1069,7 @@ document.getElementById('hero-quick-form')?.addEventListener('submit', function(
                 b.x = Math.random() * width;
             }
             ctx.save();
-            ctx.fillStyle = `rgba(255, 255, 255, ${b.alpha})`;
+            ctx.fillStyle = `rgba(186, 230, 253, ${b.alpha})`;
             ctx.beginPath();
             ctx.arc(b.x, b.y, b.radius, 0, Math.PI * 2);
             ctx.fill();

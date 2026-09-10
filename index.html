@@ -107,7 +107,7 @@
 </head>
 <body class="global-grid-bg text-gray-800 selection:bg-cyan-500 selection:text-white min-h-screen relative overflow-x-hidden">
 
-    <!-- Global Radial Gradient Overlay from Snippet -->
+    <!-- Global Radial Gradient Overlay -->
     <div class="fixed bottom-0 left-0 right-0 top-0 pointer-events-none -z-10 overflow-hidden">
         <div class="absolute bottom-0 left-0 right-0 top-0 bg-[radial-gradient(circle_800px_at_100%_200px,#d5c5ff,transparent)] opacity-60"></div>
         <div class="absolute top-1/3 left-1/4 w-[600px] h-[600px] bg-[radial-gradient(circle_600px_at_50%_50%,#bae6fd,transparent)] opacity-40"></div>
@@ -138,7 +138,7 @@
     <header class="fixed top-0 left-0 right-0 z-50 bg-white/90 backdrop-blur-xl border-b border-gray-200 shadow-md">
         <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
             <div class="flex items-center justify-between h-20">
-                <a href="/" onclick="navigateTo('/', event)" class="flex items-center space-x-3 group">
+                <a href="#anasayfa" onclick="navigateTo('#anasayfa', event)" class="flex items-center space-x-3 group">
                     <img src="https://camlikalti.yurdu.org/media/camlikaltiyurduorg_1789012455_8552.jpg" alt="İkizler Halı ve Koltuk Yıkama" class="h-12 sm:h-14 w-auto rounded-lg border border-cyan-500/40 object-contain shadow-md group-hover:border-cyan-400 transition-all" onerror="this.src='https://placehold.co/120x50/06b6d4/ffffff?text=İKİZLER'">
                     <div class="hidden sm:block text-left">
                         <span class="block font-heading font-extrabold text-lg text-gray-900 tracking-wide group-hover:text-cyan-600 transition-colors">İKİZLER</span>
@@ -171,26 +171,26 @@
             <div class="max-w-7xl mx-auto grid grid-cols-1 sm:grid-cols-2 md:grid-cols-4 gap-6 text-sm">
                 <div class="space-y-2">
                     <span class="text-xs font-bold uppercase tracking-widest text-cyan-600 block mb-2">Sayfalar</span>
-                    <a href="/" onclick="navigateTo('/', event)" class="menu-link block py-1.5 text-gray-700 hover:text-cyan-600 transition-colors"><i class="fas fa-angle-right mr-2 text-cyan-500"></i>Ana Sayfa</a>
-                    <a href="/hizmetlerimiz" onclick="navigateTo('/hizmetlerimiz', event)" class="menu-link block py-1.5 text-gray-700 hover:text-cyan-600 transition-colors"><i class="fas fa-angle-right mr-2 text-cyan-500"></i>Hizmetlerimiz</a>
-                    <a href="/bolgeler" onclick="navigateTo('/bolgeler', event)" class="menu-link block py-1.5 text-gray-700 hover:text-cyan-600 transition-colors"><i class="fas fa-angle-right mr-2 text-cyan-500"></i>Hizmet Bölgeleri (20)</a>
+                    <a href="#anasayfa" onclick="navigateTo('#anasayfa', event)" class="menu-link block py-1.5 text-gray-700 hover:text-cyan-600 transition-colors"><i class="fas fa-angle-right mr-2 text-cyan-500"></i>Ana Sayfa</a>
+                    <a href="#bolgeler" onclick="navigateTo('#bolgeler', event)" class="menu-link block py-1.5 text-gray-700 hover:text-cyan-600 transition-colors"><i class="fas fa-angle-right mr-2 text-cyan-500"></i>Hizmet Bölgeleri (20)</a>
+                    <a href="#yorumlar" onclick="navigateTo('#yorumlar', event)" class="menu-link block py-1.5 text-gray-700 hover:text-cyan-600 transition-colors"><i class="fas fa-angle-right mr-2 text-cyan-500"></i>Müşteri Yorumları</a>
                 </div>
                 <div class="space-y-2">
                     <span class="text-xs font-bold uppercase tracking-widest text-cyan-600 block mb-2">Hizmet Sayfaları</span>
-                    <a href="/hali-yikama" onclick="navigateTo('/hali-yikama', event)" class="menu-link block py-1.5 text-gray-700 hover:text-cyan-600 transition-colors"><i class="fas fa-rug mr-2 text-cyan-500"></i>Halı Yıkama Detay</a>
-                    <a href="/koltuk-yikama" onclick="navigateTo('/koltuk-yikama', event)" class="menu-link block py-1.5 text-gray-700 hover:text-cyan-600 transition-colors"><i class="fas fa-couch mr-2 text-cyan-500"></i>Koltuk Yıkama Detay</a>
-                    <a href="/perde-yikama" onclick="navigateTo('/perde-yikama', event)" class="menu-link block py-1.5 text-gray-700 hover:text-cyan-600 transition-colors"><i class="fas fa-window-maximize mr-2 text-cyan-500"></i>Perde Yıkama Detay</a>
-                    <a href="/yorgan-battaniye-yikama" onclick="navigateTo('/yorgan-battaniye-yikama', event)" class="menu-link block py-1.5 text-gray-700 hover:text-cyan-600 transition-colors"><i class="fas fa-bed mr-2 text-cyan-500"></i>Yorgan & Battaniye Detay</a>
+                    <a href="#hali-yikama" onclick="navigateTo('#hali-yikama', event)" class="menu-link block py-1.5 text-gray-700 hover:text-cyan-600 transition-colors"><i class="fas fa-rug mr-2 text-cyan-500"></i>Halı Yıkama Detay</a>
+                    <a href="#koltuk-yikama" onclick="navigateTo('#koltuk-yikama', event)" class="menu-link block py-1.5 text-gray-700 hover:text-cyan-600 transition-colors"><i class="fas fa-couch mr-2 text-cyan-500"></i>Koltuk Yıkama Detay</a>
+                    <a href="#perde-yikama" onclick="navigateTo('#perde-yikama', event)" class="menu-link block py-1.5 text-gray-700 hover:text-cyan-600 transition-colors"><i class="fas fa-window-maximize mr-2 text-cyan-500"></i>Perde Yıkama Detay</a>
+                    <a href="#yorgan-battaniye-yikama" onclick="navigateTo('#yorgan-battaniye-yikama', event)" class="menu-link block py-1.5 text-gray-700 hover:text-cyan-600 transition-colors"><i class="fas fa-bed mr-2 text-cyan-500"></i>Yorgan & Battaniye Detay</a>
                 </div>
                 <div class="space-y-2">
                     <span class="text-xs font-bold uppercase tracking-widest text-cyan-600 block mb-2">Kurumsal</span>
-                    <a href="/hakkimizda" onclick="navigateTo('/hakkimizda', event)" class="menu-link block py-1.5 text-gray-700 hover:text-cyan-600 transition-colors"><i class="fas fa-angle-right mr-2 text-cyan-500"></i>Hakkımızda</a>
-                    <a href="/yorumlar" onclick="navigateTo('/yorumlar', event)" class="menu-link block py-1.5 text-gray-700 hover:text-cyan-600 transition-colors"><i class="fas fa-angle-right mr-2 text-cyan-500"></i>Müşteri Yorumları</a>
-                    <a href="/iletisim" onclick="navigateTo('/iletisim', event)" class="menu-link block py-1.5 text-gray-700 hover:text-cyan-600 transition-colors"><i class="fas fa-angle-right mr-2 text-cyan-500"></i>İletişim & Konum</a>
+                    <a href="#hakkimizda" onclick="navigateTo('#hakkimizda', event)" class="menu-link block py-1.5 text-gray-700 hover:text-cyan-600 transition-colors"><i class="fas fa-angle-right mr-2 text-cyan-500"></i>Hakkımızda</a>
+                    <a href="#fotograf-galerisi" onclick="navigateTo('#fotograf-galerisi', event)" class="menu-link block py-1.5 text-gray-700 hover:text-cyan-600 transition-colors"><i class="fas fa-angle-right mr-2 text-cyan-500"></i>Çalışma Galerisi</a>
+                    <a href="#iletisim" onclick="navigateTo('#iletisim', event)" class="menu-link block py-1.5 text-gray-700 hover:text-cyan-600 transition-colors"><i class="fas fa-angle-right mr-2 text-cyan-500"></i>İletişim & Konum</a>
                 </div>
                 <div class="space-y-2 flex flex-col justify-center bg-cyan-50/80 p-4 rounded-2xl border border-cyan-500/20">
                     <span class="text-xs font-bold uppercase tracking-widest text-cyan-700 block">Ücretsiz Servis</span>
-                    <p class="text-xs text-gray-600">20 bölgemizde kapıdan kapıya ücretsiz alım and teslimat.</p>
+                    <p class="text-xs text-gray-600">20 bölgemizde kapıdan kapıya ücretsiz alım ve teslimat.</p>
                 </div>
             </div>
         </div>
@@ -215,7 +215,7 @@
                                 <span class="text-gradient-cyan">Derinlemesine Hijyen</span>
                             </h1>
                             <p class="text-gray-600 text-base sm:text-lg max-w-2xl mx-auto lg:mx-0 leading-relaxed mb-8">
-                                Antibakteriyel özel yıkama, santrifüjlü kurutma and kapıdan kapıya ücretsiz alım-teslimat. Lekelere veda edin, ferah temizliğin tadını çıkarın.
+                                Antibakteriyel özel yıkama, santrifüjlü kurutma ve kapıdan kapıya ücretsiz alım-teslimat. Lekelere veda edin, ferah temizliğin tadını çıkarın.
                             </p>
                             <div class="flex flex-col sm:flex-row gap-4 justify-center lg:justify-start">
                                 <a href="tel:05304149246" class="px-7 py-3.5 rounded-xl bg-cyan-600 hover:bg-cyan-700 text-white font-extrabold text-base shadow-xl transition-all flex items-center justify-center">
@@ -281,32 +281,32 @@
                     <div class="text-center max-w-3xl mx-auto mb-16">
                         <span class="text-xs font-bold uppercase tracking-widest text-cyan-600">Uzman Temizlik</span>
                         <h2 class="font-heading text-3xl sm:text-4xl font-extrabold text-gray-900 mt-2">Profesyonel Hizmetlerimiz</h2>
-                        <p class="text-gray-600 text-sm sm:text-base mt-3">Her dokuma and kumaş türüne özel pH dengeli şampuanlar, antibakteriyel leke çıkarıcılar and son teknoloji makineler.</p>
+                        <p class="text-gray-600 text-sm sm:text-base mt-3">Her dokuma ve kumaş türüne özel pH dengeli şampuanlar, antibakteriyel leke çıkarıcılar ve son teknoloji makineler.</p>
                     </div>
 
                     <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-6">
-                        <div class="glass-card rounded-2xl p-6 flex flex-col cursor-pointer shadow-sm" onclick="navigateTo('/hali-yikama', event)">
+                        <div class="glass-card rounded-2xl p-6 flex flex-col cursor-pointer shadow-sm" onclick="navigateTo('#hali-yikama', event)">
                             <div class="w-14 h-14 rounded-2xl bg-cyan-100 border border-cyan-500/30 flex items-center justify-center text-cyan-600 text-2xl mb-5 shadow-inner"><i class="fas fa-rug"></i></div>
                             <h3 class="font-heading text-lg font-bold text-gray-900 mb-2">Halı Yıkama</h3>
-                            <p class="text-gray-600 text-xs sm:text-sm leading-relaxed mb-4 flex-grow">Makine halısı, el dokuma, ipek, yün, shaggy and antika halılar liflerine zarar vermeden derinlemesine arındırılır.</p>
+                            <p class="text-gray-600 text-xs sm:text-sm leading-relaxed mb-4 flex-grow">Makine halısı, el dokuma, ipek, yün, shaggy ve antika halılar liflerine zarar vermeden derinlemesine arındırılır.</p>
                             <span class="text-xs font-bold text-cyan-600 flex items-center mt-2">Detaylı İncele <i class="fas fa-arrow-right ml-1"></i></span>
                         </div>
-                        <div class="glass-card rounded-2xl p-6 flex flex-col cursor-pointer shadow-sm" onclick="navigateTo('/koltuk-yikama', event)">
+                        <div class="glass-card rounded-2xl p-6 flex flex-col cursor-pointer shadow-sm" onclick="navigateTo('#koltuk-yikama', event)">
                             <div class="w-14 h-14 rounded-2xl bg-teal-100 border border-teal-500/30 flex items-center justify-center text-teal-600 text-2xl mb-5 shadow-inner"><i class="fas fa-couch"></i></div>
                             <h3 class="font-heading text-lg font-bold text-gray-900 mb-2">Koltuk Yıkama</h3>
-                            <p class="text-gray-600 text-xs sm:text-sm leading-relaxed mb-4 flex-grow">Yerinde buharlı vakumlu koltuk, berjer and l-koltuk temizliği. Derin lekeler and kötü kokular giderilir.</p>
+                            <p class="text-gray-600 text-xs sm:text-sm leading-relaxed mb-4 flex-grow">Yerinde buharlı vakumlu koltuk, berjer ve l-koltuk temizliği. Derin lekeler ve kötü kokular giderilir.</p>
                             <span class="text-xs font-bold text-teal-600 flex items-center mt-2">Detaylı İncele <i class="fas fa-arrow-right ml-1"></i></span>
                         </div>
-                        <div class="glass-card rounded-2xl p-6 flex flex-col cursor-pointer shadow-sm" onclick="navigateTo('/perde-yikama', event)">
+                        <div class="glass-card rounded-2xl p-6 flex flex-col cursor-pointer shadow-sm" onclick="navigateTo('#perde-yikama', event)">
                             <div class="w-14 h-14 rounded-2xl bg-emerald-100 border border-emerald-500/30 flex items-center justify-center text-emerald-600 text-2xl mb-5 shadow-inner"><i class="fas fa-window-maximize"></i></div>
                             <h3 class="font-heading text-lg font-bold text-gray-900 mb-2">Stor & Zebra Perde</h3>
-                            <p class="text-gray-600 text-xs sm:text-sm leading-relaxed mb-4 flex-grow">Mekanizmalı perdeleriniz dikkatle sökülür, mekanizmalarına zarar verilmeden kirden and is kokusundan arındırılır.</p>
+                            <p class="text-gray-600 text-xs sm:text-sm leading-relaxed mb-4 flex-grow">Mekanizmalı perdeleriniz dikkatle sökülür, mekanizmalarına zarar verilmeden kirden ve is kokusundan arındırılır.</p>
                             <span class="text-xs font-bold text-emerald-600 flex items-center mt-2">Detaylı İncele <i class="fas fa-arrow-right ml-1"></i></span>
                         </div>
-                        <div class="glass-card rounded-2xl p-6 flex flex-col cursor-pointer shadow-sm" onclick="navigateTo('/yorgan-battaniye-yikama', event)">
+                        <div class="glass-card rounded-2xl p-6 flex flex-col cursor-pointer shadow-sm" onclick="navigateTo('#yorgan-battaniye-yikama', event)">
                             <div class="w-14 h-14 rounded-2xl bg-cyan-100 border border-cyan-500/30 flex items-center justify-center text-cyan-600 text-2xl mb-5 shadow-inner"><i class="fas fa-bed"></i></div>
                             <h3 class="font-heading text-lg font-bold text-gray-900 mb-2">Yorgan & Battaniye</h3>
-                            <p class="text-gray-600 text-xs sm:text-sm leading-relaxed mb-4 flex-grow">Elyaf, yün and pamuk yorganlarınız geniş endüstriyel kazanlarda tek tek hijyenik şampuanlarla yıkanır.</p>
+                            <p class="text-gray-600 text-xs sm:text-sm leading-relaxed mb-4 flex-grow">Elyaf, yün ve pamuk yorganlarınız geniş endüstriyel kazanlarda tek tek hijyenik şampuanlarla yıkanır.</p>
                             <span class="text-xs font-bold text-cyan-600 flex items-center mt-2">Detaylı İncele <i class="fas fa-arrow-right ml-1"></i></span>
                         </div>
                     </div>
@@ -319,7 +319,7 @@
                     <div class="text-center max-w-3xl mx-auto mb-14">
                         <span class="text-xs font-bold uppercase tracking-widest text-cyan-600">Ücretsiz Servis Ağı</span>
                         <h2 class="font-heading text-3xl sm:text-4xl font-extrabold text-gray-900 mt-2">Hizmet Verdiğimiz 20 Bölge</h2>
-                        <p class="text-gray-600 text-sm sm:text-base mt-3">Aşağıdaki tüm bölgelere haftanın 6 günü ücretsiz alım and teslimat servis araçlarımız yönlendirilmektedir.</p>
+                        <p class="text-gray-600 text-sm sm:text-base mt-3">Aşağıdaki tüm bölgelere haftanın 6 günü ücretsiz alım ve teslimat servis araçlarımız yönlendirilmektedir.</p>
                     </div>
                     <div class="grid grid-cols-2 sm:grid-cols-3 md:grid-cols-4 lg:grid-cols-5 gap-3.5">
                         <div class="glass-card rounded-2xl p-4 text-center border border-gray-200 shadow-sm"><i class="fas fa-map-pin text-cyan-600 text-sm mb-1.5 block"></i><h4 class="text-sm font-semibold text-gray-900">Beyoğlu</h4></div>
@@ -352,12 +352,12 @@
                     <div class="text-center max-w-3xl mx-auto mb-14">
                         <span class="text-xs font-bold uppercase tracking-widest text-cyan-600">Gerçek Referanslar</span>
                         <h2 class="font-heading text-3xl sm:text-4xl font-extrabold text-gray-900 mt-2">Müşterilerimiz Ne Diyor?</h2>
-                        <p class="text-gray-600 text-sm sm:text-base mt-3">20 bölgemizde binlerce memnun hanenin halı and koltuklarını güvenle temizledik.</p>
+                        <p class="text-gray-600 text-sm sm:text-base mt-3">20 bölgemizde binlerce memnun hanenin halı ve koltuklarını güvenle temizledik.</p>
                     </div>
                     <div class="grid grid-cols-1 md:grid-cols-3 gap-6">
                         <div class="glass-card rounded-2xl p-6 shadow-sm">
                             <div class="flex items-center text-amber-500 text-xs mb-3 space-x-1"><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i></div>
-                            <p class="text-gray-700 text-sm italic leading-relaxed mb-5">"Çocuklu ev olduğumuz için açık renk shaggy halımızda kahve and meyve suyu lekeleri vardı. Tertemiz, mis gibi kokarak and poşetlenmiş halde teslim edildi. Çok teşekkürler."</p>
+                            <p class="text-gray-700 text-sm italic leading-relaxed mb-5">"Çocuklu ev olduğumuz için açık renk shaggy halımızda kahve ve meyve suyu lekeleri vardı. Tertemiz, mis gibi kokarak ve poşetlenmiş halde teslim edildi. Çok teşekkürler."</p>
                             <div class="flex items-center justify-between border-t border-gray-200 pt-3 text-xs"><span class="font-bold text-gray-900">Merve K.</span><span class="text-cyan-600 font-semibold">Alibeyköy</span></div>
                         </div>
                         <div class="glass-card rounded-2xl p-6 shadow-sm">
@@ -375,7 +375,7 @@
             </section>
         </div>
 
-        <!-- 2. HALI YIKAMA DETAY SAYFASI -->
+        <!-- 2. HALI YIKAMA DETAY SAYFASI (dinarhaliyikama.com.tr/hali-yikama tarzı zengin içerik) -->
         <div id="view-hali-yikama" class="page-view hidden">
             <section class="py-16 md:py-24 max-w-5xl mx-auto px-4">
                 <div class="glass-card rounded-3xl p-8 sm:p-12 border border-cyan-500/30 shadow-md">
@@ -384,27 +384,33 @@
                     </div>
                     <h1 class="font-heading text-3xl sm:text-4xl font-extrabold text-gray-900 mb-6">Halı Yıkama Hizmeti</h1>
                     <p class="text-gray-700 text-base leading-relaxed mb-6">
-                        Makine halısı, el dokuma, ipek, yün, shaggy and antika halılarınız özel tesislerimizde türüne uygun şampuanlar and son teknoloji santrifüjlü kurutma makineleri ile yıkanır. Liflerine asla zarar verilmeden derinlemesine hijyen sağlanır.
+                        Makine halısı, el dokuma, ipek, yün, shaggy ve antika halılarınız özel tesislerimizde türüne uygun şampuanlar ve son teknoloji santrifüjlü kurutma makineleri ile yıkanır. Liflerine asla zarar verilmeden derinlemesine hijyen sağlanır.
                     </p>
                     <div class="grid grid-cols-1 md:grid-cols-2 gap-6 my-8">
                         <div class="bg-white/80 p-5 rounded-2xl border border-gray-200">
                             <h4 class="font-bold text-gray-900 mb-2 flex items-center"><i class="fas fa-check text-cyan-600 mr-2"></i> Toz Alma & Ön Hazırlık</h4>
-                            <p class="text-xs text-gray-600">Halılar yıkama öncesi toz alma makinelerinde kum and derin toz kalıntılarından tamamen arındırılır.</p>
+                            <p class="text-xs text-gray-600">Halılar yıkama öncesi toz alma makinelerinde kum ve derin toz kalıntılarından tamamen arındırılır.</p>
                         </div>
                         <div class="bg-white/80 p-5 rounded-2xl border border-gray-200">
                             <h4 class="font-bold text-gray-900 mb-2 flex items-center"><i class="fas fa-check text-cyan-600 mr-2"></i> Santrifüjlü Sıkma & Kurutma</h4>
                             <p class="text-xs text-gray-600">Yüksek devirli santrifüj makinelerinde suyu sıkılarak kapalı kurutma odalarında hijyenik olarak kurutulur.</p>
                         </div>
                     </div>
+                    
+                    <h3 class="font-heading text-xl font-bold text-gray-900 mt-8 mb-4">Halı Türlerine Göre Özel Çözümler</h3>
+                    <p class="text-gray-700 text-sm leading-relaxed mb-6">
+                        Her halının iplik yapısı, boyası ve dokuma tekniği farklıdır. İkizler Halı Yıkama olarak makine halılarından el dokuma ve yün halılara kadar her ürüne özel şampuan ve yıkama derecesi uyguluyoruz.
+                    </p>
+
                     <div class="flex gap-4">
-                        <button onclick="navigateTo('/', event)" class="px-6 py-3 rounded-xl bg-gray-200 text-gray-800 hover:bg-gray-300 text-xs font-bold transition-all"><i class="fas fa-arrow-left mr-2"></i> Ana Sayfaya Dön</button>
+                        <button onclick="navigateTo('#anasayfa', event)" class="px-6 py-3 rounded-xl bg-gray-200 text-gray-800 hover:bg-gray-300 text-xs font-bold transition-all"><i class="fas fa-arrow-left mr-2"></i> Ana Sayfaya Dön</button>
                         <a href="https://wa.me/905304149246?text=Merhaba,%20Halı%20yıkama%20hizmeti%20için%20bilgi%20almak%20istiyorum." target="_blank" rel="noopener noreferrer" class="px-6 py-3 rounded-xl bg-emerald-600 hover:bg-emerald-700 text-white text-xs font-bold transition-all flex items-center shadow-md"><i class="fab fa-whatsapp text-sm mr-2"></i> WhatsApp'tan Fiyat Al</a>
                     </div>
                 </div>
             </section>
         </div>
 
-        <!-- 3. KOLTUK YIKAMA DETAY SAYFASI -->
+        <!-- 3. KOLTUK YIKAMA DETAY SAYFASI (dinarhaliyikama.com.tr/koltuk-yikama tarzı zengin içerik) -->
         <div id="view-koltuk-yikama" class="page-view hidden">
             <section class="py-16 md:py-24 max-w-5xl mx-auto px-4">
                 <div class="glass-card rounded-3xl p-8 sm:p-12 border border-teal-500/30 shadow-md">
@@ -413,7 +419,7 @@
                     </div>
                     <h1 class="font-heading text-3xl sm:text-4xl font-extrabold text-gray-900 mb-6">Koltuk Yıkama Hizmeti</h1>
                     <p class="text-gray-700 text-base leading-relaxed mb-6">
-                        Ev and ofislerinizde kullandığınız kumaş, kadife, nubuk veya deri koltuk takımlarınız yerinde yüksek vakumlu buharlı makinelerle yıkanır. Kötü kokular, mite'lar and inatçı lekeler ortadan kaldırılır.
+                        Ev ve ofislerinizde kullandığınız kumaş, kadife, nubuk veya deri koltuk takımlarınız yerinde yüksek vakumlu buharlı makinelerle yıkanır. Kötü kokular, mite'lar ve inatçı lekeler ortadan kaldırılır.
                     </p>
                     <div class="grid grid-cols-1 md:grid-cols-2 gap-6 my-8">
                         <div class="bg-white/80 p-5 rounded-2xl border border-gray-200">
@@ -425,15 +431,21 @@
                             <p class="text-xs text-gray-600">Yüksek sıcaklıkta buhar teknolojisi ile derinlemesine dezenfekte edilir.</p>
                         </div>
                     </div>
+
+                    <h3 class="font-heading text-xl font-bold text-gray-900 mt-8 mb-4">Yerinde Koltuk Temizliğinin Avantajları</h3>
+                    <p class="text-gray-700 text-sm leading-relaxed mb-6">
+                        Koltuklarınızı söküp taşımanıza gerek kalmadan, uzman personelimiz evinize gelerek 2-4 saat içinde tertemiz ve kullanıma hazır hale getirmektedir.
+                    </p>
+
                     <div class="flex gap-4">
-                        <button onclick="navigateTo('/', event)" class="px-6 py-3 rounded-xl bg-gray-200 text-gray-800 hover:bg-gray-300 text-xs font-bold transition-all"><i class="fas fa-arrow-left mr-2"></i> Ana Sayfaya Dön</button>
+                        <button onclick="navigateTo('#anasayfa', event)" class="px-6 py-3 rounded-xl bg-gray-200 text-gray-800 hover:bg-gray-300 text-xs font-bold transition-all"><i class="fas fa-arrow-left mr-2"></i> Ana Sayfaya Dön</button>
                         <a href="https://wa.me/905304149246?text=Merhaba,%20Koltuk%20yıkama%20hizmeti%20için%20bilgi%20almak%20istiyorum." target="_blank" rel="noopener noreferrer" class="px-6 py-3 rounded-xl bg-emerald-600 hover:bg-emerald-700 text-white text-xs font-bold transition-all flex items-center shadow-md"><i class="fab fa-whatsapp text-sm mr-2"></i> WhatsApp'tan Fiyat Al</a>
                     </div>
                 </div>
             </section>
         </div>
 
-        <!-- 4. PERDE YIKAMA DETAY SAYFASI -->
+        <!-- 4. PERDE YIKAMA DETAY SAYFASI (dinarhaliyikama.com.tr/perde-yikama tarzı zengin içerik) -->
         <div id="view-perde-yikama" class="page-view hidden">
             <section class="py-16 md:py-24 max-w-5xl mx-auto px-4">
                 <div class="glass-card rounded-3xl p-8 sm:p-12 border border-emerald-500/30 shadow-md">
@@ -442,17 +454,28 @@
                     </div>
                     <h1 class="font-heading text-3xl sm:text-4xl font-extrabold text-gray-900 mb-6">Stor & Zebra Perde Yıkama</h1>
                     <p class="text-gray-700 text-base leading-relaxed mb-6">
-                        Mekanizmalı stor and zebra perdeleriniz özel havuzlarda kumaş yapısına uygun şampuanlarla temizlenir. Mekanizma and apre bozulmalarına karşı koruma sağlanır.
+                        Mekanizmalı stor ve zebra perdeleriniz özel havuzlarda kumaş yapısına uygun şampuanlarla temizlenir. Mekanizma ve apre bozulmalarına karşı koruma sağlanır.
                     </p>
+                    <div class="grid grid-cols-1 md:grid-cols-2 gap-6 my-8">
+                        <div class="bg-white/80 p-5 rounded-2xl border border-gray-200">
+                            <h4 class="font-bold text-gray-900 mb-2 flex items-center"><i class="fas fa-check text-emerald-600 mr-2"></i> Profesyonel Söküm & Montaj</h4>
+                            <p class="text-xs text-gray-600">Perdeleriniz yerinden özenle sökülür, yıkandıktan sonra tekrar yerine takılır.</p>
+                        </div>
+                        <div class="bg-white/80 p-5 rounded-2xl border border-gray-200">
+                            <h4 class="font-bold text-gray-900 mb-2 flex items-center"><i class="fas fa-check text-emerald-600 mr-2"></i> Apre & Kumaş Koruması</h4>
+                            <p class="text-xs text-gray-600">Perdelerinizin sertliğini ve formunu kaybetmemesi için özel koruyucu uygulamalar yapılır.</p>
+                        </div>
+                    </div>
+
                     <div class="flex gap-4">
-                        <button onclick="navigateTo('/', event)" class="px-6 py-3 rounded-xl bg-gray-200 text-gray-800 hover:bg-gray-300 text-xs font-bold transition-all"><i class="fas fa-arrow-left mr-2"></i> Ana Sayfaya Dön</button>
+                        <button onclick="navigateTo('#anasayfa', event)" class="px-6 py-3 rounded-xl bg-gray-200 text-gray-800 hover:bg-gray-300 text-xs font-bold transition-all"><i class="fas fa-arrow-left mr-2"></i> Ana Sayfaya Dön</button>
                         <a href="https://wa.me/905304149246?text=Merhaba,%20Perde%20yıkama%20hizmeti%20için%20bilgi%20almak%20istiyorum." target="_blank" rel="noopener noreferrer" class="px-6 py-3 rounded-xl bg-emerald-600 hover:bg-emerald-700 text-white text-xs font-bold transition-all flex items-center shadow-md"><i class="fab fa-whatsapp text-sm mr-2"></i> WhatsApp'tan Fiyat Al</a>
                     </div>
                 </div>
             </section>
         </div>
 
-        <!-- 5. YORGAN & BATTANİYE DETAY SAYFASI -->
+        <!-- 5. YORGAN & BATTANİYE DETAY SAYFASI (dinarhaliyikama.com.tr/yorgan-battaniye tarzı zengin içerik) -->
         <div id="view-yorgan-battaniye-yikama" class="page-view hidden">
             <section class="py-16 md:py-24 max-w-5xl mx-auto px-4">
                 <div class="glass-card rounded-3xl p-8 sm:p-12 border border-cyan-500/30 shadow-md">
@@ -461,10 +484,21 @@
                     </div>
                     <h1 class="font-heading text-3xl sm:text-4xl font-extrabold text-gray-900 mb-6">Yorgan & Battaniye Yıkama</h1>
                     <p class="text-gray-700 text-base leading-relaxed mb-6">
-                        Elyaf, yün and pamuk yorganlarınız geniş endüstriyel kazanlarda tek tek hijyenik şampuanlarla yıkanır, tam kurutma and koruyucu poşetleme ile teslim edilir.
+                        Elyaf, yün ve pamuk yorganlarınız geniş endüstriyel kazanlarda tek tek hijyenik şampuanlarla yıkanır, tam kurutma ve koruyucu poşetleme ile teslim edilir.
                     </p>
+                    <div class="grid grid-cols-1 md:grid-cols-2 gap-6 my-8">
+                        <div class="bg-white/80 p-5 rounded-2xl border border-gray-200">
+                            <h4 class="font-bold text-gray-900 mb-2 flex items-center"><i class="fas fa-check text-cyan-600 mr-2"></i> Tekli Endüstriyel Yıkama</h4>
+                            <p class="text-xs text-gray-600">Her yorgan ve battaniye diğer eşyalardan bağımsız olarak hijyenik kazanlarda yıkanır.</p>
+                        </div>
+                        <div class="bg-white/80 p-5 rounded-2xl border border-gray-200">
+                            <h4 class="font-bold text-gray-900 mb-2 flex items-center"><i class="fas fa-check text-cyan-600 mr-2"></i> Toz Akarı & Mite Temizliği</h4>
+                            <p class="text-xs text-gray-600">Yatak sağlığınızı tehdit eden akarlardan yüksek ısı ve özel anti-alerjik yıkama ile arındırılır.</p>
+                        </div>
+                    </div>
+
                     <div class="flex gap-4">
-                        <button onclick="navigateTo('/', event)" class="px-6 py-3 rounded-xl bg-gray-200 text-gray-800 hover:bg-gray-300 text-xs font-bold transition-all"><i class="fas fa-arrow-left mr-2"></i> Ana Sayfaya Dön</button>
+                        <button onclick="navigateTo('#anasayfa', event)" class="px-6 py-3 rounded-xl bg-gray-200 text-gray-800 hover:bg-gray-300 text-xs font-bold transition-all"><i class="fas fa-arrow-left mr-2"></i> Ana Sayfaya Dön</button>
                         <a href="https://wa.me/905304149246?text=Merhaba,%20Yorgan%20yıkama%20hizmeti%20için%20bilgi%20almak%20istiyorum." target="_blank" rel="noopener noreferrer" class="px-6 py-3 rounded-xl bg-emerald-600 hover:bg-emerald-700 text-white text-xs font-bold transition-all flex items-center shadow-md"><i class="fab fa-whatsapp text-sm mr-2"></i> WhatsApp'tan Fiyat Al</a>
                     </div>
                 </div>
@@ -477,12 +511,12 @@
                 <div class="glass-card rounded-3xl p-8 sm:p-12 border border-cyan-500/30 shadow-md">
                     <h1 class="font-heading text-3xl sm:text-4xl font-extrabold text-gray-900 mb-6">Hakkımızda</h1>
                     <p class="text-gray-700 text-base leading-relaxed mb-4">
-                        İkizler Halı and Koltuk Yıkama olarak Eyüpsultan and çevresinde 18 yılı aşkın süredir profesyonel halı and koltuk temizliği hizmeti sunmaktayız.
+                        İkizler Halı ve Koltuk Yıkama olarak Eyüpsultan ve çevresinde 18 yılı aşkın süredir profesyonel halı ve koltuk temizliği hizmeti sunmaktayız.
                     </p>
                     <p class="text-gray-700 text-base leading-relaxed mb-6">
-                        20 bölgede aktif ücretsiz servis ağımızla binlerce konutun hijyen standartlarını yükselttik. En son teknoloji makineler and çevre dostu temizlik bileşenleri kullanmaktayız.
+                        20 bölgede aktif ücretsiz servis ağımızla binlerce konutun hijyen standartlarını yükselttik. En son teknoloji makineler ve çevre dostu temizlik bileşenleri kullanmaktayız.
                     </p>
-                    <button onclick="navigateTo('/', event)" class="px-6 py-3 rounded-xl bg-gray-200 text-gray-800 hover:bg-gray-300 text-xs font-bold transition-all"><i class="fas fa-arrow-left mr-2"></i> Ana Sayfaya Dön</button>
+                    <button onclick="navigateTo('#anasayfa', event)" class="px-6 py-3 rounded-xl bg-gray-200 text-gray-800 hover:bg-gray-300 text-xs font-bold transition-all"><i class="fas fa-arrow-left mr-2"></i> Ana Sayfaya Dön</button>
                 </div>
             </section>
         </div>
@@ -492,7 +526,7 @@
             <section class="py-16 md:py-24 max-w-5xl mx-auto px-4">
                 <div class="glass-card rounded-3xl p-8 sm:p-12 border border-cyan-500/30 text-center shadow-md">
                     <h1 class="font-heading text-3xl sm:text-4xl font-extrabold text-gray-900 mb-4">20 Hizmet Bölgemiz</h1>
-                    <p class="text-gray-600 text-sm mb-8">Haftanın 6 günü ücretsiz alım and teslimat yaptığımız tüm semtler aşağıdadır.</p>
+                    <p class="text-gray-600 text-sm mb-8">Haftanın 6 günü ücretsiz alım ve teslimat yaptığımız tüm semtler aşağıdadır.</p>
                     <div class="grid grid-cols-2 sm:grid-cols-3 md:grid-cols-4 gap-4 text-left">
                         <div class="bg-white/80 p-3 rounded-xl border border-gray-200 text-xs font-semibold text-gray-800"><i class="fas fa-map-pin text-cyan-600 mr-2"></i> Beyoğlu</div>
                         <div class="bg-white/80 p-3 rounded-xl border border-gray-200 text-xs font-semibold text-gray-800"><i class="fas fa-map-pin text-cyan-600 mr-2"></i> Sultangazi</div>
@@ -516,7 +550,7 @@
                         <div class="bg-white/80 p-3 rounded-xl border border-gray-200 text-xs font-semibold text-gray-800"><i class="fas fa-map-pin text-cyan-600 mr-2"></i> Kemerburgaz</div>
                     </div>
                     <div class="mt-8">
-                        <button onclick="navigateTo('/', event)" class="px-6 py-3 rounded-xl bg-gray-200 text-gray-800 hover:bg-gray-300 text-xs font-bold transition-all"><i class="fas fa-arrow-left mr-2"></i> Ana Sayfaya Dön</button>
+                        <button onclick="navigateTo('#anasayfa', event)" class="px-6 py-3 rounded-xl bg-gray-200 text-gray-800 hover:bg-gray-300 text-xs font-bold transition-all"><i class="fas fa-arrow-left mr-2"></i> Ana Sayfaya Dön</button>
                     </div>
                 </div>
             </section>
@@ -527,7 +561,7 @@
             <section class="py-16 md:py-24 max-w-6xl mx-auto px-4">
                 <div class="glass-card rounded-3xl p-8 sm:p-12 border border-cyan-500/30 shadow-md">
                     <h1 class="font-heading text-3xl sm:text-4xl font-extrabold text-gray-900 mb-2 text-center">Çalışma Galerimiz</h1>
-                    <p class="text-gray-600 text-sm text-center mb-8">Fabrikamızdan and yerinde temizlik uygulamalarımızdan kareler.</p>
+                    <p class="text-gray-600 text-sm text-center mb-8">Fabrikamızdan ve yerinde temizlik uygulamalarımızdan kareler.</p>
                     <div class="grid grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-4">
                         <div class="aspect-square bg-white rounded-2xl overflow-hidden border border-gray-200 flex flex-col items-center justify-center text-cyan-600 font-semibold text-xs shadow-sm"><i class="fas fa-image text-2xl mb-1 block"><span> Halı Yıkama Örneği</span></i></div>
                         <div class="aspect-square bg-white rounded-2xl overflow-hidden border border-gray-200 flex flex-col items-center justify-center text-teal-600 font-semibold text-xs shadow-sm"><i class="fas fa-image text-2xl mb-1 block"><span> Koltuk Yıkama Örneği</span></i></div>
@@ -535,7 +569,7 @@
                         <div class="aspect-square bg-white rounded-2xl overflow-hidden border border-gray-200 flex flex-col items-center justify-center text-cyan-600 font-semibold text-xs shadow-sm"><i class="fas fa-image text-2xl mb-1 block"><span> Yorgan Kazanları</span></i></div>
                     </div>
                     <div class="mt-8 text-center">
-                        <button onclick="navigateTo('/', event)" class="px-6 py-3 rounded-xl bg-gray-200 text-gray-800 hover:bg-gray-300 text-xs font-bold transition-all"><i class="fas fa-arrow-left mr-2"></i> Ana Sayfaya Dön</button>
+                        <button onclick="navigateTo('#anasayfa', event)" class="px-6 py-3 rounded-xl bg-gray-200 text-gray-800 hover:bg-gray-300 text-xs font-bold transition-all"><i class="fas fa-arrow-left mr-2"></i> Ana Sayfaya Dön</button>
                     </div>
                 </div>
             </section>
@@ -563,11 +597,11 @@
                             </div>
                         </div>
                         <div class="mt-8">
-                            <button onclick="navigateTo('/', event)" class="px-6 py-3 rounded-xl bg-gray-200 text-gray-800 hover:bg-gray-300 text-xs font-bold transition-all"><i class="fas fa-arrow-left mr-2"></i> Ana Sayfaya Dön</button>
+                            <button onclick="navigateTo('#anasayfa', event)" class="px-6 py-3 rounded-xl bg-gray-200 text-gray-800 hover:bg-gray-300 text-xs font-bold transition-all"><i class="fas fa-arrow-left mr-2"></i> Ana Sayfaya Dön</button>
                         </div>
                     </div>
                     <div class="lg:col-span-7 glass-card rounded-3xl overflow-hidden p-2.5 border border-cyan-500/30 shadow-md">
-                        <div id="leaflet-map" class="w-full h-80 sm:h-96 lg:h-full min-h-[380px] rounded-2xl z-10"></div>
+                        <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2858.408400228397!2d28.932899075862718!3d41.086427171339636!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x14cab1c5f27ef005%3A0x2efe9eb54f25195e!2s%C4%B0K%C4%B0ZLER%20HALI%20VE%20KOLTUK%20YIKAMA!5e1!3m2!1str!2str!4v1789050441680!5m2!1str!2str" class="w-full h-80 sm:h-96 lg:h-full min-h-[380px] rounded-2xl border-0" allowfullscreen="" loading="lazy" referrerpolicy="strict-origin-when-cross-origin"></iframe>
                     </div>
                 </div>
             </section>
@@ -575,7 +609,7 @@
 
     </main>
 
-    <!-- Footer -->
+    <!-- Footer (Restored from your reference image) -->
     <footer class="relative z-10 bg-gray-900 text-gray-300 border-t border-gray-800 pt-16 pb-28 lg:pb-16 text-xs">
         <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
             <div class="grid grid-cols-1 md:grid-cols-4 gap-10 pb-12 border-b border-gray-800">
@@ -584,28 +618,28 @@
                         <img src="https://camlikalti.yurdu.org/media/camlikaltiyurduorg_1789012455_8552.jpg" alt="İkizler Halı ve Koltuk Yıkama" class="h-12 w-auto rounded-xl border border-cyan-500/40 shadow-md object-contain" onerror="this.src='https://placehold.co/100x40/06b6d4/ffffff?text=İKİZLER'">
                         <span class="font-heading font-extrabold text-white text-sm tracking-wider">İKİZLER</span>
                     </div>
-                    <p class="text-gray-400 text-xs leading-relaxed">Eyüpsultan and çevresinde profesyonel halı, koltuk, perde and yorgan yıkama çözümleri. Ücretsiz alım and teslimat.</p>
+                    <p class="text-gray-400 text-xs leading-relaxed">Eyüpsultan ve çevresinde profesyonel halı, koltuk, perde ve yorgan yıkama çözümleri. Ücretsiz alım ve teslimat.</p>
                     <a href="https://www.instagram.com/ikizlerhalivekoltukyikama?stkn=MTBianZxYjdtdGszNQ==" target="_blank" rel="noopener noreferrer" class="inline-flex items-center text-pink-400 hover:text-pink-300 font-semibold text-xs transition-colors"><i class="fab fa-instagram mr-1.5 text-sm"></i> Instagram'da Bizi Takip Edin</a>
                 </div>
                 <div>
                     <h4 class="font-heading font-bold text-white text-sm mb-4 tracking-wide">Hızlı Linkler</h4>
                     <ul class="space-y-2.5 text-xs text-gray-400">
-                        <li><a href="/" onclick="navigateTo('/', event)" class="hover:text-cyan-400 transition-colors">Ana Sayfa</a></li>
-                        <li><a href="/hizmetlerimiz" onclick="navigateTo('/hizmetlerimiz', event)" class="hover:text-cyan-400 transition-colors">Hizmetlerimiz</a></li>
-                        <li><a href="/bolgeler" onclick="navigateTo('/bolgeler', event)" class="hover:text-cyan-400 transition-colors">Hizmet Bölgelerimiz</a></li>
-                        <li><a href="/hakkimizda" onclick="navigateTo('/hakkimizda', event)" class="hover:text-cyan-400 transition-colors">Hakkımızda</a></li>
-                        <li><a href="/yorumlar" onclick="navigateTo('/yorumlar', event)" class="hover:text-cyan-400 transition-colors">Müşteri Yorumları</a></li>
-                        <li><a href="/iletisim" onclick="navigateTo('/iletisim', event)" class="hover:text-cyan-400 transition-colors">İletişim</a></li>
+                        <li><a href="#anasayfa" onclick="navigateTo('#anasayfa', event)" class="hover:text-cyan-400 transition-colors">Ana Sayfa</a></li>
+                        <li><a href="#bolgeler" onclick="navigateTo('#bolgeler', event)" class="hover:text-cyan-400 transition-colors">Hizmet Bölgelerimiz</a></li>
+                        <li><a href="#yorumlar" onclick="navigateTo('#yorumlar', event)" class="hover:text-cyan-400 transition-colors">Müşteri Yorumları</a></li>
+                        <li><a href="#hakkimizda" onclick="navigateTo('#hakkimizda', event)" class="hover:text-cyan-400 transition-colors">Hakkımızda</a></li>
+                        <li><a href="#fotograf-galerisi" onclick="navigateTo('#fotograf-galerisi', event)" class="hover:text-cyan-400 transition-colors">Çalışma Galerisi</a></li>
+                        <li><a href="#iletisim" onclick="navigateTo('#iletisim', event)" class="hover:text-cyan-400 transition-colors">İletişim</a></li>
                     </ul>
                 </div>
                 <div>
                     <h4 class="font-heading font-bold text-white text-sm mb-4 tracking-wide">Hizmetlerimiz</h4>
                     <ul class="space-y-2.5 text-xs text-gray-400">
-                        <li><a href="/hali-yikama" onclick="navigateTo('/hali-yikama', event)" class="hover:text-cyan-400 transition-colors">Halı Yıkama (Makine, Shaggy, Yün)</a></li>
-                        <li><a href="/koltuk-yikama" onclick="navigateTo('/koltuk-yikama', event)" class="hover:text-cyan-400 transition-colors">Koltuk & Çekyat Yıkama</a></li>
-                        <li><a href="/perde-yikama" onclick="navigateTo('/perde-yikama', event)" class="hover:text-cyan-400 transition-colors">Stor & Zebra Perde Yıkama</a></li>
-                        <li><a href="/yorgan-battaniye-yikama" onclick="navigateTo('/yorgan-battaniye-yikama', event)" class="hover:text-cyan-400 transition-colors">Yorgan & Battaniye Yıkama</a></li>
-                        <li><a href="/koltuk-yikama" onclick="navigateTo('/koltuk-yikama', event)" class="hover:text-cyan-400 transition-colors">Yerinde Koltuk Temizliği</a></li>
+                        <li><a href="#hali-yikama" onclick="navigateTo('#hali-yikama', event)" class="hover:text-cyan-400 transition-colors">Halı Yıkama (Makine, Shaggy, Yün)</a></li>
+                        <li><a href="#koltuk-yikama" onclick="navigateTo('#koltuk-yikama', event)" class="hover:text-cyan-400 transition-colors">Koltuk & Çekyat Yıkama</a></li>
+                        <li><a href="#perde-yikama" onclick="navigateTo('#perde-yikama', event)" class="hover:text-cyan-400 transition-colors">Stor & Zebra Perde Yıkama</a></li>
+                        <li><a href="#yorgan-battaniye-yikama" onclick="navigateTo('#yorgan-battaniye-yikama', event)" class="hover:text-cyan-400 transition-colors">Yorgan & Battaniye Yıkama</a></li>
+                        <li><a href="#koltuk-yikama" onclick="navigateTo('#koltuk-yikama', event)" class="hover:text-cyan-400 transition-colors">Yerinde Koltuk Temizliği</a></li>
                     </ul>
                 </div>
                 <div>
@@ -620,7 +654,7 @@
                 </div>
             </div>
             <div class="pt-8 text-center text-gray-500 text-xs">
-                <p>&copy; 2026 İkizler Halı and Koltuk Yıkama. Tüm hakları saklıdır.</p>
+                <p>&copy; 2026 İkizler Halı ve Koltuk Yıkama. Tüm hakları saklıdır.</p>
             </div>
         </div>
     </footer>
@@ -638,114 +672,37 @@
         </a>
     </div>
 
-    <!-- Leaflet JS Script -->
-    <script src="https://unpkg.com/leaflet@1.9.4/dist/leaflet.js" integrity="sha256-20nQCchB9co0qIjJZRGuk2/Z9VM+kNiyxNV1lvTlZBo=" crossorigin=""></script>
-
+    <!-- Client-Side Hash Router Script -->
     <script>
-        // Client-Side Hash Router (Safe for IFrame Sandboxes)
         const routes = {
             '': 'anasayfa',
             '#': 'anasayfa',
             '#anasayfa': 'anasayfa',
-            '#hizmetlerimiz': 'anasayfa',
             '#bolgeler': 'bolgeler',
+            '#yorumlar': 'yorumlar',
+            '#hakkimizda': 'hakkimizda',
+            '#fotograf-galerisi': 'fotograf-galerisi',
+            '#iletisim': 'iletisim',
             '#hali-yikama': 'hali-yikama',
             '#koltuk-yikama': 'koltuk-yikama',
             '#perde-yikama': 'perde-yikama',
-            '#yorgan-battaniye-yikama': 'yorgan-battaniye-yikama',
-            '#hakkimizda': 'hakkimizda',
-            '#yorumlar': 'yorumlar',
-            '#fotograf-galerisi': 'fotograf-galerisi',
-            '#iletisim': 'iletisim'
+            '#yorgan-battaniye-yikama': 'yorgan-battaniye-yikama'
         };
 
         const pageTitles = {
             '#anasayfa': 'İkizler Halı ve Koltuk Yıkama | Eyüpsultan & 20 Bölge',
-            '#hizmetlerimiz': 'Profesyonel Temizlik Hizmetlerimiz | İkizler Halı Yıkama',
             '#bolgeler': 'Hizmet Bölgelerimiz (20 Bölge) | İkizler Halı Yıkama',
+            '#yorumlar': 'Müşteri Yorumları | İkizler Halı Yıkama',
+            '#hakkimizda': 'Hakkımızda | İkizler Halı ve Koltuk Yıkama',
+            '#fotograf-galerisi': 'Çalışma Galerimiz | İkizler Halı Yıkama',
+            '#iletisim': 'İletişim ve Konum | İkizler Halı Yıkama',
             '#hali-yikama': 'Profesyonel Halı Yıkama Hizmeti | İkizler Halı Yıkama',
             '#koltuk-yikama': 'Yerinde Koltuk Yıkama Hizmeti | İkizler Halı Yıkama',
             '#perde-yikama': 'Stor ve Zebra Perde Yıkama | İkizler Halı Yıkama',
-            '#yorgan-battaniye-yikama': 'Hijyenik Yorgan ve Battaniye Yıkama | İkizler Halı Yıkama',
-            '#hakkimizda': 'Hakkımızda | İkizler Halı ve Koltuk Yıkama',
-            '#yorumlar': 'Müşteri Yorumları ve Referanslar | İkizler Halı Yıkama',
-            '#fotograf-galerisi': 'Çalışma Galerimiz | İkizler Halı Yıkama',
-            '#iletisim': 'İletişim ve Konum | İkizler Halı Yıkama'
+            '#yorgan-battaniye-yikama': 'Hijyenik Yorgan ve Battaniye Yıkama | İkizler Halı Yıkama'
         };
 
-        function navigateTo(hash, event) {
-            if (event) event.preventDefault();
-
-            let viewId = routes[hash] || 'anasayfa';
-            
-            // Update hash without triggering security error in iframe
-            window.location.hash = hash;
-
-            if (pageTitles[hash]) {
-                document.getElementById('page-title').textContent = pageTitles[hash];
-            }
-
-            const views = document.querySelectorAll('.page-view');
-            views.forEach(v => v.classList.add('hidden'));
-
-            const targetView = document.getElementById('view-' + viewId);
-            if (targetView) {
-                targetView.classList.remove('hidden');
-                window.scrollTo({ top: 0, behavior: 'smooth' });
-            }
-
-            const dropdown = document.getElementById('dropdown-menu');
-            if (dropdown) dropdown.classList.add('hidden');
-
-            if (hash === '#iletisim' || viewId === 'iletisim') {
-                setTimeout(initLeafletMap, 200);
-            }
-        }
-
-        window.addEventListener('hashchange', function () {
-            const currentHash = window.location.hash || '#anasayfa';
-            navigateTo(currentHash, null);
-        });
-
-        let mapInitialized = false;
-        function initLeafletMap() {
-            const mapEl = document.getElementById('leaflet-map');
-            if (!mapEl) return;
-            if (mapInitialized) {
-                window.dispatchEvent(new Event('resize'));
-                return;
-            }
-            try {
-                const lat = 41.086427;
-                const lng = 28.932899;
-                const map = L.map('leaflet-map').setView([lat, lng], 15);
-                L.tileLayer('https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png', {
-                    maxZoom: 19,
-                    attribution: '&copy; OpenStreetMap'
-                }).addTo(map);
-
-                const customIcon = L.divIcon({
-                    className: 'custom-map-pin',
-                    html: '<div style="background-color: #06b6d4; width: 28px; height: 28px; border-radius: 50%; border: 3px solid #ffffff; box-shadow: 0 0 15px rgba(6,182,212,0.8); display: flex; align-items: center; justify-content: center;"><i class="fas fa-rug" style="color: #ffffff; font-size: 12px;"></i></div>',
-                    iconSize: [28, 28],
-                    iconAnchor: [14, 14]
-                });
-
-                L.marker([lat, lng], { icon: customIcon }).addTo(map)
-                    .bindPopup('<b>İkizler Halı ve Koltuk Yıkama</b><br>Çırçır Mah. Sezai Karakoç Cd. No:67, Eyüpsultan')
-                    .openPopup();
-
-                mapInitialized = true;
-            } catch (err) {
-                console.log('Map init note:', err);
-            }
-        }
-
-        document.addEventListener('DOMContentLoaded', function () {
-            const initialHash = window.location.hash || '#anasayfa';
-            navigateTo(initialHash, null);
-
-            // Splash Screen Animation
+        function runSplashAnimation() {
             const splashScreen = document.getElementById('splash-screen');
             const splashText = document.getElementById('splash-text');
             const regionsBg = document.getElementById('splash-regions-background');
@@ -755,17 +712,12 @@
             const regionsList = ['Beyoğlu', 'Sultangazi', 'Bayrampaşa', 'Eyüpsultan', 'Gaziosmanpaşa', 'Cebeci', 'Emniyettepe', 'Gültepe', '5. Levent', 'Karadolap', 'Yunus Emre', 'Çırçır', 'İsmetpaşa', 'Alibeyköy', 'Güzeltepe', 'Yeşilpınar', 'Kazım Karabekir', 'Göktürk Merkez', 'Küçükköy', 'Kemerburgaz'];
 
             if (splashScreen) {
+                splashScreen.style.opacity = '1';
+                splashScreen.style.visibility = 'visible';
                 body.classList.add('splash-active');
-                if (splashText) {
-                    let sIdx = 0;
-                    const textTimer = setInterval(function () {
-                        sIdx = (sIdx + 1) % servicesList.length;
-                        splashText.textContent = servicesList[sIdx];
-                    }, 300);
-                    setTimeout(function () { clearInterval(textTimer); }, 2200);
-                }
 
                 if (regionsBg) {
+                    regionsBg.innerHTML = '';
                     const occupied = [];
                     function getRandomCoords() {
                         let tries = 0;
@@ -794,12 +746,56 @@
                     });
                 }
 
+                if (splashText) {
+                    let sIdx = 0;
+                    const textTimer = setInterval(function () {
+                        sIdx = (sIdx + 1) % servicesList.length;
+                        splashText.textContent = servicesList[sIdx];
+                    }, 300);
+                    setTimeout(function () { clearInterval(textTimer); }, 2200);
+                }
+
                 setTimeout(function () {
                     splashScreen.style.opacity = '0';
                     splashScreen.style.visibility = 'hidden';
                     body.classList.remove('splash-active');
                 }, 2300);
             }
+        }
+
+        function navigateTo(hash, event) {
+            if (event) event.preventDefault();
+
+            let viewId = routes[hash] || 'anasayfa';
+            window.location.hash = hash;
+
+            if (pageTitles[hash]) {
+                document.getElementById('page-title').textContent = pageTitles[hash];
+            }
+
+            const views = document.querySelectorAll('.page-view');
+            views.forEach(v => v.classList.add('hidden'));
+
+            const targetView = document.getElementById('view-' + viewId);
+            if (targetView) {
+                targetView.classList.remove('hidden');
+                window.scrollTo({ top: 0, behavior: 'smooth' });
+            }
+
+            const dropdown = document.getElementById('dropdown-menu');
+            if (dropdown) dropdown.classList.add('hidden');
+
+            runSplashAnimation();
+        }
+
+        window.addEventListener('hashchange', function () {
+            const currentHash = window.location.hash || '#anasayfa';
+            navigateTo(currentHash, null);
+        });
+
+        document.addEventListener('DOMContentLoaded', function () {
+            const initialHash = window.location.hash || '#anasayfa';
+            navigateTo(initialHash, null);
 
             const menuToggleBtn = document.getElementById('menu-toggle-btn');
             const dropdownMenu = document.getElementById('dropdown-menu');

@@ -1,578 +1,1244 @@
 <!DOCTYPE html>
-<html lang="tr" itemscope itemtype="https://schema.org/LocalBusiness">
+<html lang="tr" class="scroll-smooth" itemscope itemtype="https://schema.org/LocalBusiness">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta name="description" content="İkizler Halı ve Koltuk Yıkama - Eyüpsultan, Alibeyköy, Gaziosmanpaşa, Sultangazi ve çevresinde profesyonel halı, koltuk, perde, yorgan yıkama hizmeti. Ücretsiz alım-teslim, hijyen garantili.">
-    <meta name="keywords" content="halı yıkama, koltuk yıkama, perde yıkama, yorgan yıkama, İkizler halı yıkama, Eyüpsultan halı yıkama, Alibeyköy halı yıkama, Gaziosmanpaşa halı yıkama, Sultangazi halı yıkama, Küçükköy halı yıkama, Rami halı yıkama, Çırçır halı yıkama, Güzeltepe halı yıkama, Karadolap halı yıkama, Emniyettepe halı yıkama, Mevlana Mahallesi halı yıkama, Akşemsettin Mahallesi halı yıkama, Yeşilpınar halı yıkama, Eyüp halı yıkama, yerinde koltuk yıkama, ücretsiz halı alım teslim">
+    <meta name="description" content="İkizler Halı ve Koltuk Yıkama - Eyüp, Alibeyköy, Gaziosmanpaşa, Sultangazi ve çevresinde hijyen garantili, ücretsiz servisli profesyonel halı, koltuk, perde ve yorgan yıkama.">
+    <meta name="keywords" content="halı yıkama, koltuk yıkama, perde yıkama, yorgan yıkama, İkizler halı yıkama, Gaziosmanpaşa, Güzeldere, Karadolap, Rami, Emniyettepe, Mevlana Mahallesi, Alibeyköy, Eyüp, Sultangazi, Küçükköy, Akşemsettin Mahallesi, Yeşilpınar, Çırçır">
     <meta name="author" content="İkizler Halı ve Koltuk Yıkama">
-    <meta name="robots" content="index, follow, max-image-preview:large, max-snippet:-1, max-video-preview:-1">
-    <meta name="googlebot" content="index, follow">
-    <meta name="language" content="Turkish">
-    <meta name="geo.region" content="TR-34">
-    <meta name="geo.placename" content="Eyüpsultan, İstanbul">
-    <meta name="geo.position" content="41.086427199999996;28.935474">
-    <meta name="ICBM" content="41.086427199999996, 28.935474">
+    <meta name="robots" content="index, follow">
+    <meta name="theme-color" content="#1a4731">
 
     <link rel="canonical" href="https://ikizlerhaliyikama.com.tr/">
 
+    <!-- Open Graph Meta -->
     <meta property="og:type" content="website">
     <meta property="og:url" content="https://ikizlerhaliyikama.com.tr/">
-    <meta property="og:title" content="İkizler Halı ve Koltuk Yıkama | Eyüpsultan ve Çevresi">
-    <meta property="og:description" content="Eyüpsultan, Alibeyköy, Gaziosmanpaşa, Sultangazi ve çevresinde profesyonel halı, koltuk, perde ve yorgan yıkama. Ücretsiz alım-teslim, hijyen garantili.">
-    <meta property="og:image" content="images/ikizler-logo.png">
+    <meta property="og:title" content="İkizler Halı ve Koltuk Yıkama | Eyüp & Çevresi">
+    <meta property="og:description" content="Gaziosmanpaşa, Alibeyköy, Eyüp, Yeşilpınar ve çevresinde profesyonel halı ve koltuk yıkama. Ücretsiz servis, hijyen garantisi.">
     <meta property="og:locale" content="tr_TR">
-    <meta property="og:site_name" content="İkizler Halı ve Koltuk Yıkama">
 
-    <meta name="twitter:card" content="summary_large_image">
-    <meta name="twitter:title" content="İkizler Halı ve Koltuk Yıkama">
-    <meta name="twitter:description" content="Eyüpsultan ve çevresinde profesyonel halı, koltuk, perde ve yorgan yıkama hizmeti.">
-    <meta name="twitter:image" content="images/ikizler-logo.png">
+    <title>İkizler Halı ve Koltuk Yıkama | Profesyonel Temizlik</title>
 
-    <title>İkizler Halı ve Koltuk Yıkama | Eyüpsultan, Alibeyköy, Gaziosmanpaşa</title>
-
-    <link rel="icon" type="image/png" href="images/ikizler-logo.png">
+    <!-- Tailwind CSS CDN & Font Awesome -->
     <script src="https://cdn.tailwindcss.com"></script>
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
-
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+    
+    <!-- Google Fonts -->
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700;800&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@300;400;500;600;700;800&family=Oswald:wght@700&display=swap" rel="stylesheet">
+
+    <script>
+        tailwind.config = {
+            theme: {
+                extend: {
+                    fontFamily: {
+                        sans: ['"Plus Jakarta Sans"', 'sans-serif'],
+                        logo: ['"Oswald"', 'sans-serif']
+                    },
+                    colors: {
+                        brand: {
+                            50: '#f0fdf4',
+                            100: '#dcfce7',
+                            200: '#bbf7d0',
+                            500: '#22c55e',
+                            600: '#16a34a',
+                            700: '#15803d',
+                            800: '#1e4b33',
+                            900: '#153926',
+                            dark: '#0e291a'
+                        },
+                        accent: {
+                            400: '#fb923c',
+                            500: '#f97316',
+                            600: '#ea580c'
+                        }
+                    }
+                }
+            }
+        }
+    </script>
 
     <style>
-        * { font-family: 'Poppins', sans-serif; }
-
-        /* Shader Canvas Katmanı */
-        #shader-canvas {
-            position: fixed;
-            top: 0;
-            left: 0;
-            width: 100vw;
-            height: 100vh;
-            z-index: -1;
-            pointer-events: none;
-            display: block;
+        .hero-section {
+            background: linear-gradient(135deg, #0e291a 0%, #17422b 50%, #113321 100%);
+            position: relative;
+            overflow: hidden;
         }
-
-        /* Cam / Glassmorphism Katmanları */
-        .glass-panel {
-            background: rgba(255, 255, 255, 0.45);
-            backdrop-filter: blur(16px);
-            -webkit-backdrop-filter: blur(16px);
-            border: 1px solid rgba(255, 255, 255, 0.7);
-            box-shadow: 0 8px 32px 0 rgba(0, 0, 0, 0.12),
-                        inset 1px 1px 2px rgba(255, 255, 255, 0.8);
-        }
-
         .glass-card {
-            background: rgba(255, 255, 255, 0.40);
-            backdrop-filter: blur(12px);
-            -webkit-backdrop-filter: blur(12px);
-            border: 1px solid rgba(255, 255, 255, 0.65);
-            box-shadow: 0 8px 24px rgba(0, 0, 0, 0.08),
-                        inset 1px 1px 2px rgba(255, 255, 255, 0.7);
-            transition: all 0.35s cubic-bezier(0.175, 0.885, 0.32, 1.25);
-        }
-
-        .glass-card:hover {
-            transform: translateY(-8px);
-            background: rgba(255, 255, 255, 0.65);
-            box-shadow: 0 16px 36px rgba(0, 0, 0, 0.18),
-                        inset 1px 1px 3px rgba(255, 255, 255, 0.9);
-        }
-
-        .hero-glass {
-            background: linear-gradient(135deg, rgba(3, 30, 48, 0.75) 0%, rgba(14, 90, 138, 0.65) 100%);
+            background: rgba(255, 255, 255, 0.96);
             backdrop-filter: blur(14px);
-            -webkit-backdrop-filter: blur(14px);
-            border: 1px solid rgba(255, 255, 255, 0.3);
-            box-shadow: 0 20px 50px rgba(0, 0, 0, 0.25);
         }
-
-        .gradient-text {
-            background: linear-gradient(135deg, #0b4568 0%, #1e88e5 100%);
-            -webkit-background-clip: text;
-            -webkit-text-fill-color: transparent;
-            background-clip: text;
+        .sparkle-pulse {
+            animation: pulseSparkle 2s ease-in-out infinite;
         }
-
-        .icon-bounce { animation: iconBounce 2.4s infinite; }
-        @keyframes iconBounce { 0%,100% { transform: translateY(0); } 50% { transform: translateY(-6px); } }
-
-        #splash-screen { animation: fadeOut 0.5s ease-out 1.8s forwards; }
-        @keyframes fadeOut { from { opacity:1; visibility:visible; } to { opacity:0; visibility:hidden; } }
+        @keyframes pulseSparkle {
+            0%, 100% { transform: scale(1) rotate(0deg); opacity: 0.9; }
+            50% { transform: scale(1.25) rotate(15deg); opacity: 1; }
+        }
     </style>
+
+    <!-- Schema.org Structured Data -->
+    <script type="application/ld+json">
+    {
+        "@context": "https://schema.org",
+        "@type": "LocalBusiness",
+        "@id": "https://ikizlerhaliyikama.com.tr/#organization",
+        "name": "İkizler Halı ve Koltuk Yıkama",
+        "url": "https://ikizlerhaliyikama.com.tr",
+        "telephone": "+905304149246",
+        "priceRange": "₺₺",
+        "address": {
+            "@type": "PostalAddress",
+            "streetAddress": "Çırçır Mahallesi, Sezai Karakoç Caddesi No:67",
+            "addressLocality": "Eyüpsultan",
+            "addressRegion": "İstanbul",
+            "addressCountry": "TR"
+        },
+        "geo": {
+            "@type": "GeoCoordinates",
+            "latitude": 41.086427,
+            "longitude": 28.935474
+        },
+        "openingHoursSpecification": [
+            {
+                "@type": "OpeningHoursSpecification",
+                "dayOfWeek": ["Monday","Tuesday","Wednesday","Thursday","Friday","Saturday"],
+                "opens": "08:30",
+                "closes": "21:30"
+            }
+        ],
+        "areaServed": [
+            "Gaziosmanpaşa", "Güzeldere", "Karadolap", "Rami", "Emniyettepe", 
+            "Mevlana Mahallesi", "Alibeyköy", "Eyüp", "Sultangazi", "Küçükköy", 
+            "Akşemsettin Mahallesi", "Yeşilpınar", "Çırçır"
+        ]
+    }
+    </script>
 </head>
-<body class="relative min-h-screen text-slate-800">
+<body class="bg-slate-50 text-slate-800 antialiased font-sans flex flex-col min-h-screen">
 
-    <!-- WebGL Shader Arka Planı -->
-    <canvas id="shader-canvas"></canvas>
-
-    <!-- Splash Screen -->
-    <div id="splash-screen" class="fixed inset-0 z-[9999] flex items-center justify-center glass-panel backdrop-blur-2xl">
-        <div class="text-center px-6">
-            <img src="images/ikizler-logo.png" alt="İkizler Halı Yıkama" class="h-32 md:h-40 mx-auto mb-4 object-contain drop-shadow-xl" onerror="this.style.display='none'">
-            <div class="w-48 h-1 bg-white/40 rounded-full overflow-hidden mx-auto mb-3">
-                <div class="h-full bg-sky-600 rounded-full w-full animate-pulse"></div>
+    <!-- Top Announcement Bar -->
+    <header class="bg-brand-900 text-brand-100 text-xs sm:text-sm py-2 px-4 border-b border-brand-800/80">
+        <div class="max-w-7xl mx-auto flex flex-col sm:flex-row justify-between items-center gap-2">
+            <div class="flex items-center gap-3">
+                <span class="inline-flex items-center gap-1.5"><i class="fa-solid fa-truck-fast text-accent-400"></i> Hizmet Bölgelerimizde Ücretsiz Servis</span>
+                <span class="hidden md:inline text-brand-700">|</span>
+                <span class="hidden md:inline-flex items-center gap-1.5"><i class="fa-solid fa-clock text-accent-400"></i> Pzt - Cmt: 08:30 - 21:30</span>
             </div>
-            <p class="text-sky-950 font-bold text-lg tracking-wide">İkizler Halı & Koltuk Yıkama</p>
+            <div class="flex items-center gap-4 font-semibold">
+                <a href="tel:05304149246" class="hover:text-white transition-colors flex items-center gap-1.5">
+                    <i class="fa-solid fa-phone-volume text-accent-400"></i> 0530 414 92 46
+                </a>
+            </div>
         </div>
-    </div>
+    </header>
 
-    <!-- Navigation -->
-    <nav class="fixed top-3 left-0 right-0 z-50 px-4">
-        <div class="max-w-7xl mx-auto glass-panel rounded-2xl px-6 py-3 flex justify-between items-center">
-            <a href="#anasayfa" class="flex items-center gap-3">
-                <img src="images/ikizler-logo.png" alt="İkizler Halı Yıkama" class="h-12 md:h-14 object-contain" onerror="this.style.display='none'">
-                <span class="font-extrabold text-base md:text-lg text-sky-950">İkizler Halı Yıkama</span>
-            </a>
-            
-            <div class="hidden lg:flex items-center space-x-1 font-medium text-sm">
-                <a href="#anasayfa" class="px-4 py-2 font-semibold text-sky-950 rounded-xl hover:bg-white/40 transition">Ana Sayfa</a>
-                <a href="#hizmetler" class="px-4 py-2 text-slate-800 rounded-xl hover:bg-white/40 transition">Hizmetler</a>
-                <a href="#hakkimizda" class="px-4 py-2 text-slate-800 rounded-xl hover:bg-white/40 transition">Hakkımızda</a>
-                <a href="#bolgeler" class="px-4 py-2 text-slate-800 rounded-xl hover:bg-white/40 transition">Hizmet Bölgeleri</a>
-                <a href="#iletisim" class="px-4 py-2 text-slate-800 rounded-xl hover:bg-white/40 transition">İletişim</a>
+    <!-- Main Navigation -->
+    <nav class="sticky top-0 z-40 bg-white/95 backdrop-blur-md shadow-sm border-b border-slate-100">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="flex justify-between items-center h-20">
+                <!-- Brand Logo (User's Exact Provided Design) -->
+                <a href="#anasayfa" class="flex items-center gap-3 group py-1.5" aria-label="İkizler Halı ve Koltuk Yıkama">
+                    <div class="h-14 flex items-center">
+                        <!-- Precise SVG recreation of the user's provided logo -->
+                        <svg class="h-12 sm:h-14 w-auto max-w-[240px] sm:max-w-[280px]" viewBox="0 0 540 220" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <!-- Carpet Fringe on Top -->
+                            <rect x="18" y="10" width="10" height="24" rx="2" fill="#1e4b33"/>
+                            <rect x="36" y="10" width="10" height="24" rx="2" fill="#1e4b33"/>
+                            <rect x="54" y="10" width="10" height="24" rx="2" fill="#1e4b33"/>
+                            <rect x="72" y="10" width="10" height="24" rx="2" fill="#1e4b33"/>
+                            <rect x="90" y="10" width="10" height="24" rx="2" fill="#1e4b33"/>
+                            <rect x="108" y="10" width="10" height="24" rx="2" fill="#1e4b33"/>
+                            <rect x="126" y="10" width="10" height="24" rx="2" fill="#1e4b33"/>
+                            <rect x="144" y="10" width="10" height="24" rx="2" fill="#1e4b33"/>
+                            <rect x="162" y="10" width="10" height="24" rx="2" fill="#1e4b33"/>
+                            <rect x="180" y="10" width="10" height="24" rx="2" fill="#1e4b33"/>
+                            <rect x="198" y="10" width="10" height="24" rx="2" fill="#1e4b33"/>
+                            <rect x="216" y="10" width="10" height="24" rx="2" fill="#1e4b33"/>
 
-                <div class="flex items-center space-x-2 ml-4 pl-4 border-l border-white/40">
-                    <a href="tel:05304149246" class="w-10 h-10 flex items-center justify-center bg-sky-700 text-white rounded-xl shadow-md hover:bg-sky-800 transition icon-bounce" title="Hemen Ara">
-                        <i class="fas fa-phone text-sm"></i>
+                            <!-- Main Carpet Body (Dark Green) -->
+                            <rect x="10" y="24" width="224" height="182" rx="4" fill="#1e4b33"/>
+
+                            <!-- Left Bubbles Array -->
+                            <circle cx="28" cy="46" r="4" fill="#ffffff"/>
+                            <circle cx="44" cy="40" r="4.5" fill="#ffffff"/>
+                            <circle cx="26" cy="74" r="5" fill="#ffffff"/>
+                            <circle cx="48" cy="62" r="3.5" fill="#ffffff"/>
+                            <circle cx="27" cy="106" r="4" fill="#ffffff"/>
+                            <circle cx="46" cy="94" r="4" fill="#ffffff"/>
+                            <circle cx="25" cy="138" r="4.5" fill="#ffffff"/>
+                            <circle cx="44" cy="122" r="3.5" fill="#ffffff"/>
+                            <circle cx="36" cy="164" r="4.5" fill="#ffffff"/>
+                            <circle cx="56" cy="186" r="4" fill="#ffffff"/>
+
+                            <!-- Right Bubbles Array -->
+                            <circle cx="200" cy="40" r="4.5" fill="#ffffff"/>
+                            <circle cx="216" cy="46" r="4" fill="#ffffff"/>
+                            <circle cx="196" cy="62" r="3.5" fill="#ffffff"/>
+                            <circle cx="218" cy="74" r="5" fill="#ffffff"/>
+                            <circle cx="198" cy="94" r="4" fill="#ffffff"/>
+                            <circle cx="217" cy="106" r="4" fill="#ffffff"/>
+                            <circle cx="200" cy="122" r="3.5" fill="#ffffff"/>
+                            <circle cx="219" cy="138" r="4.5" fill="#ffffff"/>
+                            <circle cx="208" cy="164" r="4.5" fill="#ffffff"/>
+                            <circle cx="188" cy="186" r="4" fill="#ffffff"/>
+
+                            <!-- Sparkling Stars in the Cleaned Center -->
+                            <path d="M88 64 C88 50 88 50 98 50 C88 50 88 50 88 36 C88 50 88 50 78 50 C88 50 88 50 88 64 Z" fill="#ffffff"/>
+                            <path d="M136 100 C136 82 136 82 150 82 C136 82 136 82 136 64 C136 82 136 82 122 82 C136 82 136 82 136 100 Z" fill="#ffffff"/>
+
+                            <!-- Carpet Cleaner / Vacuum Head Outline -->
+                            <rect x="52" y="120" width="140" height="48" rx="14" fill="#1e4b33" stroke="#ffffff" stroke-width="6"/>
+                            <!-- Vacuum Neck Connector -->
+                            <rect x="88" y="146" width="68" height="40" rx="8" fill="#1e4b33" stroke="#ffffff" stroke-width="6"/>
+                            <!-- Vacuum Pipe at Bottom -->
+                            <rect x="108" y="186" width="28" height="26" fill="#1e4b33"/>
+
+                            <!-- Typographic Brand Text matching exact logo styling -->
+                            <text x="272" y="80" font-family="'Oswald', sans-serif" font-weight="700" font-size="64" fill="#1e4b33" letter-spacing="2">İKİZLER</text>
+                            <text x="272" y="128" font-family="'Plus Jakarta Sans', sans-serif" font-weight="500" font-size="34" fill="#1e4b33" letter-spacing="0.5">Halı ve Koltuk</text>
+                            <text x="330" y="174" font-family="'Plus Jakarta Sans', sans-serif" font-weight="500" font-size="34" fill="#1e4b33" letter-spacing="0.5">Yıkama</text>
+                        </svg>
+                    </div>
+                </a>
+
+                <!-- Desktop Menu -->
+                <div class="hidden lg:flex items-center gap-7 text-sm font-semibold text-slate-600">
+                    <a href="#anasayfa" class="hover:text-brand-700 transition-colors">Ana Sayfa</a>
+                    <a href="#hizmetler" class="hover:text-brand-700 transition-colors">Hizmetlerimiz</a>
+                    <a href="#yorumlar" class="hover:text-brand-700 transition-colors">Müşteri Yorumları</a>
+                    <a href="#bolgeler" class="hover:text-brand-700 transition-colors">Hizmet Bölgelerimiz</a>
+                    <a href="#sss" class="hover:text-brand-700 transition-colors">S.S.S.</a>
+                    <a href="#iletisim" class="hover:text-brand-700 transition-colors">İletişim</a>
+                </div>
+
+                <!-- Call to Action Buttons -->
+                <div class="hidden sm:flex items-center gap-3">
+                    <a href="https://wa.me/905304149246?text=Merhaba,%20hali%20ve%20koltuk%20yikama%20hizmeti%20icin%20bilgi%20ve%20randevu%20almak%20istiyorum." target="_blank" rel="noopener noreferrer" class="px-4 py-2.5 rounded-lg bg-emerald-600 hover:bg-emerald-700 text-white font-semibold text-sm shadow-md transition-all flex items-center gap-2">
+                        <i class="fa-brands fa-whatsapp text-lg"></i>
+                        <span>WhatsApp</span>
                     </a>
-                    <a href="https://wa.me/905304149246" target="_blank" class="w-10 h-10 flex items-center justify-center bg-emerald-500 text-white rounded-xl shadow-md hover:bg-emerald-600 transition icon-bounce" title="WhatsApp">
-                        <i class="fab fa-whatsapp text-base"></i>
+                    <a href="tel:05304149246" class="px-4 py-2.5 rounded-lg bg-brand-800 hover:bg-brand-900 text-white font-semibold text-sm shadow-md transition-all flex items-center gap-2">
+                        <i class="fa-solid fa-phone"></i>
+                        <span>0530 414 92 46</span>
                     </a>
                 </div>
+
+                <!-- Mobile Menu Button -->
+                <button id="menu-toggle" aria-label="Menüyü Aç" class="lg:hidden text-slate-700 hover:text-brand-700 p-2 rounded-lg">
+                    <i class="fa-solid fa-bars text-2xl"></i>
+                </button>
+            </div>
+        </div>
+
+        <!-- Mobile Drawer -->
+        <div id="mobile-nav" class="hidden lg:hidden bg-white border-t border-slate-100 px-6 py-5 shadow-xl space-y-4">
+            <a href="#anasayfa" class="block font-semibold text-slate-700 hover:text-brand-700 py-1">Ana Sayfa</a>
+            <a href="#hizmetler" class="block font-semibold text-slate-700 hover:text-brand-700 py-1">Hizmetlerimiz</a>
+            <a href="#yorumlar" class="block font-semibold text-slate-700 hover:text-brand-700 py-1">Müşteri Yorumları</a>
+            <a href="#bolgeler" class="block font-semibold text-slate-700 hover:text-brand-700 py-1">Hizmet Bölgelerimiz</a>
+            <a href="#sss" class="block font-semibold text-slate-700 hover:text-brand-700 py-1">Sıkça Sorulan Sorular</a>
+            <a href="#iletisim" class="block font-semibold text-slate-700 hover:text-brand-700 py-1">İletişim</a>
+            <div class="pt-3 border-t border-slate-100 flex flex-col gap-2">
+                <a href="tel:05304149246" class="w-full text-center py-3 bg-brand-800 text-white rounded-lg font-semibold flex items-center justify-center gap-2">
+                    <i class="fa-solid fa-phone"></i> 0530 414 92 46
+                </a>
+                <a href="https://wa.me/905304149246" class="w-full text-center py-3 bg-emerald-600 text-white rounded-lg font-semibold flex items-center justify-center gap-2">
+                    <i class="fa-brands fa-whatsapp text-lg"></i> WhatsApp Randevu
+                </a>
             </div>
         </div>
     </nav>
 
-    <!-- Hero Bölümü -->
-    <section id="anasayfa" class="pt-36 pb-16 px-4">
-        <div class="max-w-6xl mx-auto hero-glass rounded-3xl p-8 md:p-16 text-center text-white">
-            <h1 class="text-3xl md:text-5xl font-black mb-6 leading-tight drop-shadow">
-                Halınız ve Koltuğunuz İçin<br class="hidden md:inline"> Güvenilir & Derinlemesine Temizlik
-            </h1>
-            <p class="text-white/95 text-base md:text-xl mb-8 max-w-3xl mx-auto font-light leading-relaxed">
-                Eyüpsultan, Alibeyköy, Gaziosmanpaşa, Sultangazi ve çevresinde hijyen garantili, ücretsiz adresten alım-teslim profesyonel yıkama hizmeti.
-            </p>
-            <div class="flex flex-col sm:flex-row gap-4 justify-center">
-                <a href="tel:05304149246" class="bg-white text-sky-950 px-8 py-4 rounded-2xl font-bold shadow-xl hover:bg-sky-50 transition flex items-center justify-center gap-3">
-                    <i class="fas fa-phone-alt"></i> Hemen Ara: 0530 414 92 46
-                </a>
-                <a href="https://wa.me/905304149246" target="_blank" class="bg-emerald-500 text-white px-8 py-4 rounded-2xl font-bold shadow-xl hover:bg-emerald-600 transition flex items-center justify-center gap-3">
-                    <i class="fab fa-whatsapp text-xl"></i> WhatsApp ile Yaz
-                </a>
-            </div>
-        </div>
-    </section>
+    <main class="flex-grow">
+        <!-- Hero Section with Live Carpet Washing Background Animation -->
+        <section id="anasayfa" class="hero-section text-white relative py-16 sm:py-24 lg:py-32">
+            <!-- Animated Canvas Background representing carpet washing scrub, water suds & sparkling clean tracks -->
+            <canvas id="carpet-wash-canvas" class="absolute inset-0 w-full h-full pointer-events-none opacity-45"></canvas>
+            
+            <!-- Soft Gradient Vignette Overlay to guarantee perfect text contrast -->
+            <div class="absolute inset-0 bg-gradient-to-r from-brand-dark/90 via-brand-dark/75 to-brand-dark/85 pointer-events-none"></div>
 
-    <!-- Öne Çıkan Nitelikler -->
-    <section class="py-6 px-4">
-        <div class="max-w-6xl mx-auto grid grid-cols-2 md:grid-cols-4 gap-4">
-            <div class="glass-card rounded-2xl p-5 text-center">
-                <i class="fas fa-shield-alt text-2xl text-sky-800 mb-2"></i>
-                <h4 class="font-bold text-sm text-slate-900">Hijyen Garantisi</h4>
-                <p class="text-xs text-slate-700 mt-1">Antibakteriyel solüsyonlar</p>
-            </div>
-            <div class="glass-card rounded-2xl p-5 text-center">
-                <i class="fas fa-truck text-2xl text-sky-800 mb-2"></i>
-                <h4 class="font-bold text-sm text-slate-900">Ücretsiz Servis</h4>
-                <p class="text-xs text-slate-700 mt-1">Kapıdan alım, kapıya teslim</p>
-            </div>
-            <div class="glass-card rounded-2xl p-5 text-center">
-                <i class="fas fa-clock text-2xl text-sky-800 mb-2"></i>
-                <h4 class="font-bold text-sm text-slate-900">Hızlı Teslimat</h4>
-                <p class="text-xs text-slate-700 mt-1">Tam kurutulmuş teslim</p>
-            </div>
-            <div class="glass-card rounded-2xl p-5 text-center">
-                <i class="fas fa-award text-2xl text-sky-800 mb-2"></i>
-                <h4 class="font-bold text-sm text-slate-900">18+ Yıl Tecrübe</h4>
-                <p class="text-xs text-slate-700 mt-1">Uzman yıkama ekibi</p>
-            </div>
-        </div>
-    </section>
+            <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 relative z-10">
+                <div class="grid lg:grid-cols-12 gap-12 items-center">
+                    <div class="lg:col-span-7 text-center lg:text-left space-y-6">
+                        <div class="inline-flex items-center gap-2 px-4 py-1.5 rounded-full bg-white/10 border border-white/20 text-brand-100 text-xs sm:text-sm font-semibold tracking-wide backdrop-blur-md">
+                            <i class="fa-solid fa-sparkles text-accent-400 sparkle-pulse"></i> Profesyonel Antibakteriyel Halı & Koltuk Yıkama
+                        </div>
 
-    <!-- Hizmetlerimiz -->
-    <section id="hizmetler" class="py-16 px-4">
-        <div class="max-w-7xl mx-auto">
-            <div class="text-center mb-12">
-                <h2 class="text-3xl md:text-4xl font-extrabold gradient-text mb-3">Hizmetlerimiz</h2>
-                <p class="text-slate-700 font-medium">Halı, koltuk, perde ve yorganlarınız için derinlemesine bakım.</p>
-            </div>
+                        <h1 class="text-3xl sm:text-5xl lg:text-6xl font-extrabold tracking-tight leading-tight">
+                            Halı ve Koltuklarınızda <br class="hidden sm:inline">
+                            <span class="text-accent-400 inline-flex items-center gap-2">
+                                Derinlemesine
+                                <i class="fa-solid fa-sparkles text-2xl sm:text-4xl text-yellow-300 sparkle-pulse"></i>
+                            </span> Hijyen.
+                        </h1>
 
-            <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-6">
-                <div class="glass-card rounded-3xl p-6 flex flex-col">
-                    <div class="w-12 h-12 rounded-xl bg-sky-700 text-white flex items-center justify-center text-xl mb-4">
-                        <i class="fas fa-rug"></i>
+                        <p class="text-base sm:text-lg text-brand-100 max-w-2xl leading-relaxed">
+                            Eyüp, Alibeyköy, Gaziosmanpaşa, Sultangazi ve hizmet bölgelerimizde ücretsiz servisimizle kapınızdan alıyor; özel şampuanlar ve tam otomatik sistemlerle yıkayıp ambalajlı teslim ediyoruz.
+                        </p>
+
+                        <!-- Highlights -->
+                        <div class="grid grid-cols-2 sm:grid-cols-3 gap-3 pt-2 text-left">
+                            <div class="flex items-center gap-2.5 bg-white/10 rounded-xl p-3 border border-white/15 backdrop-blur-sm">
+                                <i class="fa-solid fa-truck text-accent-400 text-xl"></i>
+                                <div>
+                                    <div class="text-xs sm:text-sm font-bold">Ücretsiz Servis</div>
+                                    <div class="text-[11px] text-brand-200">Adresten alım-teslim</div>
+                                </div>
+                            </div>
+                            <div class="flex items-center gap-2.5 bg-white/10 rounded-xl p-3 border border-white/15 backdrop-blur-sm">
+                                <i class="fa-solid fa-shield-virus text-accent-400 text-xl"></i>
+                                <div>
+                                    <div class="text-xs sm:text-sm font-bold">%100 Hijyen</div>
+                                    <div class="text-[11px] text-brand-200">Doğal şampuanlar</div>
+                                </div>
+                            </div>
+                            <div class="flex items-center gap-2.5 bg-white/10 rounded-xl p-3 border border-white/15 backdrop-blur-sm col-span-2 sm:col-span-1">
+                                <i class="fa-solid fa-award text-accent-400 text-xl"></i>
+                                <div>
+                                    <div class="text-xs sm:text-sm font-bold">Memnuniyet</div>
+                                    <div class="text-[11px] text-brand-200">Garantili temizlik</div>
+                                </div>
+                            </div>
+                        </div>
+
+                        <!-- CTA Actions -->
+                        <div class="flex flex-col sm:flex-row gap-4 pt-4 justify-center lg:justify-start">
+                            <a href="tel:05304149246" class="px-7 py-4 rounded-xl bg-accent-500 hover:bg-accent-600 text-white font-bold text-base shadow-xl hover:shadow-accent-500/30 transition-all flex items-center justify-center gap-3">
+                                <i class="fa-solid fa-phone-volume"></i>
+                                <span>Hemen Ara (0530 414 92 46)</span>
+                            </a>
+                            <a href="https://wa.me/905304149246?text=Merhaba,%20halı/koltuk%20yıkama%20hakkında%20bilgi%20ve%20fiyat%20almak%20istiyorum." target="_blank" rel="noopener noreferrer" class="px-7 py-4 rounded-xl bg-emerald-600 hover:bg-emerald-700 text-white font-bold text-base shadow-xl transition-all flex items-center justify-center gap-2.5">
+                                <i class="fa-brands fa-whatsapp text-xl"></i>
+                                <span>WhatsApp ile Fiyat Al</span>
+                            </a>
+                        </div>
                     </div>
-                    <h3 class="text-lg font-bold text-slate-900 mb-2">Halı Yıkama</h3>
-                    <p class="text-sm text-slate-700 mb-4 flex-grow">Makine, yün ve el dokuma halılarınıza dokusuna uygun hassas santrifüjlü yıkama.</p>
-                    <ul class="text-xs text-slate-700 space-y-1.5 border-t border-white/50 pt-3">
-                        <li><i class="fas fa-check text-sky-700 mr-1.5"></i>Leke çıkarma işlemi</li>
-                        <li><i class="fas fa-check text-sky-700 mr-1.5"></i>Antibakteriyel durulama</li>
-                    </ul>
+
+                    <!-- Hero Quick Request Card (Only 13 Allowed Regions) -->
+                    <div class="lg:col-span-5">
+                        <div class="glass-card rounded-2xl p-6 sm:p-8 text-slate-800 shadow-2xl border border-white/40 relative">
+                            <div class="absolute -top-3.5 -right-3.5 bg-accent-500 text-white text-xs font-black uppercase px-3.5 py-1.5 rounded-full shadow-lg flex items-center gap-1.5">
+                                <i class="fa-solid fa-bolt"></i> Hızlı Randevu
+                            </div>
+                            <h3 class="text-xl font-bold text-slate-900 mb-1">Hemen Servis Çağırın</h3>
+                            <p class="text-xs text-slate-500 mb-6">Bölgenizi ve hizmeti seçin, tek tıkla WhatsApp üzerinden anında randevu kaydı oluşturun.</p>
+
+                            <form id="hero-quick-form" class="space-y-4" onsubmit="event.preventDefault(); sendQuickLead();">
+                                <div>
+                                    <label for="lead-service" class="block text-xs font-semibold text-slate-600 mb-1">Hizmet Türü</label>
+                                    <select id="lead-service" class="w-full border border-slate-200 rounded-lg p-3 text-sm focus:ring-2 focus:ring-brand-600 outline-none bg-white">
+                                        <option value="Halı Yıkama">Halı Yıkama</option>
+                                        <option value="Koltuk Yıkama">Yerinde Koltuk Yıkama</option>
+                                        <option value="Perde Yıkama">Perde / Stor Yıkama</option>
+                                        <option value="Yorgan & Battaniye Yıkama">Yorgan & Battaniye Yıkama</option>
+                                    </select>
+                                </div>
+                                <div>
+                                    <label for="lead-area" class="block text-xs font-semibold text-slate-600 mb-1">Hizmet Bölgeniz</label>
+                                    <select id="lead-area" class="w-full border border-slate-200 rounded-lg p-3 text-sm focus:ring-2 focus:ring-brand-600 outline-none bg-white font-medium">
+                                        <option value="Gaziosmanpaşa">Gaziosmanpaşa</option>
+                                        <option value="Güzeldere">Güzeldere</option>
+                                        <option value="Karadolap">Karadolap</option>
+                                        <option value="Rami">Rami</option>
+                                        <option value="Emniyettepe">Emniyettepe</option>
+                                        <option value="Mevlana Mahallesi">Mevlana Mahallesi</option>
+                                        <option value="Alibeyköy">Alibeyköy</option>
+                                        <option value="Eyüp">Eyüp</option>
+                                        <option value="Sultangazi">Sultangazi</option>
+                                        <option value="Küçükköy">Küçükköy</option>
+                                        <option value="Akşemsettin Mahallesi">Akşemsettin Mahallesi</option>
+                                        <option value="Yeşilpınar">Yeşilpınar</option>
+                                        <option value="Çırçır">Çırçır</option>
+                                    </select>
+                                </div>
+                                <div>
+                                    <label for="lead-note" class="block text-xs font-semibold text-slate-600 mb-1">Notunuz veya Miktar (Opsiyonel)</label>
+                                    <input type="text" id="lead-note" placeholder="Örn: 3 adet halı, 1 takım koltuk" class="w-full border border-slate-200 rounded-lg p-3 text-sm focus:ring-2 focus:ring-brand-600 outline-none">
+                                </div>
+
+                                <button type="submit" class="w-full py-3.5 px-4 rounded-xl bg-emerald-600 hover:bg-emerald-700 text-white font-bold text-sm shadow-md hover:shadow-lg transition-all flex items-center justify-center gap-2">
+                                    <i class="fa-brands fa-whatsapp text-lg"></i>
+                                    <span>WhatsApp ile Servis Talebi Oluştur</span>
+                                </button>
+                            </form>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Trust Badges Bar -->
+        <section class="bg-white border-b border-slate-200/80 py-6">
+            <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+                <div class="grid grid-cols-2 md:grid-cols-4 gap-6 text-center">
+                    <div>
+                        <div class="text-2xl sm:text-3xl font-extrabold text-brand-800">18+ Yıl</div>
+                        <div class="text-xs sm:text-sm text-slate-500 font-medium">Bölgesel Deneyim</div>
+                    </div>
+                    <div>
+                        <div class="text-2xl sm:text-3xl font-extrabold text-brand-800">7.000+</div>
+                        <div class="text-xs sm:text-sm text-slate-500 font-medium">Memnun Müşteri</div>
+                    </div>
+                    <div>
+                        <div class="text-2xl sm:text-3xl font-extrabold text-brand-800">13 Bölge</div>
+                        <div class="text-xs sm:text-sm text-slate-500 font-medium">Ücretsiz Alım-Teslim</div>
+                    </div>
+                    <div>
+                        <div class="text-2xl sm:text-3xl font-extrabold text-brand-800">%100</div>
+                        <div class="text-xs sm:text-sm text-slate-500 font-medium">Hijyen & Temizlik Garantisi</div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Services Section -->
+        <section id="hizmetler" class="py-20 bg-slate-50 scroll-mt-20">
+            <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+                <div class="text-center max-w-3xl mx-auto mb-16">
+                    <span class="text-brand-700 font-bold uppercase tracking-wider text-xs bg-brand-100 px-3 py-1 rounded-full">Uzmanlık Alanlarımız</span>
+                    <h2 class="text-3xl sm:text-4xl font-extrabold text-slate-900 mt-3 tracking-tight">Hizmetlerimiz</h2>
+                    <p class="text-slate-600 mt-3 text-base">Eşyalarınızın dokusunu ve renk canlılığını koruyan özel antibakteriyel şampuanlar ve modern makinelerle hizmet veriyoruz.</p>
                 </div>
 
-                <div class="glass-card rounded-3xl p-6 flex flex-col">
-                    <div class="w-12 h-12 rounded-xl bg-sky-700 text-white flex items-center justify-center text-xl mb-4">
-                        <i class="fas fa-couch"></i>
+                <div class="grid md:grid-cols-2 lg:grid-cols-4 gap-8">
+                    <!-- Card 1: Halı Yıkama -->
+                    <div class="bg-white rounded-2xl p-6 shadow-sm hover:shadow-xl border border-slate-200/80 transition-all group flex flex-col justify-between">
+                        <div>
+                            <div class="w-14 h-14 rounded-xl bg-brand-50 text-brand-800 flex items-center justify-center text-2xl mb-6 group-hover:bg-brand-800 group-hover:text-white transition-colors">
+                                <i class="fa-solid fa-rug"></i>
+                            </div>
+                            <h3 class="text-xl font-bold text-slate-900 mb-2">Halı Yıkama</h3>
+                            <p class="text-slate-600 text-sm leading-relaxed mb-4">
+                                Makine, el dokuma, shaggy ve yün halılarınız cinsine göre ayrılarak tam otomatik makinelerde toz alma, çift yönlü yıkama ve santrifüj sıkma işlemlerinden geçer.
+                            </p>
+                            <ul class="text-xs text-slate-500 space-y-2 mb-6">
+                                <li class="flex items-center gap-2"><i class="fa-solid fa-check text-brand-600"></i> Otomatik toz alma & çırpma</li>
+                                <li class="flex items-center gap-2"><i class="fa-solid fa-check text-brand-600"></i> Bitkisel antibakteriyel şampuan</li>
+                                <li class="flex items-center gap-2"><i class="fa-solid fa-check text-brand-600"></i> Kapalı hijyenik kurutma odası</li>
+                            </ul>
+                        </div>
+                        <a href="https://wa.me/905304149246?text=Halı%20yıkama%20hakkında%20bilgi%20almak%20istiyorum." class="w-full py-2.5 text-center rounded-lg bg-slate-100 hover:bg-brand-800 hover:text-white text-slate-700 text-xs font-bold transition-all">
+                            Servis Talep Et
+                        </a>
                     </div>
-                    <h3 class="text-lg font-bold text-slate-900 mb-2">Koltuk Yıkama</h3>
-                    <p class="text-sm text-slate-700 mb-4 flex-grow">Yerinde profesyonel vakumlu makinelerle kumaşa işlemiş kir ve kokuları yok ediyoruz.</p>
-                    <ul class="text-xs text-slate-700 space-y-1.5 border-t border-white/50 pt-3">
-                        <li><i class="fas fa-check text-sky-700 mr-1.5"></i>Buharlı yerinde temizlik</li>
-                        <li><i class="fas fa-check text-sky-700 mr-1.5"></i>Kumaşa zarar vermeyen solüsyon</li>
-                    </ul>
+
+                    <!-- Card 2: Koltuk Yıkama -->
+                    <div class="bg-white rounded-2xl p-6 shadow-sm hover:shadow-xl border border-slate-200/80 transition-all group flex flex-col justify-between">
+                        <div>
+                            <div class="w-14 h-14 rounded-xl bg-brand-50 text-brand-800 flex items-center justify-center text-2xl mb-6 group-hover:bg-brand-800 group-hover:text-white transition-colors">
+                                <i class="fa-solid fa-couch"></i>
+                            </div>
+                            <h3 class="text-xl font-bold text-slate-900 mb-2">Koltuk Yıkama</h3>
+                            <p class="text-slate-600 text-sm leading-relaxed mb-4">
+                                Evinizde yerinde, yüksek vakumlu sanayi tipi buharlı makinelerle koltuk süngerine işlemiş kir, leke, mite ve bakterileri derinlemesine çekip arındırıyoruz.
+                            </p>
+                            <ul class="text-xs text-slate-500 space-y-2 mb-6">
+                                <li class="flex items-center gap-2"><i class="fa-solid fa-check text-brand-600"></i> Yerinde profesyonel temizlik</li>
+                                <li class="flex items-center gap-2"><i class="fa-solid fa-check text-brand-600"></i> Kumaş yapısına uygun leke çıkarıcılar</li>
+                                <li class="flex items-center gap-2"><i class="fa-solid fa-check text-brand-600"></i> 4-6 saatte hızlı kuruma</li>
+                            </ul>
+                        </div>
+                        <a href="https://wa.me/905304149246?text=Yerinde%20koltuk%20yıkama%20hakkında%20bilgi%20almak%20istiyorum." class="w-full py-2.5 text-center rounded-lg bg-slate-100 hover:bg-brand-800 hover:text-white text-slate-700 text-xs font-bold transition-all">
+                            Servis Talep Et
+                        </a>
+                    </div>
+
+                    <!-- Card 3: Perde Yıkama -->
+                    <div class="bg-white rounded-2xl p-6 shadow-sm hover:shadow-xl border border-slate-200/80 transition-all group flex flex-col justify-between">
+                        <div>
+                            <div class="w-14 h-14 rounded-xl bg-brand-50 text-brand-800 flex items-center justify-center text-2xl mb-6 group-hover:bg-brand-800 group-hover:text-white transition-colors">
+                                <i class="fa-solid fa-window-maximize"></i>
+                            </div>
+                            <h3 class="text-xl font-bold text-slate-900 mb-2">Perde & Stor Yıkama</h3>
+                            <p class="text-slate-600 text-sm leading-relaxed mb-4">
+                                Stor, zebra ve tül perdeleriniz mekanizmasına zarar verilmeden uzman ekibimizce sökülür, özel havuzlarda hassas şekilde yıkanır ve ütülü teslim edilir.
+                            </p>
+                            <ul class="text-xs text-slate-500 space-y-2 mb-6">
+                                <li class="flex items-center gap-2"><i class="fa-solid fa-check text-brand-600"></i> Mekanizma korumalı hassas temizlik</li>
+                                <li class="flex items-center gap-2"><i class="fa-solid fa-check text-brand-600"></i> Sararma, yağ ve is lekesi arındırma</li>
+                                <li class="flex items-center gap-2"><i class="fa-solid fa-check text-brand-600"></i> Temiz ve kullanıma hazır teslim</li>
+                            </ul>
+                        </div>
+                        <a href="https://wa.me/905304149246?text=Perde%20ve%20stor%20yıkama%20için%20bilgi%20almak%20istiyorum." class="w-full py-2.5 text-center rounded-lg bg-slate-100 hover:bg-brand-800 hover:text-white text-slate-700 text-xs font-bold transition-all">
+                            Servis Talep Et
+                        </a>
+                    </div>
+
+                    <!-- Card 4: Yorgan & Battaniye -->
+                    <div class="bg-white rounded-2xl p-6 shadow-sm hover:shadow-xl border border-slate-200/80 transition-all group flex flex-col justify-between">
+                        <div>
+                            <div class="w-14 h-14 rounded-xl bg-brand-50 text-brand-800 flex items-center justify-center text-2xl mb-6 group-hover:bg-brand-800 group-hover:text-white transition-colors">
+                                <i class="fa-solid fa-bed"></i>
+                            </div>
+                            <h3 class="text-xl font-bold text-slate-900 mb-2">Yorgan & Battaniye</h3>
+                            <p class="text-slate-600 text-sm leading-relaxed mb-4">
+                                Elyaf, yün, pamuk ve kaz tüyü yorganlarınız geniş tamburlu endüstriyel hijyenik makinelerde tek tek yıkanır ve tam kurutulmuş olarak paketlenir.
+                            </p>
+                            <ul class="text-xs text-slate-500 space-y-2 mb-6">
+                                <li class="flex items-center gap-2"><i class="fa-solid fa-check text-brand-600"></i> Kişiye özel tekil yıkama</li>
+                                <li class="flex items-center gap-2"><i class="fa-solid fa-check text-brand-600"></i> Mayt ve alerjenlerden arındırma</li>
+                                <li class="flex items-center gap-2"><i class="fa-solid fa-check text-brand-600"></i> Hijyenik koruyucu paketleme</li>
+                            </ul>
+                        </div>
+                        <a href="https://wa.me/905304149246?text=Yorgan%20ve%20battaniye%20yıkama%20hakkında%20bilgi%20almak%20istiyorum." class="w-full py-2.5 text-center rounded-lg bg-slate-100 hover:bg-brand-800 hover:text-white text-slate-700 text-xs font-bold transition-all">
+                            Servis Talep Et
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Customer Testimonials Section -->
+        <section id="yorumlar" class="py-20 bg-white border-y border-slate-200/80 scroll-mt-20">
+            <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+                <div class="text-center max-w-3xl mx-auto mb-14">
+                    <span class="text-brand-700 font-bold uppercase tracking-wider text-xs bg-brand-100 px-3.5 py-1.5 rounded-full">
+                        <i class="fa-solid fa-star text-amber-500 mr-1"></i> %100 Gerçek Müşteri Memnuniyeti
+                    </span>
+                    <h2 class="text-3xl sm:text-4xl font-extrabold text-slate-900 mt-3 tracking-tight">Hizmet Alan Müşterilerimizin Yorumları</h2>
+                    <p class="text-slate-600 mt-3 text-base">Hizmet bölgelerimizdeki ev ve iş yerlerinden aldığımız olumlu geri bildirimler bizim en büyük güvencemizdir.</p>
                 </div>
 
-                <div class="glass-card rounded-3xl p-6 flex flex-col">
-                    <div class="w-12 h-12 rounded-xl bg-sky-700 text-white flex items-center justify-center text-xl mb-4">
-                        <i class="fas fa-window-maximize"></i>
+                <div class="grid md:grid-cols-2 lg:grid-cols-3 gap-6">
+                    <!-- Review 1 -->
+                    <div class="bg-slate-50 rounded-2xl p-6 border border-slate-200/90 shadow-sm hover:shadow-md transition-all flex flex-col justify-between">
+                        <div>
+                            <div class="flex items-center justify-between mb-4">
+                                <div class="flex items-center gap-1 text-amber-400 text-sm">
+                                    <i class="fa-solid fa-star"></i>
+                                    <i class="fa-solid fa-star"></i>
+                                    <i class="fa-solid fa-star"></i>
+                                    <i class="fa-solid fa-star"></i>
+                                    <i class="fa-solid fa-star"></i>
+                                </div>
+                                <span class="text-[11px] font-semibold text-emerald-700 bg-emerald-100 px-2.5 py-0.5 rounded-full flex items-center gap-1">
+                                    <i class="fa-solid fa-circle-check text-[10px]"></i> Onaylı Müşteri
+                                </span>
+                            </div>
+                            <p class="text-slate-700 text-sm leading-relaxed mb-6 italic">
+                                "Alibeyköy'deki evimiz için 4 adet salon halısı verdik. Açık renk yün halımızdaki kahve lekesi tamamen çıkmış, halılar ilk aldığımız günkü gibi tertemiz ve mis gibi kokuyordu. Söz verdikleri gün getirdiler, çok teşekkürler."
+                            </p>
+                        </div>
+                        <div class="flex items-center gap-3 pt-4 border-t border-slate-200/70">
+                            <div class="w-10 h-10 rounded-full bg-brand-800 text-white font-bold flex items-center justify-center text-sm shadow-sm">
+                                SÖ
+                            </div>
+                            <div>
+                                <div class="font-bold text-slate-900 text-sm">Sevgi Özdemir</div>
+                                <div class="text-xs text-brand-700 font-medium"><i class="fa-solid fa-location-dot text-[11px] mr-1"></i>Alibeyköy / Halı Yıkama</div>
+                            </div>
+                        </div>
                     </div>
-                    <h3 class="text-lg font-bold text-slate-900 mb-2">Perde Yıkama</h3>
-                    <p class="text-sm text-slate-700 mb-4 flex-grow">Stor, zebra, tül ve kumaş perdelerinizin kırışmadan ilk günkü formuna dönmesini sağlıyoruz.</p>
-                    <ul class="text-xs text-slate-700 space-y-1.5 border-t border-white/50 pt-3">
-                        <li><i class="fas fa-check text-sky-700 mr-1.5"></i>Stor & Zebra özel yıkama</li>
-                        <li><i class="fas fa-check text-sky-700 mr-1.5"></i>Hassas doku koruma</li>
-                    </ul>
+
+                    <!-- Review 2 -->
+                    <div class="bg-slate-50 rounded-2xl p-6 border border-slate-200/90 shadow-sm hover:shadow-md transition-all flex flex-col justify-between">
+                        <div>
+                            <div class="flex items-center justify-between mb-4">
+                                <div class="flex items-center gap-1 text-amber-400 text-sm">
+                                    <i class="fa-solid fa-star"></i>
+                                    <i class="fa-solid fa-star"></i>
+                                    <i class="fa-solid fa-star"></i>
+                                    <i class="fa-solid fa-star"></i>
+                                    <i class="fa-solid fa-star"></i>
+                                </div>
+                                <span class="text-[11px] font-semibold text-emerald-700 bg-emerald-100 px-2.5 py-0.5 rounded-full flex items-center gap-1">
+                                    <i class="fa-solid fa-circle-check text-[10px]"></i> Onaylı Müşteri
+                                </span>
+                            </div>
+                            <p class="text-slate-700 text-sm leading-relaxed mb-6 italic">
+                                "Yeşilpınar'da oturuyoruz, yerinde L koltuk ve berjer yıkattık. Gelen ekip son derece saygılı ve işinin ehliydi. Çıkan kirli suya inanamadık. Akşama doğru koltuklar tamamen kurudu ve pırıl pırıl oldu. Kesinlikle tavsiye ederim."
+                            </p>
+                        </div>
+                        <div class="flex items-center gap-3 pt-4 border-t border-slate-200/70">
+                            <div class="w-10 h-10 rounded-full bg-brand-800 text-white font-bold flex items-center justify-center text-sm shadow-sm">
+                                MK
+                            </div>
+                            <div>
+                                <div class="font-bold text-slate-900 text-sm">Murat Karaca</div>
+                                <div class="text-xs text-brand-700 font-medium"><i class="fa-solid fa-location-dot text-[11px] mr-1"></i>Yeşilpınar / Koltuk Yıkama</div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Review 3 -->
+                    <div class="bg-slate-50 rounded-2xl p-6 border border-slate-200/90 shadow-sm hover:shadow-md transition-all flex flex-col justify-between">
+                        <div>
+                            <div class="flex items-center justify-between mb-4">
+                                <div class="flex items-center gap-1 text-amber-400 text-sm">
+                                    <i class="fa-solid fa-star"></i>
+                                    <i class="fa-solid fa-star"></i>
+                                    <i class="fa-solid fa-star"></i>
+                                    <i class="fa-solid fa-star"></i>
+                                    <i class="fa-solid fa-star"></i>
+                                </div>
+                                <span class="text-[11px] font-semibold text-emerald-700 bg-emerald-100 px-2.5 py-0.5 rounded-full flex items-center gap-1">
+                                    <i class="fa-solid fa-circle-check text-[10px]"></i> Onaylı Müşteri
+                                </span>
+                            </div>
+                            <p class="text-slate-700 text-sm leading-relaxed mb-6 italic">
+                                "Gaziosmanpaşa'dan aradım, aynı gün kapımdan aldılar. Stor perdeler ve yün yorganlar tertemiz paketli halde geldi. Fiyatları da piyasaya göre gayet dürüst ve makul. Artık tüm temizlik işlerimizde İkizler'i tercih ediyoruz."
+                            </p>
+                        </div>
+                        <div class="flex items-center gap-3 pt-4 border-t border-slate-200/70">
+                            <div class="w-10 h-10 rounded-full bg-brand-800 text-white font-bold flex items-center justify-center text-sm shadow-sm">
+                                HA
+                            </div>
+                            <div>
+                                <div class="font-bold text-slate-900 text-sm">Hülya Aydın</div>
+                                <div class="text-xs text-brand-700 font-medium"><i class="fa-solid fa-location-dot text-[11px] mr-1"></i>Gaziosmanpaşa / Stor & Yorgan</div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Review 4 -->
+                    <div class="bg-slate-50 rounded-2xl p-6 border border-slate-200/90 shadow-sm hover:shadow-md transition-all flex flex-col justify-between">
+                        <div>
+                            <div class="flex items-center justify-between mb-4">
+                                <div class="flex items-center gap-1 text-amber-400 text-sm">
+                                    <i class="fa-solid fa-star"></i>
+                                    <i class="fa-solid fa-star"></i>
+                                    <i class="fa-solid fa-star"></i>
+                                    <i class="fa-solid fa-star"></i>
+                                    <i class="fa-solid fa-star"></i>
+                                </div>
+                                <span class="text-[11px] font-semibold text-emerald-700 bg-emerald-100 px-2.5 py-0.5 rounded-full flex items-center gap-1">
+                                    <i class="fa-solid fa-circle-check text-[10px]"></i> Onaylı Müşteri
+                                </span>
+                            </div>
+                            <p class="text-slate-700 text-sm leading-relaxed mb-6 italic">
+                                "Eyüp merkezde oturuyorum. El dokuma antika halımı teslim ederken çok tereddüt etmiştim ama renkleri hiç karışmadan, iplikleri yıpranmadan harika temizlenmiş. Gerçek profesyonellik budur."
+                            </p>
+                        </div>
+                        <div class="flex items-center gap-3 pt-4 border-t border-slate-200/70">
+                            <div class="w-10 h-10 rounded-full bg-brand-800 text-white font-bold flex items-center justify-center text-sm shadow-sm">
+                                EK
+                            </div>
+                            <div>
+                                <div class="font-bold text-slate-900 text-sm">Emre Koç</div>
+                                <div class="text-xs text-brand-700 font-medium"><i class="fa-solid fa-location-dot text-[11px] mr-1"></i>Eyüp / Dokuma Halı</div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Review 5 -->
+                    <div class="bg-slate-50 rounded-2xl p-6 border border-slate-200/90 shadow-sm hover:shadow-md transition-all flex flex-col justify-between">
+                        <div>
+                            <div class="flex items-center justify-between mb-4">
+                                <div class="flex items-center gap-1 text-amber-400 text-sm">
+                                    <i class="fa-solid fa-star"></i>
+                                    <i class="fa-solid fa-star"></i>
+                                    <i class="fa-solid fa-star"></i>
+                                    <i class="fa-solid fa-star"></i>
+                                    <i class="fa-solid fa-star"></i>
+                                </div>
+                                <span class="text-[11px] font-semibold text-emerald-700 bg-emerald-100 px-2.5 py-0.5 rounded-full flex items-center gap-1">
+                                    <i class="fa-solid fa-circle-check text-[10px]"></i> Onaylı Müşteri
+                                </span>
+                            </div>
+                            <p class="text-slate-700 text-sm leading-relaxed mb-6 italic">
+                                "Çırçır Mahallesi'ndeki evimizden her sezon halı ve battaniyelerimizi veririz. Yıllardır kalitelerinden hiç ödün vermediler. Servis personeli çok kibar ve saatinde geliyor. Emeğinize sağlık."
+                            </p>
+                        </div>
+                        <div class="flex items-center gap-3 pt-4 border-t border-slate-200/70">
+                            <div class="w-10 h-10 rounded-full bg-brand-800 text-white font-bold flex items-center justify-center text-sm shadow-sm">
+                                NT
+                            </div>
+                            <div>
+                                <div class="font-bold text-slate-900 text-sm">Nermin Taşkın</div>
+                                <div class="text-xs text-brand-700 font-medium"><i class="fa-solid fa-location-dot text-[11px] mr-1"></i>Çırçır / Düzenli Müşteri</div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Review 6 -->
+                    <div class="bg-slate-50 rounded-2xl p-6 border border-slate-200/90 shadow-sm hover:shadow-md transition-all flex flex-col justify-between">
+                        <div>
+                            <div class="flex items-center justify-between mb-4">
+                                <div class="flex items-center gap-1 text-amber-400 text-sm">
+                                    <i class="fa-solid fa-star"></i>
+                                    <i class="fa-solid fa-star"></i>
+                                    <i class="fa-solid fa-star"></i>
+                                    <i class="fa-solid fa-star"></i>
+                                    <i class="fa-solid fa-star"></i>
+                                </div>
+                                <span class="text-[11px] font-semibold text-emerald-700 bg-emerald-100 px-2.5 py-0.5 rounded-full flex items-center gap-1">
+                                    <i class="fa-solid fa-circle-check text-[10px]"></i> Onaylı Müşteri
+                                </span>
+                            </div>
+                            <p class="text-slate-700 text-sm leading-relaxed mb-6 italic">
+                                "Sultangazi'de oturuyorum, çocuklu bir aile olduğumuz için halılardaki hijyen bizim için çok önemli. İkizler Halı Yıkama kimyasal kokmayan, tertemiz ve puf puf halılar teslim etti. Kesinlikle 5 yıldızı hak ediyorlar."
+                            </p>
+                        </div>
+                        <div class="flex items-center gap-3 pt-4 border-t border-slate-200/70">
+                            <div class="w-10 h-10 rounded-full bg-brand-800 text-white font-bold flex items-center justify-center text-sm shadow-sm">
+                                BY
+                            </div>
+                            <div>
+                                <div class="font-bold text-slate-900 text-sm">Burak Yılmaz</div>
+                                <div class="text-xs text-brand-700 font-medium"><i class="fa-solid fa-location-dot text-[11px] mr-1"></i>Sultangazi / Halı Yıkama</div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Service Regions Section (Strictly only the 13 areas requested by the user) -->
+        <section id="bolgeler" class="py-20 bg-slate-50 scroll-mt-20">
+            <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+                <div class="text-center max-w-3xl mx-auto mb-14">
+                    <span class="text-brand-700 font-bold uppercase tracking-wider text-xs bg-brand-100 px-3.5 py-1.5 rounded-full">
+                        <i class="fa-solid fa-truck-fast mr-1"></i> Ücretsiz Alım - Teslim Ağı
+                    </span>
+                    <h2 class="text-3xl sm:text-4xl font-extrabold text-slate-900 mt-3 tracking-tight">Hizmet Bölgelerimiz</h2>
+                    <p class="text-slate-600 text-sm sm:text-base mt-3">Aşağıda yer alan 13 hizmet bölgemizde kendi araçlarımızla ücretsiz kapıdan alım ve kapıya teslimat sağlıyoruz.</p>
                 </div>
 
-                <div class="glass-card rounded-3xl p-6 flex flex-col">
-                    <div class="w-12 h-12 rounded-xl bg-sky-700 text-white flex items-center justify-center text-xl mb-4">
-                        <i class="fas fa-bed"></i>
+                <!-- Exactly 13 items specified by the user -->
+                <div class="grid grid-cols-2 sm:grid-cols-3 md:grid-cols-4 lg:grid-cols-5 gap-4 max-w-5xl mx-auto">
+                    <!-- 1. Gaziosmanpaşa -->
+                    <div class="p-4 rounded-xl bg-white border border-slate-200 text-center font-bold text-slate-800 text-sm hover:border-brand-600 hover:text-brand-800 hover:shadow-md transition-all flex items-center justify-center gap-2">
+                        <i class="fa-solid fa-location-dot text-brand-600 text-xs"></i> Gaziosmanpaşa
                     </div>
-                    <h3 class="text-lg font-bold text-slate-900 mb-2">Yorgan & Battaniye</h3>
-                    <p class="text-sm text-slate-700 mb-4 flex-grow">Sanayi tipi makinelerde mayt, toz ve alerjenlerden tamamen arındırılır.</p>
-                    <ul class="text-xs text-slate-700 space-y-1.5 border-t border-white/50 pt-3">
-                        <li><i class="fas fa-check text-sky-700 mr-1.5"></i>Tam kurutma garantisi</li>
-                        <li><i class="fas fa-check text-sky-700 mr-1.5"></i>Hijyenik vakumlu ambalaj</li>
-                    </ul>
+                    <!-- 2. Güzeldere -->
+                    <div class="p-4 rounded-xl bg-white border border-slate-200 text-center font-bold text-slate-800 text-sm hover:border-brand-600 hover:text-brand-800 hover:shadow-md transition-all flex items-center justify-center gap-2">
+                        <i class="fa-solid fa-location-dot text-brand-600 text-xs"></i> Güzeldere
+                    </div>
+                    <!-- 3. Karadolap -->
+                    <div class="p-4 rounded-xl bg-white border border-slate-200 text-center font-bold text-slate-800 text-sm hover:border-brand-600 hover:text-brand-800 hover:shadow-md transition-all flex items-center justify-center gap-2">
+                        <i class="fa-solid fa-location-dot text-brand-600 text-xs"></i> Karadolap
+                    </div>
+                    <!-- 4. Rami -->
+                    <div class="p-4 rounded-xl bg-white border border-slate-200 text-center font-bold text-slate-800 text-sm hover:border-brand-600 hover:text-brand-800 hover:shadow-md transition-all flex items-center justify-center gap-2">
+                        <i class="fa-solid fa-location-dot text-brand-600 text-xs"></i> Rami
+                    </div>
+                    <!-- 5. Emniyettepe -->
+                    <div class="p-4 rounded-xl bg-white border border-slate-200 text-center font-bold text-slate-800 text-sm hover:border-brand-600 hover:text-brand-800 hover:shadow-md transition-all flex items-center justify-center gap-2">
+                        <i class="fa-solid fa-location-dot text-brand-600 text-xs"></i> Emniyettepe
+                    </div>
+                    <!-- 6. Mevlana Mahallesi -->
+                    <div class="p-4 rounded-xl bg-white border border-slate-200 text-center font-bold text-slate-800 text-sm hover:border-brand-600 hover:text-brand-800 hover:shadow-md transition-all flex items-center justify-center gap-2">
+                        <i class="fa-solid fa-location-dot text-brand-600 text-xs"></i> Mevlana Mahallesi
+                    </div>
+                    <!-- 7. Alibeyköy -->
+                    <div class="p-4 rounded-xl bg-white border border-slate-200 text-center font-bold text-slate-800 text-sm hover:border-brand-600 hover:text-brand-800 hover:shadow-md transition-all flex items-center justify-center gap-2">
+                        <i class="fa-solid fa-location-dot text-brand-600 text-xs"></i> Alibeyköy
+                    </div>
+                    <!-- 8. Eyüp -->
+                    <div class="p-4 rounded-xl bg-white border border-slate-200 text-center font-bold text-slate-800 text-sm hover:border-brand-600 hover:text-brand-800 hover:shadow-md transition-all flex items-center justify-center gap-2">
+                        <i class="fa-solid fa-location-dot text-brand-600 text-xs"></i> Eyüp
+                    </div>
+                    <!-- 9. Sultangazi -->
+                    <div class="p-4 rounded-xl bg-white border border-slate-200 text-center font-bold text-slate-800 text-sm hover:border-brand-600 hover:text-brand-800 hover:shadow-md transition-all flex items-center justify-center gap-2">
+                        <i class="fa-solid fa-location-dot text-brand-600 text-xs"></i> Sultangazi
+                    </div>
+                    <!-- 10. Küçükköy -->
+                    <div class="p-4 rounded-xl bg-white border border-slate-200 text-center font-bold text-slate-800 text-sm hover:border-brand-600 hover:text-brand-800 hover:shadow-md transition-all flex items-center justify-center gap-2">
+                        <i class="fa-solid fa-location-dot text-brand-600 text-xs"></i> Küçükköy
+                    </div>
+                    <!-- 11. Akşemsettin Mahallesi -->
+                    <div class="p-4 rounded-xl bg-white border border-slate-200 text-center font-bold text-slate-800 text-sm hover:border-brand-600 hover:text-brand-800 hover:shadow-md transition-all flex items-center justify-center gap-2">
+                        <i class="fa-solid fa-location-dot text-brand-600 text-xs"></i> Akşemsettin Mahallesi
+                    </div>
+                    <!-- 12. Yeşilpınar -->
+                    <div class="p-4 rounded-xl bg-white border border-slate-200 text-center font-bold text-slate-800 text-sm hover:border-brand-600 hover:text-brand-800 hover:shadow-md transition-all flex items-center justify-center gap-2">
+                        <i class="fa-solid fa-location-dot text-brand-600 text-xs"></i> Yeşilpınar
+                    </div>
+                    <!-- 13. Çırçır -->
+                    <div class="p-4 rounded-xl bg-white border border-slate-200 text-center font-bold text-slate-800 text-sm hover:border-brand-600 hover:text-brand-800 hover:shadow-md transition-all flex items-center justify-center gap-2">
+                        <i class="fa-solid fa-location-dot text-brand-600 text-xs"></i> Çırçır
+                    </div>
+                </div>
+
+                <div class="mt-10 text-center">
+                    <a href="tel:05304149246" class="inline-flex items-center gap-2 px-6 py-3 rounded-xl bg-brand-800 hover:bg-brand-900 text-white font-bold text-sm shadow-md transition-all">
+                        <i class="fa-solid fa-phone"></i>
+                        <span>Bölgeniz İçin Servis Çağırın: 0530 414 92 46</span>
+                    </a>
                 </div>
             </div>
-        </div>
-    </section>
+        </section>
 
-    <!-- Hakkımızda -->
-    <section id="hakkimizda" class="py-12 px-4">
-        <div class="max-w-6xl mx-auto glass-panel rounded-3xl p-8 md:p-12">
-            <h2 class="text-2xl md:text-3xl font-bold gradient-text mb-4">Hakkımızda</h2>
-            <p class="text-slate-800 leading-relaxed mb-4">
-                <strong>İkizler Halı ve Koltuk Yıkama</strong> olarak, Eyüpsultan ve çevresinde 18 yılı aşkın deneyimimizle 7.000'in üzerinde müşteriye halı, koltuk, perde ve tekstil temizliği hizmeti sunduk. Müşteri memnuniyetini önceliğimiz olarak görüyor, her halıya ve koltuğa özel ilgi gösteriyoruz.
-            </p>
-            <p class="text-slate-800 leading-relaxed">
-                Modern yıkama ekipmanlarımız ve antibakteriyel temizlik ürünlerimiz ile halılarınızı en iyi şekilde temizliyoruz. Tüm işlemlerimizde hijyen ve şeffaf fiyatlandırma önceliğimizdir.
-            </p>
-        </div>
-    </section>
+        <!-- FAQ Section -->
+        <section id="sss" class="py-20 bg-white scroll-mt-20">
+            <div class="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8">
+                <div class="text-center max-w-2xl mx-auto mb-14">
+                    <span class="text-brand-700 font-bold uppercase tracking-wider text-xs bg-brand-100 px-3 py-1 rounded-full">Merak Edilenler</span>
+                    <h2 class="text-3xl font-extrabold text-slate-900 mt-3">Sıkça Sorulan Sorular</h2>
+                </div>
 
-    <!-- Bölgeler -->
-    <section id="bolgeler" class="py-12 px-4">
-        <div class="max-w-5xl mx-auto glass-panel rounded-3xl p-8 md:p-12 text-center">
-            <h2 class="text-2xl md:text-3xl font-bold gradient-text mb-4">Ücretsiz Servis Bölgelerimiz</h2>
-            <p class="text-slate-800 text-sm md:text-base mb-6 font-medium">İstanbul Avrupa Yakası'nda kapınızdan alıyor, kapınıza teslim ediyoruz.</p>
-            <div class="flex flex-wrap justify-center gap-2.5">
-                <span class="px-4 py-2 bg-white/70 border border-white/90 rounded-xl text-sm font-semibold text-sky-950 shadow-sm">Eyüpsultan</span>
-                <span class="px-4 py-2 bg-white/70 border border-white/90 rounded-xl text-sm font-semibold text-sky-950 shadow-sm">Alibeyköy</span>
-                <span class="px-4 py-2 bg-white/70 border border-white/90 rounded-xl text-sm font-semibold text-sky-950 shadow-sm">Gaziosmanpaşa</span>
-                <span class="px-4 py-2 bg-white/70 border border-white/90 rounded-xl text-sm font-semibold text-sky-950 shadow-sm">Sultangazi</span>
-                <span class="px-4 py-2 bg-white/70 border border-white/90 rounded-xl text-sm font-semibold text-sky-950 shadow-sm">Küçükköy</span>
-                <span class="px-4 py-2 bg-white/70 border border-white/90 rounded-xl text-sm font-semibold text-sky-950 shadow-sm">Rami</span>
-                <span class="px-4 py-2 bg-white/70 border border-white/90 rounded-xl text-sm font-semibold text-sky-950 shadow-sm">Çırçır</span>
-                <span class="px-4 py-2 bg-white/70 border border-white/90 rounded-xl text-sm font-semibold text-sky-950 shadow-sm">Yeşilpınar</span>
-            </div>
-        </div>
-    </section>
+                <div class="space-y-4" id="faq-accordion">
+                    <!-- FAQ 1 -->
+                    <div class="bg-slate-50 rounded-xl border border-slate-200 overflow-hidden">
+                        <button class="faq-btn w-full p-5 text-left font-bold text-slate-800 flex justify-between items-center hover:text-brand-700 transition-colors">
+                            <span>Alım ve teslimat için servis ücreti alıyor musunuz?</span>
+                            <i class="fa-solid fa-chevron-down text-xs transition-transform duration-200"></i>
+                        </button>
+                        <div class="faq-content hidden px-5 pb-5 text-sm text-slate-600 leading-relaxed border-t border-slate-200/60 pt-3">
+                            Hayır, hizmet verdiğimiz 13 bölgede (Gaziosmanpaşa, Güzeldere, Karadolap, Rami, Emniyettepe, Mevlana Mahallesi, Alibeyköy, Eyüp, Sultangazi, Küçükköy, Akşemsettin Mahallesi, Yeşilpınar ve Çırçır) kapıdan alım ve kapıya teslimat tamamen ücretsizdir.
+                        </div>
+                    </div>
 
-    <!-- İletişim & Harita -->
-    <section id="iletisim" class="py-12 px-4">
-        <div class="max-w-4xl mx-auto glass-panel rounded-3xl p-8 text-center">
-            <h3 class="text-2xl font-bold gradient-text mb-2">Bize Ulaşın</h3>
-            <p class="text-slate-800 text-sm mb-6">Pazartesi - Cumartesi: 08:30 - 21:30 saatleri arasında kesintisiz servis.</p>
-            <div class="flex flex-col sm:flex-row justify-center gap-4 text-sm font-semibold text-slate-900 mb-6">
-                <div><i class="fas fa-map-marker-alt text-sky-700 mr-2"></i>Çırçır Mah. Sezai Karakoç Cad. No:67, Eyüpsultan</div>
-                <div><i class="fas fa-phone text-sky-700 mr-2"></i>0530 414 92 46</div>
+                    <!-- FAQ 2 -->
+                    <div class="bg-slate-50 rounded-xl border border-slate-200 overflow-hidden">
+                        <button class="faq-btn w-full p-5 text-left font-bold text-slate-800 flex justify-between items-center hover:text-brand-700 transition-colors">
+                            <span>Halılarım kaç gün içinde teslim edilir?</span>
+                            <i class="fa-solid fa-chevron-down text-xs transition-transform duration-200"></i>
+                        </button>
+                        <div class="faq-content hidden px-5 pb-5 text-sm text-slate-600 leading-relaxed border-t border-slate-200/60 pt-3">
+                            Halılarınız cinsine ve mevsime bağlı olarak kapalı kurutma odalarımızda kurutulduktan sonra ortalama 2 ila 4 iş günü içinde taranmış, havalandırılmış ve koruyucu poşetinde teslim edilir.
+                        </div>
+                    </div>
+
+                    <!-- FAQ 3 -->
+                    <div class="bg-slate-50 rounded-xl border border-slate-200 overflow-hidden">
+                        <button class="faq-btn w-full p-5 text-left font-bold text-slate-800 flex justify-between items-center hover:text-brand-700 transition-colors">
+                            <span>Yerinde koltuk yıkama nasıl yapılıyor ve ne zaman kurur?</span>
+                            <i class="fa-solid fa-chevron-down text-xs transition-transform duration-200"></i>
+                        </button>
+                        <div class="faq-content hidden px-5 pb-5 text-sm text-slate-600 leading-relaxed border-t border-slate-200/60 pt-3">
+                            Koltuklarınız evinizde, özel buharlı ve yüksek emiş güçlü profesyonel makinelerle kumaşa uygun antialerjik şampuanlarla yıkanır. Yüksek vakumlama sayesinde suyun %95'i anında geri çekilir ve ortalama 4-8 saat içinde tamamen kullanıma hazır hale gelir.
+                        </div>
+                    </div>
+
+                    <!-- FAQ 4 -->
+                    <div class="bg-slate-50 rounded-xl border border-slate-200 overflow-hidden">
+                        <button class="faq-btn w-full p-5 text-left font-bold text-slate-800 flex justify-between items-center hover:text-brand-700 transition-colors">
+                            <span>Kullanılan şampuanlar sağlığa zararlı mıdır?</span>
+                            <i class="fa-solid fa-chevron-down text-xs transition-transform duration-200"></i>
+                        </button>
+                        <div class="faq-content hidden px-5 pb-5 text-sm text-slate-600 leading-relaxed border-t border-slate-200/60 pt-3">
+                            Kesinlikle hayır. Tesisimizde ve yerinde yıkamada çocukların ve evcil hayvanların sağlığına tamamen zararsız, bitkisel özlü, antibakteriyel ve antialerjik onaylı profesyonel şampuanlar kullanılmaktadır.
+                        </div>
+                    </div>
+                </div>
             </div>
-            <div class="rounded-2xl overflow-hidden border border-white/60 shadow-inner h-64 w-full">
-                <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2858.408398981677!2d28.935474!3d41.086427199999996!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x14cab1c5f27ef005%3A0x2efe9eb54f25195e!2s%C4%B0K%C4%B0ZLER%20HALI%20VE%20KOLTUK%20YIKAMA!5e1!3m2!1str!2str!4v1789037270534!5m2!1str!2str" class="w-full h-full border-0" allowfullscreen="" loading="lazy" referrerpolicy="strict-origin-when-cross-origin"></iframe>
+        </section>
+
+        <!-- Contact & Map Section -->
+        <section id="iletisim" class="py-20 bg-slate-50 scroll-mt-20">
+            <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+                <div class="grid lg:grid-cols-12 gap-12 items-start">
+                    <!-- Info -->
+                    <div class="lg:col-span-5 space-y-6">
+                        <span class="text-brand-700 font-bold uppercase tracking-wider text-xs bg-brand-100 px-3.5 py-1.5 rounded-full">İletişim & Randevu</span>
+                        <h2 class="text-3xl font-extrabold text-slate-900 tracking-tight">Bize Hemen Ulaşın</h2>
+                        <p class="text-slate-600 text-sm leading-relaxed">Halı ve koltuklarınızın alımı, randevu ve detaylı bilgi için bizi haftanın 6 günü doğrudan arayabilir veya WhatsApp'tan mesaj bırakabilirsiniz.</p>
+
+                        <div class="space-y-4 pt-2">
+                            <div class="flex items-start gap-4 p-4 rounded-xl bg-white border border-slate-200 shadow-sm">
+                                <div class="w-10 h-10 rounded-lg bg-brand-800 text-white flex items-center justify-center flex-shrink-0">
+                                    <i class="fa-solid fa-location-dot"></i>
+                                </div>
+                                <div class="text-sm">
+                                    <div class="font-bold text-slate-900">Adres</div>
+                                    <p class="text-slate-600 mt-0.5">Çırçır Mahallesi, Sezai Karakoç Caddesi No:67, Eyüpsultan / İstanbul</p>
+                                </div>
+                            </div>
+
+                            <div class="flex items-start gap-4 p-4 rounded-xl bg-white border border-slate-200 shadow-sm">
+                                <div class="w-10 h-10 rounded-lg bg-brand-800 text-white flex items-center justify-center flex-shrink-0">
+                                    <i class="fa-solid fa-phone"></i>
+                                </div>
+                                <div class="text-sm">
+                                    <div class="font-bold text-slate-900">Müşteri & Servis Hattı</div>
+                                    <a href="tel:05304149246" class="text-brand-800 font-bold hover:underline block mt-0.5 text-base">0530 414 92 46</a>
+                                </div>
+                            </div>
+
+                            <div class="flex items-start gap-4 p-4 rounded-xl bg-white border border-slate-200 shadow-sm">
+                                <div class="w-10 h-10 rounded-lg bg-brand-800 text-white flex items-center justify-center flex-shrink-0">
+                                    <i class="fa-solid fa-clock"></i>
+                                </div>
+                                <div class="text-sm">
+                                    <div class="font-bold text-slate-900">Çalışma Saatleri</div>
+                                    <p class="text-slate-600 mt-0.5">Pazartesi - Cumartesi: 08:30 - 21:30<br><span class="text-xs text-rose-600 font-semibold">Pazar: Kapalı</span></p>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="flex gap-3 pt-2">
+                            <a href="tel:05304149246" class="flex-1 py-3.5 bg-brand-800 hover:bg-brand-900 text-white rounded-xl font-bold text-sm text-center transition-colors shadow-md">
+                                <i class="fa-solid fa-phone mr-1.5"></i> Hemen Ara
+                            </a>
+                            <a href="https://wa.me/905304149246?text=Merhaba,%20halı%20ve%20koltuk%20yıkama%20hakkında%20bilgi%20almak%20istiyorum." target="_blank" rel="noopener noreferrer" class="flex-1 py-3.5 bg-emerald-600 hover:bg-emerald-700 text-white rounded-xl font-bold text-sm text-center transition-colors shadow-md">
+                                <i class="fa-brands fa-whatsapp text-lg mr-1.5"></i> WhatsApp
+                            </a>
+                        </div>
+                    </div>
+
+                    <!-- Map Frame -->
+                    <div class="lg:col-span-7 min-h-[420px] h-full rounded-3xl overflow-hidden shadow-lg border border-slate-200 relative bg-slate-100 flex flex-col">
+                        <iframe 
+                            src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2858.408400228397!2d28.932899075862718!3d41.086427171339636!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x14cab1c5f27ef005%3A0x2efe9eb54f25195e!2s%C4%B0K%C4%B0ZLER%20HALI%20VE%20KOLTUK%20YIKAMA!5e1!3m2!1str!2str!4v1789050441680!5m2!1str!2str" 
+                            width="100%" 
+                            height="100%" 
+                            style="border:0; min-height: 420px;" 
+                            allowfullscreen="" 
+                            loading="lazy" 
+                            referrerpolicy="strict-origin-when-cross-origin"
+                            title="İkizler Halı ve Koltuk Yıkama Konum Haritası"
+                            class="w-full h-full flex-grow block">
+                        </iframe>
+                        <!-- Quick Route / Open in Google Maps Badge -->
+                        <div class="absolute top-4 right-4 z-10">
+                            <a href="https://www.google.com/maps/place/%C4%B0K%C4%B0ZLER+HALI+VE+KOLTUK+YIKAMA/@41.0864272,28.935474,17z" target="_blank" rel="noopener noreferrer" class="inline-flex items-center gap-2 bg-white/95 backdrop-blur-md text-brand-900 hover:bg-brand-900 hover:text-white px-3.5 py-2 rounded-xl text-xs font-bold shadow-lg border border-slate-200 transition-all">
+                                <i class="fa-solid fa-diamond-turn-right text-emerald-600"></i>
+                                <span>Haritada Aç & Yol Tarifi Al</span>
+                            </a>
+                        </div>
+                    </div>
+                </div>
             </div>
-        </div>
-    </section>
+        </section>
+    </main>
 
     <!-- Footer -->
-    <footer class="py-6 text-center text-xs text-slate-800 font-medium">
-        <p>&copy; 2026 İkizler Halı ve Koltuk Yıkama. Tüm hakları saklıdır.</p>
+    <footer class="bg-brand-dark text-slate-300 py-12 text-sm border-t border-brand-900">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="grid grid-cols-1 md:grid-cols-4 gap-8 mb-8">
+                <!-- Logo & About -->
+                <div class="space-y-3">
+                    <div class="flex items-center gap-2 text-white font-bold text-lg font-logo tracking-wider">
+                        <i class="fa-solid fa-sparkles text-emerald-400"></i> İKİZLER HALI VE KOLTUK YIKAMA
+                    </div>
+                    <p class="text-xs text-slate-400 leading-relaxed">
+                        Eyüp, Alibeyköy, Gaziosmanpaşa ve çevresinde 18 yıllık deneyim ve hijyen garantisiyle profesyonel halı, koltuk, stor perde ve yorgan temizliği.
+                    </p>
+                </div>
+                <div>
+                    <div class="text-white font-bold mb-3 text-sm">Hızlı Menü</div>
+                    <ul class="space-y-2 text-xs">
+                        <li><a href="#anasayfa" class="hover:text-white transition-colors">Ana Sayfa</a></li>
+                        <li><a href="#hizmetler" class="hover:text-white transition-colors">Hizmetlerimiz</a></li>
+                        <li><a href="#yorumlar" class="hover:text-white transition-colors">Müşteri Yorumları</a></li>
+                        <li><a href="#bolgeler" class="hover:text-white transition-colors">Hizmet Bölgelerimiz</a></li>
+                        <li><a href="#sss" class="hover:text-white transition-colors">Sıkça Sorulanlar</a></li>
+                    </ul>
+                </div>
+                <div>
+                    <div class="text-white font-bold mb-3 text-sm">Hizmetlerimiz</div>
+                    <ul class="space-y-2 text-xs">
+                        <li><a href="#hizmetler" class="hover:text-white transition-colors">Otomatik Halı Yıkama</a></li>
+                        <li><a href="#hizmetler" class="hover:text-white transition-colors">Yerinde Buharlı Koltuk Yıkama</a></li>
+                        <li><a href="#hizmetler" class="hover:text-white transition-colors">Stor & Zebra Perde Temizliği</a></li>
+                        <li><a href="#hizmetler" class="hover:text-white transition-colors">Yorgan & Battaniye Yıkama</a></li>
+                    </ul>
+                </div>
+                <div>
+                    <div class="text-white font-bold mb-3 text-sm">İletişim & Servis</div>
+                    <p class="text-xs text-slate-400 mb-2">Çırçır Mah. Sezai Karakoç Cd. No:67, Eyüpsultan / İstanbul</p>
+                    <a href="tel:05304149246" class="text-emerald-400 font-bold block text-sm mb-1">0530 414 92 46</a>
+                    <span class="text-xs text-slate-500">Pazartesi - Cumartesi: 08:30 - 21:30</span>
+                </div>
+            </div>
+            <div class="pt-8 border-t border-brand-900 text-center text-xs text-slate-500">
+                &copy; 2026 İkizler Halı ve Koltuk Yıkama. Tüm hakları saklıdır.
+            </div>
+        </div>
     </footer>
 
-    <!-- Mobil Butonlar -->
-    <div class="fixed bottom-5 right-5 z-50 flex flex-col gap-2.5 lg:hidden">
-        <a href="https://wa.me/905304149246" target="_blank" class="w-12 h-12 bg-emerald-500 text-white rounded-full flex items-center justify-center shadow-2xl text-xl">
-            <i class="fab fa-whatsapp"></i>
+    <!-- Mobile Fixed Action Buttons -->
+    <div class="fixed bottom-4 right-4 z-50 flex flex-col gap-2.5 sm:hidden">
+        <a href="https://wa.me/905304149246?text=Merhaba,%20halı%20ve%20koltuk%20yıkama%20hakkında%20bilgi%20almak%20istiyorum." target="_blank" rel="noopener noreferrer" class="w-13 h-13 p-3.5 bg-emerald-600 hover:bg-emerald-700 text-white rounded-full shadow-2xl flex items-center justify-center transition-transform hover:scale-110" aria-label="WhatsApp">
+            <i class="fa-brands fa-whatsapp text-2xl"></i>
         </a>
-        <a href="tel:05304149246" class="w-12 h-12 bg-sky-700 text-white rounded-full flex items-center justify-center shadow-2xl text-lg">
-            <i class="fas fa-phone-alt"></i>
+        <a href="tel:05304149246" class="w-13 h-13 p-3.5 bg-brand-800 hover:bg-brand-900 text-white rounded-full shadow-2xl flex items-center justify-center transition-transform hover:scale-110" aria-label="Telefon">
+            <i class="fa-solid fa-phone text-xl"></i>
         </a>
     </div>
 
-    <!-- WebGL Shader Script (adisyon-shader.tsx'in Vanilla JS Motoru) -->
     <script>
-        (function() {
-            const canvas = document.getElementById("shader-canvas");
+        // Mobile Navigation Toggle
+        const menuToggle = document.getElementById('menu-toggle');
+        const mobileNav = document.getElementById('mobile-nav');
+
+        if (menuToggle && mobileNav) {
+            menuToggle.addEventListener('click', () => {
+                mobileNav.classList.toggle('hidden');
+            });
+            mobileNav.querySelectorAll('a').forEach(link => {
+                link.addEventListener('click', () => mobileNav.classList.add('hidden'));
+            });
+        }
+
+        // WhatsApp Quick Lead dispatch
+        function sendQuickLead() {
+            const service = document.getElementById('lead-service').value;
+            const area = document.getElementById('lead-area').value;
+            const note = document.getElementById('lead-note').value || 'Miktar belirtilmedi';
+
+            const text = `Merhaba İkizler Halı Yıkama,%0A%0AWeb sitenizden randevu oluşturmak istiyorum:%0A- Hizmet: ${encodeURIComponent(service)}%0A- Bölge: ${encodeURIComponent(area)}%0A- Not / Miktar: ${encodeURIComponent(note)}%0A%0AUygun gün ve saat alabilir miyim?`;
+            window.open(`https://wa.me/905304149246?text=${text}`, '_blank');
+        }
+
+        // FAQ Accordion
+        document.querySelectorAll('.faq-btn').forEach(button => {
+            button.addEventListener('click', () => {
+                const content = button.nextElementSibling;
+                const icon = button.querySelector('i');
+                const isOpen = !content.classList.contains('hidden');
+
+                document.querySelectorAll('.faq-content').forEach(c => c.classList.add('hidden'));
+                document.querySelectorAll('.faq-btn i').forEach(i => i.classList.remove('rotate-180'));
+
+                if (!isOpen) {
+                    content.classList.remove('hidden');
+                    icon.classList.add('rotate-180');
+                }
+            });
+        });
+
+        // =========================================================================
+        // CARPET WASHING INTERACTIVE LIVE BACKGROUND ANIMATION
+        // Features: Automatic Scrub Machine head traveling across carpet fibers,
+        // foaming bubbles, water spray, sparkling clean path behind the head.
+        // =========================================================================
+        (function initCarpetWashAnimation() {
+            const canvas = document.getElementById('carpet-wash-canvas');
             if (!canvas) return;
+            const ctx = canvas.getContext('2d');
 
-            const gl = canvas.getContext("webgl", { antialias: false });
-            if (!gl) return;
-
-            const VERT = `attribute vec2 a_position;
-            void main() {
-                gl_Position = vec4(a_position, 0.0, 1.0);
-            }`;
-
-            const FRAG = `#ifdef GL_FRAGMENT_PRECISION_HIGH
-            precision highp float;
-            #else
-            precision mediump float;
-            #endif
-
-            uniform vec3 u_colors[8];
-            uniform vec4 u_scene;
-            uniform vec4 u_shape;
-            uniform vec4 u_surface;
-            uniform vec4 u_finish;
-            uniform vec4 u_transform;
-            uniform vec4 u_space;
-            uniform vec4 u_cursor;
-
-            #define u_resolution u_scene.xy
-            #define u_time u_scene.z
-            #define u_colorCount u_scene.w
-            #define u_scale u_shape.x
-            #define u_intensity u_shape.y
-            #define u_paramA u_shape.z
-            #define u_warp u_shape.w
-            #define u_detail u_surface.x
-            #define u_contrast u_surface.y
-            #define u_brightness u_surface.z
-            #define u_saturation u_surface.w
-            #define u_hue u_finish.x
-            #define u_vignette u_finish.y
-            #define u_blur u_finish.z
-            #define u_grain u_finish.w
-            #ifdef GL_FRAGMENT_PRECISION_HIGH
-            #define u_seed u_transform.x
-            #else
-            #define u_seed mod(u_transform.x, 31.0)
-            #endif
-            #define u_rotate u_transform.y
-            #define u_drift u_transform.z
-            #define u_oklab u_transform.w
-            #define u_offset u_space.xy
-            #define u_mouse u_space.zw
-            #define u_cursorPresence u_cursor.x
-            #define u_cursorEffect u_cursor.y
-            #define u_cursorStrength u_cursor.z
-            #define u_cursorRadius u_cursor.w
-
-            float hash21(vec2 p) {
-            #ifndef GL_FRAGMENT_PRECISION_HIGH
-                p = mod(p, 31.0);
-            #endif
-                p = fract(p * vec2(234.34, 435.345));
-                p += dot(p, p + 34.23);
-                return fract(p.x * p.y);
+            let width, height;
+            function resizeCanvas() {
+                width = canvas.width = canvas.parentElement.offsetWidth;
+                height = canvas.height = canvas.parentElement.offsetHeight;
             }
+            resizeCanvas();
+            window.addEventListener('resize', resizeCanvas);
 
-            float grainHash(vec2 p) {
-                vec3 p3 = fract(vec3(p.xyx) * 0.1031);
-                p3 += dot(p3, p3.yzx + 33.33);
-                return fract((p3.x + p3.y) * p3.z);
-            }
+            // Scrubber Head State
+            let headX = width * 0.2;
+            let headY = height * 0.4;
+            let speedX = 2.2;
+            let speedY = 1.2;
+            let headWidth = 140;
+            let headHeight = 44;
 
-            float noise(vec2 p) {
-                vec2 i = floor(p);
-                vec2 f = fract(p);
-                vec2 u = f * f * (3.0 - 2.0 * f);
-                return mix(
-                    mix(hash21(i), hash21(i + vec2(1.0, 0.0)), u.x),
-                    mix(hash21(i + vec2(0.0, 1.0)), hash21(i + vec2(1.0, 1.0)), u.x),
-                    u.y);
-            }
+            // Particles: Soap Bubbles & Water Spray
+            const bubbles = [];
+            const sparkles = [];
 
-            float fbm(vec2 p) {
-                float v = 0.0;
-                float a = 0.5;
-                for (int i = 0; i < 5; i++) {
-                    v += a * noise(p);
-                    p = p * 2.03 + vec2(17.0, 9.2);
-                    a *= 0.5;
+            class Bubble {
+                constructor(x, y) {
+                    this.x = x + (Math.random() - 0.5) * headWidth;
+                    this.y = y + (Math.random() - 0.5) * headHeight;
+                    this.radius = Math.random() * 8 + 3;
+                    this.vx = (Math.random() - 0.5) * 1.5;
+                    this.vy = -(Math.random() * 1.8 + 0.8);
+                    this.alpha = 0.8;
+                    this.decay = Math.random() * 0.015 + 0.008;
                 }
-                return v;
-            }
-
-            vec3 mixColour(vec3 a, vec3 b, float t) {
-                return mix(a, b, t);
-            }
-
-            vec3 palette(float x) {
-                float n = max(u_colorCount - 1.0, 1.0);
-                float f = clamp(x, 0.0, 1.0) * n;
-                vec3 col = u_colors[0];
-                for (int i = 0; i < 7; i++) {
-                    if (float(i) < n)
-                        col = mixColour(col, u_colors[i + 1], smoothstep(0.0, 1.0, clamp(f - float(i), 0.0, 1.0)));
+                update() {
+                    this.x += this.vx;
+                    this.y += this.vy;
+                    this.alpha -= this.decay;
                 }
-                return col;
-            }
+                draw() {
+                    ctx.save();
+                    ctx.globalAlpha = Math.max(0, this.alpha);
+                    ctx.beginPath();
+                    ctx.arc(this.x, this.y, this.radius, 0, Math.PI * 2);
+                    ctx.fillStyle = 'rgba(255, 255, 255, 0.7)';
+                    ctx.fill();
+                    ctx.lineWidth = 1.2;
+                    ctx.strokeStyle = 'rgba(187, 247, 208, 0.9)';
+                    ctx.stroke();
 
-            vec3 shade(vec2 uv, vec2 p, float t) {
-                float y = uv.y
-                    + sin(uv.x * (3.0 + u_intensity * 9.0) + t * 0.8) * 0.08
-                    + (fbm(p * 2.0 + t * 0.1) - 0.5) * u_intensity * 0.6;
-                return palette(y);
-            }
-
-            void main() {
-                vec2 uv = gl_FragCoord.xy / u_resolution.xy;
-                vec2 screenUv = uv;
-                vec2 p = (gl_FragCoord.xy - 0.5 * u_resolution.xy) / min(u_resolution.x, u_resolution.y);
-
-                uv = p * min(u_resolution.x, u_resolution.y) / u_resolution.xy + 0.5;
-                p *= u_scale;
-
-                if (abs(u_rotate) > 0.0001) {
-                    float cr = cos(u_rotate), sr = sin(u_rotate);
-                    p = mat2(cr, -sr, sr, cr) * p;
-                }
-                p += u_offset;
-                if (u_drift > 0.0001)
-                    p += u_drift * vec2(sin(u_time * 0.31), cos(u_time * 0.23));
-
-                if (u_warp > 0.0) {
-                    p += u_warp * (vec2(fbm(p * u_detail + u_seed), fbm(p * u_detail + vec2(5.2, 1.3))) - 0.5);
-                }
-
-                vec3 col;
-                if (u_blur > 0.0) {
-                    float e = u_blur;
-                    float pe = e * u_scale;
-                    vec2 uvE = vec2(e) * min(u_resolution.x, u_resolution.y) / u_resolution.xy;
-                    col  = shade(uv, p, u_time) * 0.36;
-                    col += shade(uv + vec2(uvE.x, 0.0), p + vec2(pe, 0.0), u_time) * 0.16;
-                    col += shade(uv - vec2(uvE.x, 0.0), p - vec2(pe, 0.0), u_time) * 0.16;
-                    col += shade(uv + vec2(0.0, uvE.y), p + vec2(0.0, pe), u_time) * 0.16;
-                    col += shade(uv - vec2(0.0, uvE.y), p - vec2(0.0, pe), u_time) * 0.16;
-                } else {
-                    col = shade(uv, p, u_time);
-                }
-
-                if (abs(u_contrast - 1.0) > 0.0001) col = (col - 0.5) * u_contrast + 0.5;
-                if (u_vignette > 0.0001) {
-                    float vd = length(screenUv - 0.5) * 1.41421356;
-                    col *= 1.0 - u_vignette * smoothstep(0.35, 1.0, vd);
-                }
-                if (u_grain > 0.0001) {
-                    col += (grainHash(gl_FragCoord.xy + vec2(u_seed * 17.0, u_seed * 31.0)) - 0.5) * u_grain;
-                }
-                gl_FragColor = vec4(clamp(col, 0.0, 1.0), 1.0);
-            }`;
-
-            const UNIFORMS = {
-                colors: [
-                    [0.0117, 0.1098, 0.1490],
-                    [0.1058, 0.4235, 0.6588],
-                    [0.3529, 0.8235, 0.9568],
-                    [0.9176, 0.9764, 1.0],
-                    [0.9176, 0.9764, 1.0],
-                    [0.9176, 0.9764, 1.0],
-                    [0.9176, 0.9764, 1.0],
-                    [0.9176, 0.9764, 1.0]
-                ],
-                colorCount: 4,
-                scale: 2.0,
-                intensity: 0.54,
-                paramA: 0.47,
-                warp: 0.042,
-                detail: 1.536,
-                contrast: 1.158,
-                brightness: 0.0,
-                saturation: 1.0,
-                hue: 0.0,
-                vignette: 0.21,
-                blur: 0.002,
-                grain: 0.101,
-                seed: 4012.0,
-                rotate: 5.6549,
-                offsetX: 0.11,
-                offsetY: -0.19,
-                drift: 0.116,
-                cursorEffect: 2.0,
-                cursorStrength: 0.65,
-                cursorRadius: 0.46,
-                oklab: 0.0,
-                timeScale: -0.727
-            };
-
-            const compile = (type, src) => {
-                const s = gl.createShader(type);
-                gl.shaderSource(s, src);
-                gl.compileShader(s);
-                return s;
-            };
-
-            const program = gl.createProgram();
-            gl.attachShader(program, compile(gl.VERTEX_SHADER, VERT));
-            gl.attachShader(program, compile(gl.FRAGMENT_SHADER, FRAG));
-            gl.linkProgram(program);
-            gl.useProgram(program);
-
-            const buf = gl.createBuffer();
-            gl.bindBuffer(gl.ARRAY_BUFFER, buf);
-            gl.bufferData(gl.ARRAY_BUFFER, new Float32Array([-1, -1, 3, -1, -1, 3]), gl.STATIC_DRAW);
-
-            const loc = gl.getAttribLocation(program, "a_position");
-            gl.enableVertexAttribArray(loc);
-            gl.vertexAttribPointer(loc, 2, gl.FLOAT, false, 0, 0);
-
-            const uni = {
-                colors: gl.getUniformLocation(program, "u_colors"),
-                scene: gl.getUniformLocation(program, "u_scene"),
-                shape: gl.getUniformLocation(program, "u_shape"),
-                surface: gl.getUniformLocation(program, "u_surface"),
-                finish: gl.getUniformLocation(program, "u_finish"),
-                transform: gl.getUniformLocation(program, "u_transform"),
-                space: gl.getUniformLocation(program, "u_space"),
-                cursor: gl.getUniformLocation(program, "u_cursor"),
-            };
-
-            gl.uniform3fv(uni.colors, new Float32Array(UNIFORMS.colors.flat()));
-            gl.uniform4f(uni.shape, UNIFORMS.scale, UNIFORMS.intensity, UNIFORMS.paramA, UNIFORMS.warp);
-            gl.uniform4f(uni.surface, UNIFORMS.detail, UNIFORMS.contrast, UNIFORMS.brightness, UNIFORMS.saturation);
-            gl.uniform4f(uni.finish, UNIFORMS.hue, UNIFORMS.vignette, UNIFORMS.blur, UNIFORMS.grain);
-            gl.uniform4f(uni.transform, UNIFORMS.seed, UNIFORMS.rotate, UNIFORMS.drift, UNIFORMS.oklab);
-            gl.uniform4f(uni.cursor, 0, UNIFORMS.cursorEffect, UNIFORMS.cursorStrength, UNIFORMS.cursorRadius);
-
-            const start = performance.now();
-
-            function resize() {
-                const dpr = Math.min(window.devicePixelRatio || 1, 1.5);
-                const w = Math.round(window.innerWidth * dpr);
-                const h = Math.round(window.innerHeight * dpr);
-                if (canvas.width !== w || canvas.height !== h) {
-                    canvas.width = w;
-                    canvas.height = h;
-                    gl.viewport(0, 0, w, h);
+                    // Bubble highlight
+                    ctx.beginPath();
+                    ctx.arc(this.x - this.radius * 0.3, this.y - this.radius * 0.3, this.radius * 0.25, 0, Math.PI * 2);
+                    ctx.fillStyle = 'rgba(255, 255, 255, 0.95)';
+                    ctx.fill();
+                    ctx.restore();
                 }
             }
 
-            window.addEventListener("resize", resize);
-            resize();
+            class Sparkle {
+                constructor(x, y) {
+                    this.x = x + (Math.random() - 0.5) * headWidth;
+                    this.y = y + (Math.random() - 0.5) * headHeight;
+                    this.size = Math.random() * 14 + 6;
+                    this.rotation = Math.random() * Math.PI;
+                    this.alpha = 1;
+                    this.decay = Math.random() * 0.03 + 0.015;
+                }
+                update() {
+                    this.alpha -= this.decay;
+                    this.rotation += 0.05;
+                }
+                draw() {
+                    ctx.save();
+                    ctx.globalAlpha = Math.max(0, this.alpha);
+                    ctx.translate(this.x, this.y);
+                    ctx.rotate(this.rotation);
 
-            function render(now) {
-                gl.uniform4f(uni.scene, canvas.width, canvas.height, ((now - start) / 1000) * UNIFORMS.timeScale, UNIFORMS.colorCount);
-                gl.uniform4f(uni.space, UNIFORMS.offsetX, UNIFORMS.offsetY, 0, 0);
-                gl.drawArrays(gl.TRIANGLES, 0, 3);
-                requestAnimationFrame(render);
+                    ctx.fillStyle = '#ffffff';
+                    ctx.beginPath();
+                    for (let i = 0; i < 4; i++) {
+                        ctx.lineTo(0, -this.size);
+                        ctx.lineTo(this.size * 0.25, -this.size * 0.25);
+                        ctx.rotate(Math.PI / 2);
+                    }
+                    ctx.fill();
+                    ctx.restore();
+                }
             }
-            requestAnimationFrame(render);
+
+            // Past clean track
+            const cleanTrails = [];
+
+            function animateCarpetCleaning() {
+                ctx.clearRect(0, 0, width, height);
+
+                // 1. Draw Carpet Woven Texture Lines
+                ctx.save();
+                ctx.strokeStyle = 'rgba(255, 255, 255, 0.03)';
+                ctx.lineWidth = 1;
+                const gridSpacing = 28;
+                for (let x = 0; x < width; x += gridSpacing) {
+                    ctx.beginPath();
+                    ctx.moveTo(x, 0);
+                    ctx.lineTo(x, height);
+                    ctx.stroke();
+                }
+                for (let y = 0; y < height; y += gridSpacing) {
+                    ctx.beginPath();
+                    ctx.moveTo(0, y);
+                    ctx.lineTo(width, y);
+                    ctx.stroke();
+                }
+                ctx.restore();
+
+                // 2. Update Cleaner Head Position
+                headX += speedX;
+                headY += speedY;
+
+                // Bounce at boundaries
+                const padding = 80;
+                if (headX < padding || headX > width - padding - headWidth) {
+                    speedX = -speedX;
+                }
+                if (headY < padding || headY > height - padding - headHeight) {
+                    speedY = -speedY;
+                }
+
+                // Add to clean trails
+                cleanTrails.push({ x: headX, y: headY, alpha: 0.35 });
+                if (cleanTrails.length > 70) {
+                    cleanTrails.shift();
+                }
+
+                // 3. Draw Clean Carpet Water Path
+                cleanTrails.forEach((trail, i) => {
+                    trail.alpha *= 0.985;
+                    ctx.save();
+                    ctx.globalAlpha = trail.alpha * (i / cleanTrails.length);
+                    const grad = ctx.createRadialGradient(
+                        trail.x + headWidth / 2, trail.y + headHeight / 2, 10,
+                        trail.x + headWidth / 2, trail.y + headHeight / 2, headWidth * 1.1
+                    );
+                    grad.addColorStop(0, 'rgba(74, 222, 128, 0.35)');
+                    grad.addColorStop(0.5, 'rgba(34, 197, 94, 0.15)');
+                    grad.addColorStop(1, 'transparent');
+
+                    ctx.fillStyle = grad;
+                    ctx.beginPath();
+                    ctx.ellipse(
+                        trail.x + headWidth / 2, 
+                        trail.y + headHeight / 2, 
+                        headWidth * 0.9, 
+                        headHeight * 0.8, 
+                        0, 0, Math.PI * 2
+                    );
+                    ctx.fill();
+                    ctx.restore();
+                });
+
+                // 4. Generate Wash Bubbles & Sparkles
+                if (Math.random() < 0.75) {
+                    bubbles.push(new Bubble(headX + headWidth / 2, headY + headHeight / 2));
+                }
+                if (Math.random() < 0.25) {
+                    sparkles.push(new Sparkle(headX + headWidth / 2, headY + headHeight / 2));
+                }
+
+                // 5. Update & Draw Bubbles
+                for (let i = bubbles.length - 1; i >= 0; i--) {
+                    bubbles[i].update();
+                    bubbles[i].draw();
+                    if (bubbles[i].alpha <= 0) {
+                        bubbles.splice(i, 1);
+                    }
+                }
+
+                // 6. Update & Draw Sparkles
+                for (let i = sparkles.length - 1; i >= 0; i--) {
+                    sparkles[i].update();
+                    sparkles[i].draw();
+                    if (sparkles[i].alpha <= 0) {
+                        sparkles.splice(i, 1);
+                    }
+                }
+
+                // 7. Draw The Vacuum/Scrubber Washing Head (as depicted in the logo)
+                ctx.save();
+                ctx.translate(headX, headY);
+
+                // Scrubber suction head glow
+                ctx.shadowColor = 'rgba(74, 222, 128, 0.6)';
+                ctx.shadowBlur = 18;
+
+                // Transparent vacuum chamber
+                ctx.fillStyle = 'rgba(30, 75, 51, 0.85)';
+                ctx.strokeStyle = '#ffffff';
+                ctx.lineWidth = 3.5;
+
+                ctx.beginPath();
+                ctx.roundRect(0, 0, headWidth, headHeight, 14);
+                ctx.fill();
+                ctx.stroke();
+
+                // Cleaner pipe connector
+                ctx.fillStyle = 'rgba(21, 128, 61, 0.9)';
+                ctx.beginPath();
+                ctx.roundRect(headWidth / 2 - 22, headHeight - 6, 44, 28, 6);
+                ctx.fill();
+                ctx.stroke();
+
+                // Internal suction mouth nozzle line
+                ctx.beginPath();
+                ctx.moveTo(16, headHeight * 0.45);
+                ctx.lineTo(headWidth - 16, headHeight * 0.45);
+                ctx.lineWidth = 2.5;
+                ctx.strokeStyle = 'rgba(187, 247, 208, 0.9)';
+                ctx.stroke();
+
+                // Rotary washing scrub indicator lights
+                const time = Date.now() * 0.005;
+                const dotCount = 5;
+                for (let d = 0; d < dotCount; d++) {
+                    const dotX = 26 + (d * (headWidth - 52) / (dotCount - 1));
+                    const dotY = headHeight * 0.45;
+                    ctx.beginPath();
+                    ctx.arc(dotX, dotY, 3, 0, Math.PI * 2);
+                    ctx.fillStyle = (Math.sin(time + d) > 0) ? '#4ade80' : '#ffffff';
+                    ctx.fill();
+                }
+
+                ctx.restore();
+
+                requestAnimationFrame(animateCarpetCleaning);
+            }
+
+            // Start loop on page load
+            window.addEventListener('load', () => {
+                requestAnimationFrame(animateCarpetCleaning);
+            });
         })();
     </script>
 </body>

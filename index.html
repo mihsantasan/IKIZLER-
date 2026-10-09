@@ -1062,4 +1062,17 @@ document.addEventListener('DOMContentLoaded', () => {
       
       const newTab = window.open(whatsappUrl, '_blank');
       // Popup engelleyici devreye girerse doğrudan sayfada aç
-      if (!newTab || newTab.closed || typeof newTab.closed === 'undefined
+      if (!newTab || newTab.closed || typeof newTab.closed === 'undefined') {
+        window.location.href = whatsappUrl;
+      }
+    });
+  }
+});
+
+window.addEventListener('load', () => {
+  resizeCanvas();
+});
+</script>
+
+</body>
+</html>

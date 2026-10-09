@@ -1,6 +1,24 @@
 <!DOCTYPE html>
 <html lang="tr">
 <head>
+<!-- Google tag (gtag.js) -->
+<script async src="https://www.googletagmanager.com/gtag/js?id=AW-18443254421"></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+  gtag('config', 'AW-18443254421');
+
+  // Google Ads Tıklama Dönüşüm Fonksiyonu
+  function trackConversion() {
+    if (typeof gtag === 'function') {
+      gtag('event', 'conversion', {
+        'send_to': 'AW-18443254421/BeqcCK7JmIEdEJX1ttpE'
+      });
+    }
+  }
+</script>
+
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 <meta id="meta-description" name="description" content="İkizler Halı ve Koltuk Yıkama - Eyüpsultan, Alibeyköy, Gaziosmanpaşa, Sultangazi ve 20 bölgede profesyonel halı, koltuk, perde ve yorgan yıkama. Ücretsiz alım-teslim, hijyen garantili.">
@@ -18,10 +36,10 @@
 <!-- Open Graph / Sosyal Medya Paylaşım Etiketleri -->
 <meta property="og:type" content="website">
 <meta property="og:site_name" content="İkizler Halı ve Koltuk Yıkama">
-<meta property="og:title" content="İkizler Halı ve Koltuk Yıkama | Eyüpsultan & 20 Bölge">
-<meta property="og:description" content="Eyüpsultan, Alibeyköy, Gaziosmanpaşa, Sultangazi ve 20 bölgede profesyonel halı, koltuk, perde ve yorgan yıkama. Ücretsiz alım-teslim, hijyen garantili.">
+<meta property="og:title" id="og-title" content="İkizler Halı ve Koltuk Yıkama | Eyüpsultan & 20 Bölge">
+<meta property="og:description" id="og-description" content="Eyüpsultan, Alibeyköy, Gaziosmanpaşa, Sultangazi ve 20 bölgede profesyonel halı, koltuk, perde ve yorgan yıkama. Ücretsiz alım-teslim, hijyen garantili.">
 <meta property="og:image" content="https://ikizlerhalivekoltukyikama.com.tr/logo.jpg">
-<meta property="og:url" content="https://ikizlerhalivekoltukyikama.com.tr/">
+<meta property="og:url" id="og-url" content="https://ikizlerhalivekoltukyikama.com.tr/">
 <meta property="og:locale" content="tr_TR">
 <meta name="twitter:card" content="summary">
 <meta name="twitter:title" content="İkizler Halı ve Koltuk Yıkama | Eyüpsultan & 20 Bölge">
@@ -152,7 +170,9 @@ body.splash-active { overflow: hidden !important; }
 }
 .text-gradient-cyan {
   background: linear-gradient(135deg, #0369a1 0%, #06b6d4 50%, #14b8a6 100%);
-  -webkit-background-clip: text; -webkit-text-fill-color: transparent;
+  background-clip: text;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
 }
 .instagram-gradient { background: linear-gradient(45deg, #f09433 0%, #e6683c 25%, #dc2743 50%, #cc2366 75%, #bc1888 100%); }
 
@@ -207,10 +227,10 @@ body.splash-active { overflow: hidden !important; }
         <a href="https://www.instagram.com/ikizlerhalivekoltukyikama" target="_blank" rel="noopener noreferrer" class="hidden sm:flex instagram-gradient text-white px-3.5 py-2 rounded-xl text-xs font-semibold hover:opacity-90 transition-all items-center shadow-md">
           <i class="fab fa-instagram text-sm mr-1.5"></i> Instagram
         </a>
-        <a href="https://wa.me/905304149246" target="_blank" rel="noopener noreferrer" class="hidden sm:flex bg-emerald-500 hover:bg-emerald-600 text-white px-3.5 py-2 rounded-xl text-xs font-semibold transition-all items-center shadow-md">
+        <a href="https://wa.me/905304149246" onclick="trackConversion()" target="_blank" rel="noopener noreferrer" class="hidden sm:flex bg-emerald-500 hover:bg-emerald-600 text-white px-3.5 py-2 rounded-xl text-xs font-semibold transition-all items-center shadow-md">
           <i class="fab fa-whatsapp text-sm mr-1.5"></i> WhatsApp
         </a>
-        <a href="tel:05304149246" class="bg-cyan-500 hover:bg-cyan-600 text-white px-4 py-2 rounded-xl text-xs font-bold transition-all flex items-center shadow-lg shadow-cyan-500/20">
+        <a href="tel:05304149246" onclick="trackConversion()" class="bg-cyan-500 hover:bg-cyan-600 text-white px-4 py-2 rounded-xl text-xs font-bold transition-all flex items-center shadow-lg shadow-cyan-500/20">
           <i class="fas fa-phone text-xs mr-1.5"></i> 0530 414 92 46
         </a>
         <!-- Collapsible Menu Button -->
@@ -272,10 +292,10 @@ body.splash-active { overflow: hidden !important; }
               Antibakteriyel özel yıkama, santrifüjlü kurutma ve kapıdan kapıya ücretsiz alım-teslimat. Lekelere veda edin, ferah temizliğin tadını çıkarın.
             </p>
             <div class="flex flex-col sm:flex-row gap-4 justify-center lg:justify-start">
-              <a href="tel:05304149246" class="px-7 py-3.5 rounded-xl bg-cyan-600 hover:bg-cyan-700 text-white font-extrabold text-base shadow-xl transition-all flex items-center justify-center">
+              <a href="tel:05304149246" onclick="trackConversion()" class="px-7 py-3.5 rounded-xl bg-cyan-600 hover:bg-cyan-700 text-white font-extrabold text-base shadow-xl transition-all flex items-center justify-center">
                 <i class="fas fa-phone mr-2.5"></i> 0530 414 92 46
               </a>
-              <a href="https://wa.me/905304149246?text=Merhaba,%20halı/koltuk%20yıkama%20hakkında%20bilgi%20ve%20servis%20talep%20etmek%20istiyorum." target="_blank" rel="noopener noreferrer" class="px-7 py-3.5 rounded-xl bg-emerald-600 hover:bg-emerald-700 text-white font-bold text-base shadow-xl transition-all flex items-center justify-center">
+              <a href="https://wa.me/905304149246?text=Merhaba,%20halı/koltuk%20yıkama%20hakkında%20bilgi%20ve%20servis%20talep%20etmek%20istiyorum." onclick="trackConversion()" target="_blank" rel="noopener noreferrer" class="px-7 py-3.5 rounded-xl bg-emerald-600 hover:bg-emerald-700 text-white font-bold text-base shadow-xl transition-all flex items-center justify-center">
                 <i class="fab fa-whatsapp text-lg mr-2.5"></i> WhatsApp ile Randevu
               </a>
             </div>
@@ -296,11 +316,11 @@ body.splash-active { overflow: hidden !important; }
               </div>
               <form id="quick-order-form" class="space-y-4">
                 <div>
-                  <label class="block text-xs font-semibold text-gray-700 mb-1">Adınız Soyadınız</label>
+                  <label class="block text-xs font-semibold text-gray-700 mb-1" for="order-name">Adınız Soyadınız</label>
                   <input type="text" id="order-name" required placeholder="Örn: Ahmet Yılmaz" class="w-full px-4 py-2.5 rounded-xl bg-white border border-gray-300 text-gray-900 text-sm focus:outline-none focus:border-cyan-500 shadow-sm">
                 </div>
                 <div>
-                  <label class="block text-xs font-semibold text-gray-700 mb-1">Hizmet Türü</label>
+                  <label class="block text-xs font-semibold text-gray-700 mb-1" for="order-service">Hizmet Türü</label>
                   <select id="order-service" class="w-full px-4 py-2.5 rounded-xl bg-white border border-gray-300 text-gray-900 text-sm focus:outline-none focus:border-cyan-500 shadow-sm">
                     <option value="Halı Yıkama">Halı Yıkama</option>
                     <option value="Koltuk Yıkama">Koltuk Yıkama</option>
@@ -310,13 +330,13 @@ body.splash-active { overflow: hidden !important; }
                   </select>
                 </div>
                 <div>
-                  <label class="block text-xs font-semibold text-gray-700 mb-1">Hizmet Bölgeniz (20 Bölge)</label>
+                  <label class="block text-xs font-semibold text-gray-700 mb-1" for="order-region">Hizmet Bölgeniz (20 Bölge)</label>
                   <select id="order-region" class="w-full px-4 py-2.5 rounded-xl bg-white border border-gray-300 text-gray-900 text-sm focus:outline-none focus:border-cyan-500 shadow-sm">
                     <option value="Beyoğlu">Beyoğlu</option><option value="Sultangazi">Sultangazi</option><option value="Bayrampaşa">Bayrampaşa</option><option value="Eyüpsultan">Eyüpsultan</option><option value="Gaziosmanpaşa">Gaziosmanpaşa</option><option value="Cebeci">Cebeci</option><option value="Emniyettepe">Emniyettepe</option><option value="Gültepe">Gültepe</option><option value="5. Levent">5. Levent</option><option value="Karadolap">Karadolap</option><option value="Yunus Emre">Yunus Emre</option><option value="Çırçır">Çırçır</option><option value="İsmetpaşa">İsmetpaşa</option><option value="Alibeyköy">Alibeyköy</option><option value="Güzeltepe">Güzeltepe</option><option value="Yeşilpınar">Yeşilpınar</option><option value="Kazım Karabekir">Kazım Karabekir</option><option value="Göktürk Merkez">Göktürk Merkez</option><option value="Küçükköy">Küçükköy</option><option value="Kemerburgaz">Kemerburgaz</option>
                   </select>
                 </div>
                 <div>
-                  <label class="block text-xs font-semibold text-gray-700 mb-1">Yıkanacak Ürün Adeti / Miktarı</label>
+                  <label class="block text-xs font-semibold text-gray-700 mb-1" for="order-details">Yıkanacak Ürün Adeti / Miktarı</label>
                   <input type="text" id="order-details" required placeholder="Örn: 4 Adet Halı, 1 Takım Koltuk" class="w-full px-4 py-2.5 rounded-xl bg-white border border-gray-300 text-gray-900 text-sm focus:outline-none focus:border-cyan-500 shadow-sm">
                 </div>
                 <button type="submit" class="w-full py-3 rounded-xl bg-gradient-to-r from-cyan-600 to-teal-600 hover:from-cyan-500 hover:to-teal-500 text-white font-extrabold text-sm shadow-lg shadow-cyan-500/20 transition-all flex items-center justify-center cursor-pointer">
@@ -338,25 +358,25 @@ body.splash-active { overflow: hidden !important; }
           <p class="text-gray-600 text-sm sm:text-base mt-3">Her dokuma ve kumaş türüne özel pH dengeli şampuanlar, antibakteriyel leke çıkarıcılar ve son teknoloji makineler.</p>
         </div>
         <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-6">
-          <div class="glass-card rounded-2xl p-6 flex flex-col cursor-pointer shadow-sm" onclick="navigateTo('/hali-yikama', event)">
+          <div class="glass-card rounded-2xl p-6 flex flex-col cursor-pointer shadow-sm" role="button" tabindex="0" onclick="navigateTo('/hali-yikama', event)" onkeydown="if(event.key==='Enter'||event.key===' ') navigateTo('/hali-yikama', event)">
             <div class="w-14 h-14 rounded-2xl bg-cyan-100 border border-cyan-500/30 flex items-center justify-center text-cyan-600 text-2xl mb-5 shadow-inner"><i class="fas fa-rug"></i></div>
             <h3 class="font-heading text-lg font-bold text-gray-900 mb-2">Halı Yıkama</h3>
             <p class="text-gray-600 text-xs sm:text-sm leading-relaxed mb-4 flex-grow">Makine halısı, el dokuma, ipek, yün, shaggy ve antika halılar liflerine zarar vermeden derinlemesine arındırılır.</p>
             <span class="text-xs font-bold text-cyan-600 flex items-center mt-2">Detaylı İncele <i class="fas fa-arrow-right ml-1"></i></span>
           </div>
-          <div class="glass-card rounded-2xl p-6 flex flex-col cursor-pointer shadow-sm" onclick="navigateTo('/koltuk-yikama', event)">
+          <div class="glass-card rounded-2xl p-6 flex flex-col cursor-pointer shadow-sm" role="button" tabindex="0" onclick="navigateTo('/koltuk-yikama', event)" onkeydown="if(event.key==='Enter'||event.key===' ') navigateTo('/koltuk-yikama', event)">
             <div class="w-14 h-14 rounded-2xl bg-teal-100 border border-teal-500/30 flex items-center justify-center text-teal-600 text-2xl mb-5 shadow-inner"><i class="fas fa-couch"></i></div>
             <h3 class="font-heading text-lg font-bold text-gray-900 mb-2">Koltuk Yıkama</h3>
             <p class="text-gray-600 text-xs sm:text-sm leading-relaxed mb-4 flex-grow">Yerinde buharlı vakumlu koltuk, berjer ve L-koltuk temizliği. Derin lekeler ve kötü kokular giderilir.</p>
             <span class="text-xs font-bold text-teal-600 flex items-center mt-2">Detaylı İncele <i class="fas fa-arrow-right ml-1"></i></span>
           </div>
-          <div class="glass-card rounded-2xl p-6 flex flex-col cursor-pointer shadow-sm" onclick="navigateTo('/perde-yikama', event)">
+          <div class="glass-card rounded-2xl p-6 flex flex-col cursor-pointer shadow-sm" role="button" tabindex="0" onclick="navigateTo('/perde-yikama', event)" onkeydown="if(event.key==='Enter'||event.key===' ') navigateTo('/perde-yikama', event)">
             <div class="w-14 h-14 rounded-2xl bg-emerald-100 border border-emerald-500/30 flex items-center justify-center text-emerald-600 text-2xl mb-5 shadow-inner"><i class="fas fa-window-maximize"></i></div>
             <h3 class="font-heading text-lg font-bold text-gray-900 mb-2">Stor & Zebra Perde</h3>
             <p class="text-gray-600 text-xs sm:text-sm leading-relaxed mb-4 flex-grow">Mekanizmalı perdeleriniz dikkatle sökülür, mekanizmalarına zarar verilmeden kirden ve is kokusundan arındırılır.</p>
             <span class="text-xs font-bold text-emerald-600 flex items-center mt-2">Detaylı İncele <i class="fas fa-arrow-right ml-1"></i></span>
           </div>
-          <div class="glass-card rounded-2xl p-6 flex flex-col cursor-pointer shadow-sm" onclick="navigateTo('/yorgan-battaniye-yikama', event)">
+          <div class="glass-card rounded-2xl p-6 flex flex-col cursor-pointer shadow-sm" role="button" tabindex="0" onclick="navigateTo('/yorgan-battaniye-yikama', event)" onkeydown="if(event.key==='Enter'||event.key===' ') navigateTo('/yorgan-battaniye-yikama', event)">
             <div class="w-14 h-14 rounded-2xl bg-cyan-100 border border-cyan-500/30 flex items-center justify-center text-cyan-600 text-2xl mb-5 shadow-inner"><i class="fas fa-bed"></i></div>
             <h3 class="font-heading text-lg font-bold text-gray-900 mb-2">Yorgan & Battaniye</h3>
             <p class="text-gray-600 text-xs sm:text-sm leading-relaxed mb-4 flex-grow">Elyaf, yün ve pamuk yorganlarınız geniş endüstriyel kazanlarda tek tek hijyenik şampuanlarla yıkanır.</p>
@@ -454,8 +474,8 @@ body.splash-active { overflow: hidden !important; }
           Her halının iplik yapısı, boyası ve dokuma tekniği farklıdır. İkizler Halı Yıkama olarak makine halılarından el dokuma ve yün halılara kadar her ürüne özel şampuan ve yıkama derecesi uyguluyoruz.
         </p>
         <div class="flex flex-wrap gap-4">
-          <button onclick="navigateTo('/', event)" class="px-6 py-3 rounded-xl bg-gray-200 text-gray-800 hover:bg-gray-300 text-xs font-bold transition-all"><i class="fas fa-arrow-left mr-2"></i> Ana Sayfaya Dön</button>
-          <a href="https://wa.me/905304149246?text=Merhaba,%20Halı%20yıkama%20hizmeti%20için%20bilgi%20almak%20istiyorum." target="_blank" rel="noopener noreferrer" class="px-6 py-3 rounded-xl bg-emerald-600 hover:bg-emerald-700 text-white text-xs font-bold transition-all flex items-center shadow-md"><i class="fab fa-whatsapp text-sm mr-2"></i> WhatsApp'tan Fiyat Al</a>
+          <button onclick="navigateTo('/', event)" class="px-6 py-3 rounded-xl bg-gray-200 text-gray-800 hover:bg-gray-300 text-xs font-bold transition-all cursor-pointer"><i class="fas fa-arrow-left mr-2"></i> Ana Sayfaya Dön</button>
+          <a href="https://wa.me/905304149246?text=Merhaba,%20Halı%20yıkama%20hizmeti%20için%20bilgi%20almak%20istiyorum." onclick="trackConversion()" target="_blank" rel="noopener noreferrer" class="px-6 py-3 rounded-xl bg-emerald-600 hover:bg-emerald-700 text-white text-xs font-bold transition-all flex items-center shadow-md"><i class="fab fa-whatsapp text-sm mr-2"></i> WhatsApp'tan Fiyat Al</a>
         </div>
       </div>
     </section>
@@ -487,8 +507,8 @@ body.splash-active { overflow: hidden !important; }
           Koltuklarınızı söküp taşımadan, uzman personelimiz adresinize gelerek 2-4 saat içinde tertemiz ve kullanıma hazır hale getirir.
         </p>
         <div class="flex flex-wrap gap-4">
-          <button onclick="navigateTo('/', event)" class="px-6 py-3 rounded-xl bg-gray-200 text-gray-800 hover:bg-gray-300 text-xs font-bold transition-all"><i class="fas fa-arrow-left mr-2"></i> Ana Sayfaya Dön</button>
-          <a href="https://wa.me/905304149246?text=Merhaba,%20Koltuk%20yıkama%20hizmeti%20için%20bilgi%20almak%20istiyorum." target="_blank" rel="noopener noreferrer" class="px-6 py-3 rounded-xl bg-emerald-600 hover:bg-emerald-700 text-white text-xs font-bold transition-all flex items-center shadow-md"><i class="fab fa-whatsapp text-sm mr-2"></i> WhatsApp'tan Fiyat Al</a>
+          <button onclick="navigateTo('/', event)" class="px-6 py-3 rounded-xl bg-gray-200 text-gray-800 hover:bg-gray-300 text-xs font-bold transition-all cursor-pointer"><i class="fas fa-arrow-left mr-2"></i> Ana Sayfaya Dön</button>
+          <a href="https://wa.me/905304149246?text=Merhaba,%20Koltuk%20yıkama%20hizmeti%20için%20bilgi%20almak%20istiyorum." onclick="trackConversion()" target="_blank" rel="noopener noreferrer" class="px-6 py-3 rounded-xl bg-emerald-600 hover:bg-emerald-700 text-white text-xs font-bold transition-all flex items-center shadow-md"><i class="fab fa-whatsapp text-sm mr-2"></i> WhatsApp'tan Fiyat Al</a>
         </div>
       </div>
     </section>
@@ -516,8 +536,8 @@ body.splash-active { overflow: hidden !important; }
           </div>
         </div>
         <div class="flex flex-wrap gap-4">
-          <button onclick="navigateTo('/', event)" class="px-6 py-3 rounded-xl bg-gray-200 text-gray-800 hover:bg-gray-300 text-xs font-bold transition-all"><i class="fas fa-arrow-left mr-2"></i> Ana Sayfaya Dön</button>
-          <a href="https://wa.me/905304149246?text=Merhaba,%20Perde%20yıkama%20hizmeti%20için%20bilgi%20almak%20istiyorum." target="_blank" rel="noopener noreferrer" class="px-6 py-3 rounded-xl bg-emerald-600 hover:bg-emerald-700 text-white text-xs font-bold transition-all flex items-center shadow-md"><i class="fab fa-whatsapp text-sm mr-2"></i> WhatsApp'tan Fiyat Al</a>
+          <button onclick="navigateTo('/', event)" class="px-6 py-3 rounded-xl bg-gray-200 text-gray-800 hover:bg-gray-300 text-xs font-bold transition-all cursor-pointer"><i class="fas fa-arrow-left mr-2"></i> Ana Sayfaya Dön</button>
+          <a href="https://wa.me/905304149246?text=Merhaba,%20Perde%20yıkama%20hizmeti%20için%20bilgi%20almak%20istiyorum." onclick="trackConversion()" target="_blank" rel="noopener noreferrer" class="px-6 py-3 rounded-xl bg-emerald-600 hover:bg-emerald-700 text-white text-xs font-bold transition-all flex items-center shadow-md"><i class="fab fa-whatsapp text-sm mr-2"></i> WhatsApp'tan Fiyat Al</a>
         </div>
       </div>
     </section>
@@ -545,8 +565,8 @@ body.splash-active { overflow: hidden !important; }
           </div>
         </div>
         <div class="flex flex-wrap gap-4">
-          <button onclick="navigateTo('/', event)" class="px-6 py-3 rounded-xl bg-gray-200 text-gray-800 hover:bg-gray-300 text-xs font-bold transition-all"><i class="fas fa-arrow-left mr-2"></i> Ana Sayfaya Dön</button>
-          <a href="https://wa.me/905304149246?text=Merhaba,%20Yorgan%20yıkama%20hizmeti%20için%20bilgi%20almak%20istiyorum." target="_blank" rel="noopener noreferrer" class="px-6 py-3 rounded-xl bg-emerald-600 hover:bg-emerald-700 text-white text-xs font-bold transition-all flex items-center shadow-md"><i class="fab fa-whatsapp text-sm mr-2"></i> WhatsApp'tan Fiyat Al</a>
+          <button onclick="navigateTo('/', event)" class="px-6 py-3 rounded-xl bg-gray-200 text-gray-800 hover:bg-gray-300 text-xs font-bold transition-all cursor-pointer"><i class="fas fa-arrow-left mr-2"></i> Ana Sayfaya Dön</button>
+          <a href="https://wa.me/905304149246?text=Merhaba,%20Yorgan%20yıkama%20hizmeti%20için%20bilgi%20almak%20istiyorum." onclick="trackConversion()" target="_blank" rel="noopener noreferrer" class="px-6 py-3 rounded-xl bg-emerald-600 hover:bg-emerald-700 text-white text-xs font-bold transition-all flex items-center shadow-md"><i class="fab fa-whatsapp text-sm mr-2"></i> WhatsApp'tan Fiyat Al</a>
         </div>
       </div>
     </section>
@@ -563,7 +583,7 @@ body.splash-active { overflow: hidden !important; }
         <p class="text-gray-700 text-base leading-relaxed mb-6">
           20 bölgede aktif ücretsiz servis ağımızla binlerce konutun hijyen standartlarını yükselttik. En son teknoloji makineler ve çevre dostu temizlik bileşenleri kullanmaktayız.
         </p>
-        <button onclick="navigateTo('/', event)" class="px-6 py-3 rounded-xl bg-gray-200 text-gray-800 hover:bg-gray-300 text-xs font-bold transition-all"><i class="fas fa-arrow-left mr-2"></i> Ana Sayfaya Dön</button>
+        <button onclick="navigateTo('/', event)" class="px-6 py-3 rounded-xl bg-gray-200 text-gray-800 hover:bg-gray-300 text-xs font-bold transition-all cursor-pointer"><i class="fas fa-arrow-left mr-2"></i> Ana Sayfaya Dön</button>
       </div>
     </section>
   </div>
@@ -597,7 +617,7 @@ body.splash-active { overflow: hidden !important; }
           <div class="bg-white/80 p-3 rounded-xl border border-gray-200 text-xs font-semibold text-gray-800"><i class="fas fa-map-pin text-cyan-600 mr-2"></i> Kemerburgaz</div>
         </div>
         <div class="mt-8">
-          <button onclick="navigateTo('/', event)" class="px-6 py-3 rounded-xl bg-gray-200 text-gray-800 hover:bg-gray-300 text-xs font-bold transition-all"><i class="fas fa-arrow-left mr-2"></i> Ana Sayfaya Dön</button>
+          <button onclick="navigateTo('/', event)" class="px-6 py-3 rounded-xl bg-gray-200 text-gray-800 hover:bg-gray-300 text-xs font-bold transition-all cursor-pointer"><i class="fas fa-arrow-left mr-2"></i> Ana Sayfaya Dön</button>
         </div>
       </div>
     </section>
@@ -617,19 +637,19 @@ body.splash-active { overflow: hidden !important; }
             </div>
             <div class="flex items-start">
               <div class="w-10 h-10 rounded-xl bg-teal-100 border border-teal-500/30 flex items-center justify-center text-teal-700 mr-4 flex-shrink-0"><i class="fas fa-phone"></i></div>
-              <div><span class="block font-bold text-gray-900">Doğrudan Sipariş Hattı</span><a href="tel:05304149246" class="text-cyan-600 font-bold text-base hover:underline">0530 414 92 46</a></div>
+              <div><span class="block font-bold text-gray-900">Doğrudan Sipariş Hattı</span><a href="tel:05304149246" onclick="trackConversion()" class="text-cyan-600 font-bold text-base hover:underline">0530 414 92 46</a></div>
             </div>
             <div class="flex items-start">
               <div class="w-10 h-10 rounded-xl bg-emerald-100 border border-emerald-500/30 flex items-center justify-center text-emerald-700 mr-4 flex-shrink-0"><i class="fab fa-whatsapp text-lg"></i></div>
-              <div><span class="block font-bold text-gray-900">WhatsApp Destek</span><a href="https://wa.me/905304149246" target="_blank" rel="noopener noreferrer" class="text-emerald-600 font-bold hover:underline">0530 414 92 46</a></div>
+              <div><span class="block font-bold text-gray-900">WhatsApp Destek</span><a href="https://wa.me/905304149246" onclick="trackConversion()" target="_blank" rel="noopener noreferrer" class="text-emerald-600 font-bold hover:underline">0530 414 92 46</a></div>
             </div>
           </div>
           <div class="mt-8">
-            <button onclick="navigateTo('/', event)" class="px-6 py-3 rounded-xl bg-gray-200 text-gray-800 hover:bg-gray-300 text-xs font-bold transition-all"><i class="fas fa-arrow-left mr-2"></i> Ana Sayfaya Dön</button>
+            <button onclick="navigateTo('/', event)" class="px-6 py-3 rounded-xl bg-gray-200 text-gray-800 hover:bg-gray-300 text-xs font-bold transition-all cursor-pointer"><i class="fas fa-arrow-left mr-2"></i> Ana Sayfaya Dön</button>
           </div>
         </div>
         <div class="lg:col-span-7 glass-card rounded-3xl overflow-hidden p-2.5 border border-cyan-500/30 shadow-md">
-          <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2858.408400228397!2d28.932899075862718!3d41.086427171339636!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x14cab1c5f27ef005%3A0x2efe9eb54f25195e!2s%C4%B0K%C4%B0ZLER%20HALI%20VE%20KOLTUK%20YIKAMA!5e1!3m2!1str!2str!4v1789050441680!5m2!1str!2str" class="w-full h-80 sm:h-96 lg:h-full min-h-[380px] rounded-2xl border-0" allowfullscreen="" loading="lazy" referrerpolicy="strict-origin-when-cross-origin"></iframe>
+          <iframe title="İkizler Halı ve Koltuk Yıkama Harita Konumu" src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2858.408400228397!2d28.932899075862718!3d41.086427171339636!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x14cab1c5f27ef005%3A0x2efe9eb54f25195e!2s%C4%B0K%C4%B0ZLER%20HALI%20VE%20KOLTUK%20YIKAMA!5e1!3m2!1str!2str!4v1789050441680!5m2!1str!2str" class="w-full h-80 sm:h-96 lg:h-full min-h-[380px] rounded-2xl border-0" allowfullscreen loading="lazy" referrerpolicy="strict-origin-when-cross-origin"></iframe>
         </div>
       </div>
     </section>
@@ -671,8 +691,8 @@ body.splash-active { overflow: hidden !important; }
         <h4 class="font-heading font-bold text-white text-sm mb-4 tracking-wide">İletişim</h4>
         <ul class="space-y-2.5 text-xs text-gray-400">
           <li class="flex items-start"><i class="fas fa-location-dot text-cyan-400 mr-2 mt-0.5 flex-shrink-0"></i><span>Çırçır Mah. Sezai Karakoç Cd. No:67, Eyüpsultan/İstanbul</span></li>
-          <li class="flex items-center"><i class="fas fa-phone text-cyan-400 mr-2 flex-shrink-0"></i><a href="tel:05304149246" class="hover:text-cyan-400">Tel: 0530 414 92 46</a></li>
-          <li class="flex items-center"><i class="fab fa-whatsapp text-emerald-400 mr-2 flex-shrink-0"></i><a href="https://wa.me/905304149246" target="_blank" rel="noopener noreferrer" class="hover:text-emerald-400">WhatsApp: 0530 414 92 46</a></li>
+          <li class="flex items-center"><i class="fas fa-phone text-cyan-400 mr-2 flex-shrink-0"></i><a href="tel:05304149246" onclick="trackConversion()" class="hover:text-cyan-400">Tel: 0530 414 92 46</a></li>
+          <li class="flex items-center"><i class="fab fa-whatsapp text-emerald-400 mr-2 flex-shrink-0"></i><a href="https://wa.me/905304149246" onclick="trackConversion()" target="_blank" rel="noopener noreferrer" class="hover:text-emerald-400">WhatsApp: 0530 414 92 46</a></li>
           <li class="flex items-center"><i class="fab fa-instagram text-pink-400 mr-2 flex-shrink-0"></i><a href="https://www.instagram.com/ikizlerhalivekoltukyikama" target="_blank" rel="noopener noreferrer" class="text-pink-400 hover:underline">@ikizlerhalivekoltukyikama</a></li>
           <li class="flex items-center"><i class="fas fa-clock text-cyan-400 mr-2 flex-shrink-0"></i><span>Pzt - Cmt: 08:30 - 21:30</span></li>
         </ul>
@@ -689,10 +709,10 @@ body.splash-active { overflow: hidden !important; }
   <a href="https://www.instagram.com/ikizlerhalivekoltukyikama" target="_blank" rel="noopener noreferrer" class="instagram-gradient text-white w-12 h-12 rounded-full shadow-2xl flex items-center justify-center transform hover:scale-110 active:scale-95 transition-all" aria-label="Instagram">
     <i class="fab fa-instagram text-2xl"></i>
   </a>
-  <a href="https://wa.me/905304149246" target="_blank" rel="noopener noreferrer" class="bg-emerald-500 text-white w-12 h-12 rounded-full shadow-2xl flex items-center justify-center transform hover:scale-110 active:scale-95 transition-all" aria-label="WhatsApp">
+  <a href="https://wa.me/905304149246" onclick="trackConversion()" target="_blank" rel="noopener noreferrer" class="bg-emerald-500 text-white w-12 h-12 rounded-full shadow-2xl flex items-center justify-center transform hover:scale-110 active:scale-95 transition-all" aria-label="WhatsApp">
     <i class="fab fa-whatsapp text-2xl"></i>
   </a>
-  <a href="tel:05304149246" class="bg-cyan-500 text-white w-12 h-12 rounded-full shadow-2xl flex items-center justify-center transform hover:scale-110 active:scale-95 transition-all" aria-label="Telefon">
+  <a href="tel:05304149246" onclick="trackConversion()" class="bg-cyan-500 text-white w-12 h-12 rounded-full shadow-2xl flex items-center justify-center transform hover:scale-110 active:scale-95 transition-all" aria-label="Telefon">
     <i class="fas fa-phone text-xl"></i>
   </a>
 </div>
@@ -735,10 +755,29 @@ const pageDescriptions = {
   '/yorgan-battaniye-yikama': 'Elyaf, yün ve pamuk yorgan ve battaniyeleriniz endüstriyel kazanlarda hijyenik şampuanlarla tek tek yıkanır.'
 };
 
+function normalizePath(rawPath) {
+  if (!rawPath || rawPath === '' || rawPath === '/index.html' || rawPath === 'index.html') return '/';
+  if (rawPath.length > 1 && rawPath.endsWith('/')) return rawPath.slice(0, -1);
+  return rawPath;
+}
+
 let canvasAnimId = null;
 
 function runSplashAnimation() {
   const splashScreen = document.getElementById('splash-screen');
+  if (!splashScreen) return;
+
+  // Sadece oturumun ilk açılışında çalıştır
+  try {
+    if (sessionStorage.getItem('ikizler_splash_seen') === 'true') {
+      splashScreen.style.display = 'none';
+      return;
+    }
+    sessionStorage.setItem('ikizler_splash_seen', 'true');
+  } catch (e) {
+    // sessionStorage engellenmişse normal devam et
+  }
+
   const splashText = document.getElementById('splash-text');
   const regionsBg = document.getElementById('splash-regions-background');
   const body = document.body;
@@ -746,70 +785,81 @@ function runSplashAnimation() {
   const servicesList = ['Halı Yıkama', 'Koltuk Yıkama', 'Stor & Zebra Perde', 'Yorgan & Battaniye', '20 Bölgede Ücretsiz Servis'];
   const regionsList = ['Beyoğlu', 'Sultangazi', 'Bayrampaşa', 'Eyüpsultan', 'Gaziosmanpaşa', 'Cebeci', 'Emniyettepe', 'Gültepe', '5. Levent', 'Karadolap', 'Yunus Emre', 'Çırçır', 'İsmetpaşa', 'Alibeyköy', 'Güzeltepe', 'Yeşilpınar', 'Kazım Karabekir', 'Göktürk Merkez', 'Küçükköy', 'Kemerburgaz'];
 
-  if (splashScreen) {
-    splashScreen.style.opacity = '1';
-    splashScreen.style.visibility = 'visible';
-    body.classList.add('splash-active');
+  splashScreen.style.opacity = '1';
+  splashScreen.style.visibility = 'visible';
+  body.classList.add('splash-active');
 
-    if (regionsBg) {
-      regionsBg.innerHTML = '';
-      const occupied = [];
-      function getRandomCoords() {
-        let tries = 0;
-        let coord = { x: 50, y: 50 };
-        let overlaps = true;
-        while (overlaps && tries < 40) {
-          coord = { x: Math.random() * 80 + 8, y: Math.random() * 76 + 12 };
-          const isCenter = coord.x > 25 && coord.x < 75 && coord.y > 20 && coord.y < 80;
-          overlaps = isCenter || occupied.some(p => Math.hypot(coord.x - p.x, coord.y - p.y) < 15);
-          tries++;
-        }
-        occupied.push(coord);
-        return coord;
+  if (regionsBg) {
+    regionsBg.innerHTML = '';
+    const occupied = [];
+    function getRandomCoords() {
+      let tries = 0;
+      let coord = { x: 50, y: 50 };
+      let overlaps = true;
+      while (overlaps && tries < 40) {
+        coord = { x: Math.random() * 80 + 8, y: Math.random() * 76 + 12 };
+        const isCenter = coord.x > 25 && coord.x < 75 && coord.y > 20 && coord.y < 80;
+        overlaps = isCenter || occupied.some(p => Math.hypot(coord.x - p.x, coord.y - p.y) < 15);
+        tries++;
       }
-
-      regionsList.forEach((region, index) => {
-        const pt = getRandomCoords();
-        const tag = document.createElement('div');
-        tag.className = 'region-float';
-        tag.textContent = region;
-        tag.style.left = pt.x + '%';
-        tag.style.top = pt.y + '%';
-        tag.style.animationDelay = (index * 0.1) + 's';
-        regionsBg.appendChild(tag);
-      });
+      occupied.push(coord);
+      return coord;
     }
 
-    if (splashText) {
-      let sIdx = 0;
-      const textTimer = setInterval(() => {
-        sIdx = (sIdx + 1) % servicesList.length;
-        splashText.textContent = servicesList[sIdx];
-      }, 350);
-      setTimeout(() => clearInterval(textTimer), 2000);
-    }
-
-    setTimeout(() => {
-      splashScreen.style.opacity = '0';
-      splashScreen.style.visibility = 'hidden';
-      body.classList.remove('splash-active');
-    }, 2100);
+    regionsList.forEach((region, index) => {
+      const pt = getRandomCoords();
+      const tag = document.createElement('div');
+      tag.className = 'region-float';
+      tag.textContent = region;
+      tag.style.left = pt.x + '%';
+      tag.style.top = pt.y + '%';
+      tag.style.animationDelay = (index * 0.1) + 's';
+      regionsBg.appendChild(tag);
+    });
   }
+
+  let textTimer = null;
+  if (splashText) {
+    let sIdx = 0;
+    textTimer = setInterval(() => {
+      sIdx = (sIdx + 1) % servicesList.length;
+      splashText.textContent = servicesList[sIdx];
+    }, 350);
+  }
+
+  setTimeout(() => {
+    if (textTimer) clearInterval(textTimer);
+    splashScreen.style.pointerEvents = 'none';
+    splashScreen.style.opacity = '0';
+    splashScreen.style.visibility = 'hidden';
+    body.classList.remove('splash-active');
+    setTimeout(() => {
+      splashScreen.style.display = 'none';
+    }, 550);
+  }, 2100);
 }
 
-function renderView(path) {
-  let viewId = routes[path] || 'anasayfa';
+function renderView(rawPath) {
+  const path = normalizePath(rawPath);
+  const viewId = routes[path] || 'anasayfa';
 
   if (pageTitles[path]) {
     document.getElementById('page-title').textContent = pageTitles[path];
+    const ogTitle = document.getElementById('og-title');
+    if (ogTitle) ogTitle.setAttribute('content', pageTitles[path]);
   }
   const descEl = document.getElementById('meta-description');
   if (descEl && pageDescriptions[path]) {
     descEl.setAttribute('content', pageDescriptions[path]);
+    const ogDesc = document.getElementById('og-description');
+    if (ogDesc) ogDesc.setAttribute('content', pageDescriptions[path]);
   }
   const canonicalEl = document.getElementById('canonical-link');
   if (canonicalEl) {
-    canonicalEl.setAttribute('href', 'https://ikizlerhalivekoltukyikama.com.tr' + (path === '/' ? '' : path));
+    const fullUrl = 'https://ikizlerhalivekoltukyikama.com.tr' + (path === '/' ? '' : path);
+    canonicalEl.setAttribute('href', fullUrl);
+    const ogUrl = document.getElementById('og-url');
+    if (ogUrl) ogUrl.setAttribute('content', fullUrl);
   }
 
   const views = document.querySelectorAll('.page-view');
@@ -828,7 +878,6 @@ function renderView(path) {
     }
   }
 
-  // Canvas animasyonunu sayfa anasayfa değilse durdurarak pil tasarrufu sağla
   if (viewId === 'anasayfa') {
     startCanvasAnimation();
   } else {
@@ -843,8 +892,12 @@ function renderView(path) {
 
 function navigateTo(path, event) {
   if (event) event.preventDefault();
-  if (window.location.pathname !== path) {
-    history.pushState(null, '', path);
+  try {
+    if (window.location.pathname !== path) {
+      history.pushState(null, '', path);
+    }
+  } catch (err) {
+    // file:/// veya güvenlik kısıtlı ortamlarda sessizce geç
   }
   renderView(path);
 }
@@ -862,8 +915,10 @@ let bubbles = [];
 function resizeCanvas() {
   if (!canvas || !canvas.parentElement) return;
   const rect = canvas.parentElement.getBoundingClientRect();
-  cWidth = canvas.width = rect.width;
-  cHeight = canvas.height = rect.height;
+  if (rect.width > 0 && rect.height > 0) {
+    cWidth = canvas.width = rect.width;
+    cHeight = canvas.height = rect.height;
+  }
 }
 
 function initCanvas() {
@@ -874,10 +929,12 @@ function initCanvas() {
   window.addEventListener('resize', resizeCanvas);
 
   bubbles = [];
+  const baseW = cWidth || window.innerWidth || 800;
+  const baseH = cHeight || 500;
   for (let i = 0; i < 25; i++) {
     bubbles.push({
-      x: Math.random() * (cWidth || 800),
-      y: Math.random() * (cHeight || 600),
+      x: Math.random() * baseW,
+      y: Math.random() * baseH,
       radius: Math.random() * 7 + 3,
       speedY: Math.random() * 0.7 + 0.3,
       speedX: (Math.random() - 0.5) * 0.3,
@@ -887,9 +944,15 @@ function initCanvas() {
 }
 
 function startCanvasAnimation() {
+  if (!canvas) return;
+  resizeCanvas();
   if (canvasAnimId) return;
+
   function loop() {
     if (!ctx) return;
+    if (cWidth === 0 || cHeight === 0) {
+      resizeCanvas();
+    }
     ctx.clearRect(0, 0, cWidth, cHeight);
 
     nozzleX += (targetX - nozzleX) * 0.02;
@@ -954,17 +1017,30 @@ function stopCanvasAnimation() {
 document.addEventListener('DOMContentLoaded', () => {
   initCanvas();
   renderView(window.location.pathname || '/');
-  
-  // Sadece ilk açılışta splash animasyonunu çalıştır
   runSplashAnimation();
 
-  // Menü Butonu Etkileşimi
+  // Menü Butonu & Dışa Tıklama Etkileşimi
   const menuToggleBtn = document.getElementById('menu-toggle-btn');
   const dropdownMenu = document.getElementById('dropdown-menu');
   if (menuToggleBtn && dropdownMenu) {
-    menuToggleBtn.addEventListener('click', () => {
+    menuToggleBtn.addEventListener('click', (e) => {
+      e.stopPropagation();
       const isHidden = dropdownMenu.classList.toggle('hidden');
       menuToggleBtn.setAttribute('aria-expanded', (!isHidden).toString());
+    });
+
+    document.addEventListener('click', (e) => {
+      if (!dropdownMenu.classList.contains('hidden') && !dropdownMenu.contains(e.target) && !menuToggleBtn.contains(e.target)) {
+        dropdownMenu.classList.add('hidden');
+        menuToggleBtn.setAttribute('aria-expanded', 'false');
+      }
+    });
+
+    document.addEventListener('keydown', (e) => {
+      if (e.key === 'Escape' && !dropdownMenu.classList.contains('hidden')) {
+        dropdownMenu.classList.add('hidden');
+        menuToggleBtn.setAttribute('aria-expanded', 'false');
+      }
     });
   }
 
@@ -973,6 +1049,9 @@ document.addEventListener('DOMContentLoaded', () => {
   if (quickForm) {
     quickForm.addEventListener('submit', (e) => {
       e.preventDefault();
+      
+      trackConversion();
+
       const name = document.getElementById('order-name').value.trim();
       const service = document.getElementById('order-service').value;
       const region = document.getElementById('order-region').value;
@@ -980,12 +1059,7 @@ document.addEventListener('DOMContentLoaded', () => {
 
       const message = `Merhaba İkizler Halı Yıkama,\nBen ${name}.\nBölge: ${region}\nHizmet: ${service}\nÜrün Miktarı/Detay: ${details}\nServis ve randevu oluşturmak istiyorum.`;
       const whatsappUrl = 'https://wa.me/905304149246?text=' + encodeURIComponent(message);
-      window.open(whatsappUrl, '_blank');
-    });
-  }
-});
-</script>
-
-</body>
-</html>
-```
+      
+      const newTab = window.open(whatsappUrl, '_blank');
+      // Popup engelleyici devreye girerse doğrudan sayfada aç
+      if (!newTab || newTab.closed || typeof newTab.closed === 'undefined
